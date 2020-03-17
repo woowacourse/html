@@ -8,12 +8,16 @@
 
 <img src="https://techcourse-storage.s3.ap-northeast-2.amazonaws.com/2020-03-16T10:41:53.786image.png" width="400">
 
+<br/>
+
 ## 2. 안내사항
 
 - 위 미션은 [Repository](https://github.com/woowacourse/html)에서 기존의 미션을 진행하던 방식과 동일하게 진행합니다.
 - PR을 보내면 **@eastjun**이 확인 후 merge할 예정입니다.
 - 마감기한은 **2020년 3월 23월 월요일 23:59분** 까지입니다.
 - 작성한 html은  **@eastjun**이 웹핸드북으로 제작하여 배포할 예정입니다. 예쁘게 만들 필요는 없지만 내용에 성의를 보여주세요 😀
+
+<br/>
 
 ## 3. 요구사항 
 
@@ -24,7 +28,7 @@
 - [ ]  댓글을 작성하는 `input` 또는 `textarea` 태그를 사용한다. (실제 동작할 필요는 없음)
 - [ ]  자신이 사용한 태그들의 기능을 README.md에 작성한다.
 
-
+<br/>
 
 ## 👏 Contributing
 
