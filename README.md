@@ -6,7 +6,7 @@
 ### [우아한테크그램](https://woonjangahn.github.io/html)
 
 <p align="center">
-  <img src="./screenshot.jpg" alt="screenshot" />
+  <img src="./screenshot.jpg" alt="screenshot" width="300" />
 </p>
 
 <br/>
