@@ -1,0 +1,129 @@
+@charset "utf-8";
+@import url(http://fonts.googleapis.com/earlyaccess/jejumyeongjo.css);
+
+.header {
+    font-family: 'jeju myeongjo', serif;
+    font-size: 54px;
+    color: white;
+    background-color: black;
+    width: 100%;
+    padding-left: 10px;
+    padding-bottom: 5px;
+}
+
+.wrapper {
+    width: 1200px;
+    margin: auto;
+    outline-style: dashed;
+}
+
+.introducebox {
+    display: flex;
+}
+
+.html_introduce_pic {
+    width: 500px;
+    height: 600px;
+    padding: 20px;
+}
+
+.html_introduce_pic>img {
+    padding: 170px 50px 50px 50px;
+    margin: auto;
+}
+
+.html_introduce {
+    padding: 200px 30px 30px 30px;
+}
+
+.life_box {
+    padding: 50px 0px 30px 0px;
+    text-align: center;
+}
+
+.htmlis_box {
+    padding: 50px 0px 30px 0px;
+    text-align: center;
+}
+
+.notes_box {
+    padding: 50px 30px 30px 30px;
+    text-align: center;
+}
+
+.content {
+    font-family: 'jeju myeongjo', serif;
+    font-size: 20px;
+}
+
+.background_swiss {
+    background-image: url( "../img/swiss.jpg" );
+    background-size: cover;
+    width: 1200px;
+    height: 800px;
+    padding: 180px 30px 30px 30px;
+}
+
+.web_icon {
+    padding: 30px;
+}
+
+.web_timeline {
+    font-family: 'jeju myeongjo', serif;
+    font-size: 40px;
+}
+
+.web_timeline>p {
+    padding-top: 16px;
+}
+
+.nav-tabs {
+    background-color: black !important;
+}
+
+.active {
+    color: black !important;
+}
+
+.nav-link {
+    color: white;
+}
+
+.nav-link:hover {
+    color: white;
+}
+
+.nav-tabs .nav-link{
+    font-family: 'jeju myeongjo', serif;
+    border-top-left-radius: .0rem !important;
+    border-top-right-radius: .0rem !important;
+}
+
+.footer {
+    font-family: 'jeju myeongjo', serif;
+    text-align: center;
+    background-color: black;
+    color: white !important;
+    font-size: 15px;
+    padding: 10px;
+    text-decoration: none;
+}
+
+.inputnote {
+    width: 100%;
+    display: flex;
+}
+
+.comment {
+    margin: auto;
+    width: 90% !important;
+}
+
+.inputnote>button {
+    width: 100px;
+}
+
+.footer>b>a:link {text-decoration: none; color: white;}
+.footer>b>a:visited {text-decoration: none; color: white;}
+.footer>b>a:active {text-decoration: none; color: white;}
+.footer>b>a:hover {text-decoration: none; color: white;}
