@@ -36,10 +36,13 @@
 
 ## 사용한 태그
 
-- span
+- div
 - pre
 - input
-- 
+- br
+- font
+- p
+- img
 
 ---
 

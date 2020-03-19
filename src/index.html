@@ -34,8 +34,8 @@
 </div>
 
 <div class="progress">
-	<div class="progress-bar progress-bar-success" role="progressbar" style="min-width: 0; width: 50%;">
-		50%
+	<div class="progress-bar progress-bar-success" role="progressbar" style="min-width: 0; width: 0%;">
+		0
 	</div>
 </div>
 
@@ -45,15 +45,25 @@
 			url: 'index.html',
 			success: function () {
 				$('.page-header').append('<span class="label label-info">level : 1</span>');
-				$('#content').load('storage/level1.html')
+				$('#content').load('level1.html')
 			}
 		})
 	}
 </script>
 
+<script>
+	function levelOneSubmit() {
+		var userAnswer = document.getElementById('bodyAnswer').value;
+
+		if (userAnswer == 'body') {
+			location.href = 'level2.html';
+		}
+	}
+</script>
+
 <script
 		crossorigin="anonymous"
-		integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
-		src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+		integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
+		src="https://code.jquery.com/jquery-3.4.1.js"></script>
 </body>
 </html>
