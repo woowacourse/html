@@ -37,6 +37,13 @@
             <li>1990년 12월 - 웹서버 개설 및 <a href="http://info.cern.ch/">최초의 웹사이트</a> 개설</li>
         </ol>
     </section>
+    <section class="card" id="guest-book">
+        <img src="lulu.gif">
+        <h3>HTML에 대하여 많이 배우셨나요?</h3>
+        <div>도움이 되셨다면 아래 방명록을 작성해주세요.</div>
+        <textarea name="guest_book" placeholder="소중한 방명록을 남겨주세요."></textarea>
+        <button>제출</button>
+    </section>
 </main>
 </body>
 </html>
@@ -105,6 +112,16 @@
 
     .card > ol {
         padding: 0;
+    }
+
+    #guest-book:hover {
+        box-shadow: none;
+        opacity: 1;
+    }
+
+    #guest-book > textarea {
+        width: 80%;
+        margin: 10px;
     }
 </style>
 
