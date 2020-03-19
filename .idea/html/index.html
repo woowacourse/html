@@ -24,10 +24,20 @@
         <div class="footer_menu">
             <div class="div_menu">
                 <h1 class="menu2">menu</h1>
-                <p><a href="intro.html">HTML이란?</a></p>
-                <p><a href="description1.html">아잉</a></p>
-                <p><a href="description1.html">ㅋㅋ</a></p>
-                <p><a href="description1.html">불꽃</a></p>
+                <ul>
+                    <p>
+                    <li><a href="intro.html">HTML이란?</a></li>
+                    </p>
+                    <p>
+                    <li><a href="description1.html">아잉</a></li>
+                    </p>
+                    <p>
+                    <li><a href="description1.html">ㅋㅋ</a></li>
+                    </p>
+                    <p>
+                    <li><a href="description1.html">불꽃</a></li>
+                    </p>
+                </ul>
             </div>
         </div>
         <!--        영상-->
@@ -39,13 +49,27 @@
             <div class="div_text_title"><h2>안녕하세용</h2></div>
             <div class="div_text_image"><img src="main_dd.jpg" alt="" class="div_text_image"></div>
             <div class="div_text_reply"><h3>댓글</h3>
-                <div class="text_reply_show"></div>
+                <div class="text_reply_show">
+                    <table class="text_reply_show_table">
+                        <tr>
+                            <th class="text_reply_show_no">번호</th>
+                            <th class="text_reply_show_contents">내용</th>
+                            <th class="text_reply_show_nickname">닉네임</th>
+                        </tr>
+                        <tr>
+                            <th class="text_reply_show_no">1</th>
+                            <th class="text_reply_show_contents">ㅋㅋ귀엽당</th>
+                            <th class="text_reply_show_nickname">디디</th>
+                        </tr>
+
+                    </table>
+                </div>
                 <div class="text_reply_enter">
-                    <form action="">
-                        <textarea name="" id="reply"></textarea>
-                        닉네임 : <input type="text" placeholder="아이디" name="id">
-                        비밀번호 : <input type="text" placeholder="비밀번호" name="pw">
-                        <input type="submit" id="submit_reply" value="제출">
+                    <form name="postReply" action="" method="POST" onsubmit="abcSubmit();">
+                        <input type="text" class="text_area_reply" name="reply">
+                        닉네임 : <input type="text" placeholder="닉네임" name="nickname">
+                        비밀번호 : <input type="password" placeholder="비밀번호" name="password">
+                        <input type="submit" name="submit" value="제출">
                     </form>
                 </div>
             </div>
@@ -53,12 +77,14 @@
     </footer>
 </div>
 <script>
+    var no = 2;
     $(".header_title_logo").mouseover(function () {
         $(this).attr("src", $(this).data("animated"))
     }),
-        $(".main-logo").mouseout(function () {
+        $(".header_title_logo").mouseout(function () {
             $(this).attr("src", $(this).data("static"))
         });
+
     function button1_click() {
         if ($('.div_menu').length) {
             $('div').remove('.div_menu');
@@ -71,6 +97,16 @@
                 "                <p><a href=\"description1.html\">불꽃</a></p>\n" +
                 "            </div>");
         }
+    }
+
+    function abcSubmit() {
+        var reply = document.postReply.reply.value;
+        var nickname = document.postReply.nickname.value;
+        $(".text_reply_show_table").append("<tr>\n" +
+            "                            <th class=\"text_reply_show_no\">" + (no++) + "</th>\n" +
+            "                            <th class=\"text_reply_show_contents\">" + reply + "</th>\n" +
+            "                            <th class=\"text_reply_show_nickname\">" + nickname + "</th>\n" +
+            "                        </tr>")
     }
 </script>
 </body>

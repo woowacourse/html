@@ -76,16 +76,24 @@ footer{
 .title_image{
     max-width:80%
 }
-#reply{
+.text_area_reply{
     width:100%;
-    height: 100px;
-    column-count: auto;
-    row-count: auto;
+    height: 70px;
+    margin-bottom: 10px;
 }
-#submit_reply{
-    align-content: flex-end;
+.text_reply_show_table{
+    border: 1px solid black;
+    width: 100%;
+    margin-bottom: 10px;
+    border-collapse: collapse;
 }
-.movie{
-    padding:20px;
+.text_reply_show_no{
+    border: 1px solid black;
+}
+.text_reply_show_contents{
+    border: 1px solid black;
+}
+.text_reply_show_nickname{
+    border: 1px solid black;
 }
 

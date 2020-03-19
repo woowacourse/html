@@ -2,11 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="993e3eb3-44f3-4a04-9cc2-94e9a915b60c" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/html/option_button.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/html/description1.html" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/html/description1.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/html/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/html/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/html/intro.html" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/html/intro.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/html/sample.html" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/html/sample.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/html/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/html/style.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
@@ -66,7 +62,7 @@
       <option name="presentableId" value="Default" />
       <updated>1584576042073</updated>
       <workItem from="1584576045585" duration="37000" />
-      <workItem from="1584576125370" duration="23237000" />
+      <workItem from="1584576125370" duration="26864000" />
     </task>
     <task id="LOCAL-00001" summary="feat:기본 프레임 구현">
       <created>1584603370335</created>
@@ -82,7 +78,14 @@
       <option name="project" value="LOCAL" />
       <updated>1584613391018</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="feat:기본 스크립트 구현">
+      <created>1584617732075</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1584617732075</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -92,7 +95,8 @@
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="feat:기본 프레임 구현" />
     <MESSAGE value="feat:기본 css 구현" />
-    <option name="LAST_COMMIT_MESSAGE" value="feat:기본 css 구현" />
+    <MESSAGE value="feat:기본 스크립트 구현" />
+    <option name="LAST_COMMIT_MESSAGE" value="feat:기본 스크립트 구현" />
   </component>
   <component name="WindowStateProjectService">
     <state x="19" y="150" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1584600288729">
@@ -104,20 +108,21 @@
       <screen x="0" y="23" width="1680" height="947" />
     </state>
     <state x="295" y="341" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1/0.23.1680.947@0.23.1680.947" timestamp="1584597925483" />
-    <state x="0" y="23" key="CommitChangelistDialog2" timestamp="1584613390884">
-      <screen x="0" y="23" width="1680" height="947" />
+    <state x="0" y="0" key="CommitChangelistDialog2" timestamp="1584617731945">
+      <screen x="0" y="0" width="2560" height="1440" />
     </state>
     <state x="0" y="37" key="CommitChangelistDialog2/0.0.1680.1050@0.0.1680.1050" timestamp="1584603370219" />
+    <state x="0" y="0" key="CommitChangelistDialog2/0.0.2560.1440@0.0.2560.1440" timestamp="1584617731945" />
     <state x="0" y="23" key="CommitChangelistDialog2/0.23.1680.947@0.23.1680.947" timestamp="1584613390884" />
     <state x="43" y="78" key="SettingsEditor" timestamp="1584608913805">
       <screen x="0" y="23" width="1680" height="947" />
     </state>
     <state x="43" y="78" key="SettingsEditor/0.23.1680.947@0.23.1680.947" timestamp="1584608913805" />
-    <state width="762" height="677" key="SwitcherDM" timestamp="1584617655877">
+    <state width="762" height="677" key="SwitcherDM" timestamp="1584619857621">
       <screen x="0" y="0" width="2560" height="1440" />
     </state>
     <state width="500" height="494" key="SwitcherDM/0.0.1680.1050@0.0.1680.1050" timestamp="1584604489329" />
-    <state width="762" height="677" key="SwitcherDM/0.0.2560.1440@0.0.2560.1440" timestamp="1584617655877" />
+    <state width="762" height="677" key="SwitcherDM/0.0.2560.1440@0.0.2560.1440" timestamp="1584619857621" />
     <state width="500" height="445" key="SwitcherDM/0.23.1680.947@0.23.1680.947" timestamp="1584613364747" />
     <state x="220" y="230" width="670" height="750" key="search.everywhere.popup" timestamp="1584603870490">
       <screen x="0" y="0" width="1680" height="1050" />
