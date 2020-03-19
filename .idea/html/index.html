@@ -27,16 +27,12 @@
                 <ul>
                     <p>
                     <li><a href="intro.html">HTML이란?</a></li>
-                    </p>
                     <p>
                     <li><a href="description1.html">아잉</a></li>
-                    </p>
                     <p>
                     <li><a href="description1.html">ㅋㅋ</a></li>
-                    </p>
                     <p>
                     <li><a href="description1.html">불꽃</a></li>
-                    </p>
                 </ul>
             </div>
         </div>
@@ -61,15 +57,14 @@
                             <th class="text_reply_show_contents">ㅋㅋ귀엽당</th>
                             <th class="text_reply_show_nickname">디디</th>
                         </tr>
-
                     </table>
                 </div>
                 <div class="text_reply_enter">
-                    <form name="postReply" action="" method="POST" onsubmit="abcSubmit();">
-                        <input type="text" class="text_area_reply" name="reply">
-                        닉네임 : <input type="text" placeholder="닉네임" name="nickname">
-                        비밀번호 : <input type="password" placeholder="비밀번호" name="password">
-                        <input type="submit" name="submit" value="제출">
+                    <form name="postReply" action="" method="POST">
+                        <input type="text" class="text_area_reply text" id="contents" name="reply">
+                        닉네임 : <input type="text" placeholder="닉네임" id="nickname" name="nickname" class="text">
+                        비밀번호 : <input type="password" placeholder="비밀번호" name="password" class="text">
+                        <input type="button" name="submit" value="제출" onclick="abcSubmit();">
                     </form>
                 </div>
             </div>
@@ -78,6 +73,8 @@
 </div>
 <script>
     var no = 2;
+</script>
+<script>
     $(".header_title_logo").mouseover(function () {
         $(this).attr("src", $(this).data("animated"))
     }),
@@ -106,8 +103,13 @@
             "                            <th class=\"text_reply_show_no\">" + (no++) + "</th>\n" +
             "                            <th class=\"text_reply_show_contents\">" + reply + "</th>\n" +
             "                            <th class=\"text_reply_show_nickname\">" + nickname + "</th>\n" +
-            "                        </tr>")
-    }
+            "                        </tr>");
+        var el = document.getElementsByClassName("text");
+        for (var i = 0; i < el.length; i++) {
+            el[i].value = "";
+        }
+        return true;
+    };
 </script>
 </body>
 </html>
