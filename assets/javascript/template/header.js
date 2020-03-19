@@ -1,3 +1,5 @@
+import { insertBeforeEnd } from "../util.js";
+
 export function headerTemplate() {
   return `
     <nav class="header_logo">
@@ -8,6 +10,5 @@ export function headerTemplate() {
 }
 
 export function loadHeader() {
-  const header = document.querySelector(".header");
-  header.insertAdjacentHTML("beforeend", headerTemplate());
+  insertBeforeEnd(".header", headerTemplate);
 }

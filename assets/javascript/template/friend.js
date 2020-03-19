@@ -1,10 +1,11 @@
 import { friendsData } from "../data/friends.js";
+import { insertBeforeEnd } from "../util.js";
 
 export function friendTemplate({src, name, actual}) {
   return `
     <a href="${actual || "#"}" target="_blank" class="friend">
       <div class="friend_img">
-        <img src="${src}" alt="friend_placeholder">
+        <img src="${src || "./assets/image/friends/friend_placeholder.jpg"}" alt="friend image">
       </div>
       <div class="friend_name">${name}</div>
     </a>
@@ -12,9 +13,5 @@ export function friendTemplate({src, name, actual}) {
 }
 
 export function loadFriends() {
-  let friends = document.querySelector(".friends");
-  friendsData.map(data => friendTemplate(data))
-      .forEach(template => {
-        friends.insertAdjacentHTML("beforeend", template);
-      })
+  insertBeforeEnd(".friends", friendTemplate, friendsData);
 }
