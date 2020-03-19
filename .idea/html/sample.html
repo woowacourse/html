@@ -11,8 +11,9 @@
 <div id="div_all">
     <!--    상단바-->
     <header>
-        <h1>
-            <a href="index.html" class="main-logo">
+        <h1 class="title_text">
+            <a href="sample.html"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b2/Hamburger_icon.svg/440px-Hamburger_icon.svg.png" alt="" align="left" width="50px" height="50px" class="option_button"></a>
+            <a href="index.html" class="title">
                 <img src="./static_dd.jpeg"
                      alt="" data-animated="./animated_dd.gif"
                      data-static="./static_dd.jpeg"
@@ -33,22 +34,23 @@
         <footer>
             <!--            제목-->
             <div>
-                <h2>HTML 이란 무엇인가?</h2>
+                <h2>안녕하세용</h2>
             </div>
             <!--            영상 첫줄-->
             <div id="div_first_row">
                 <!--                첫번째영상-->
-                <img src="https://t1.daumcdn.net/cfile/tistory/996EB53F5C1B232327" alt="">
-                <p>
-                    HTML 은 Hyper Text Markup Language 약어로
-                    HyperText(웹 페이지에서 다른 페이지로 이동할 수 있도록 하는 것)
-                    기능을 가진 문서를 만드는 언어입니다. 다시 말해, 구조를 설계할 때 사용되는
-                    언어로 hyper link 시스템을 가지고 있으며, 흔히 말하는 웹 페이지를 위한 마크업 언어라고
-                    할 수 있습니다.
-                </p>
+                <img src="main_dd.jpg"
+                     alt="" width="100%" height="100%">
             </div>
             <!--            영상 둘째줄-->
             <div>
+                <p>방명록</p>
+                <form action="">
+                    <textarea name="" id="reply"></textarea>
+                    아이디 : <input type="text" placeholder="아이디" name="id">
+                    비밀번호 : <input type="text" placeholder="비밀번호" name="pw">
+                    <input type="submit" id="submit_reply" value="제출">
+                </form>
                 <!--                첫번째영상-->
                 <div></div>
                 <!--                두번재영상-->
@@ -65,7 +67,7 @@
 <script>
     $(".main-logo").mouseover(function(){
         $(this).attr("src", $(this).data("animated"))
-    });
+    }),
         $(".main-logo").mouseout(function () {
             $(this).attr("src", $(this).data("static"))
         });

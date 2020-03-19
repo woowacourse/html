@@ -2,19 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="993e3eb3-44f3-4a04-9cc2-94e9a915b60c" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/html/animated_dd.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/html/description1.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/html/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/html/intro.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/html/main_dd.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/html/static_dd.jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/html/style.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/html.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/html/sample.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/html/description1.html" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/html/description1.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/html/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/html/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/html/intro.html" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/html/intro.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/html/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/html/style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -48,6 +41,9 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/.idea/html" />
+    <property name="project.structure.last.edited" value="Project" />
+    <property name="project.structure.proportion" value="0.0" />
+    <property name="project.structure.side.proportion" value="0.0" />
     <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
   </component>
   <component name="RecentsManager">
@@ -69,8 +65,16 @@
       <option name="presentableId" value="Default" />
       <updated>1584576042073</updated>
       <workItem from="1584576045585" duration="37000" />
-      <workItem from="1584576125370" duration="12109000" />
+      <workItem from="1584576125370" duration="19041000" />
     </task>
+    <task id="LOCAL-00001" summary="feat:기본 프레임 구현">
+      <created>1584603370335</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1584603370335</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -78,6 +82,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+    <MESSAGE value="feat:기본 프레임 구현" />
+    <option name="LAST_COMMIT_MESSAGE" value="feat:기본 프레임 구현" />
   </component>
   <component name="WindowStateProjectService">
     <state x="19" y="150" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1584600288729">
@@ -89,14 +95,23 @@
       <screen x="0" y="23" width="1680" height="947" />
     </state>
     <state x="295" y="341" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1/0.23.1680.947@0.23.1680.947" timestamp="1584597925483" />
-    <state width="500" height="494" key="SwitcherDM" timestamp="1584599245805">
+    <state x="0" y="37" key="CommitChangelistDialog2" timestamp="1584603370219">
       <screen x="0" y="0" width="1680" height="1050" />
     </state>
-    <state width="500" height="494" key="SwitcherDM/0.0.1680.1050@0.0.1680.1050" timestamp="1584599245805" />
-    <state width="500" height="445" key="SwitcherDM/0.23.1680.947@0.23.1680.947" timestamp="1584598265996" />
-    <state x="220" y="230" width="670" height="676" key="search.everywhere.popup" timestamp="1584585956804">
+    <state x="0" y="37" key="CommitChangelistDialog2/0.0.1680.1050@0.0.1680.1050" timestamp="1584603370219" />
+    <state x="43" y="78" key="SettingsEditor" timestamp="1584608913805">
       <screen x="0" y="23" width="1680" height="947" />
     </state>
+    <state x="43" y="78" key="SettingsEditor/0.23.1680.947@0.23.1680.947" timestamp="1584608913805" />
+    <state width="500" height="445" key="SwitcherDM" timestamp="1584613364747">
+      <screen x="0" y="23" width="1680" height="947" />
+    </state>
+    <state width="500" height="494" key="SwitcherDM/0.0.1680.1050@0.0.1680.1050" timestamp="1584604489329" />
+    <state width="500" height="445" key="SwitcherDM/0.23.1680.947@0.23.1680.947" timestamp="1584613364747" />
+    <state x="220" y="230" width="670" height="750" key="search.everywhere.popup" timestamp="1584603870490">
+      <screen x="0" y="0" width="1680" height="1050" />
+    </state>
+    <state x="220" y="230" width="670" height="750" key="search.everywhere.popup/0.0.1680.1050@0.0.1680.1050" timestamp="1584603870490" />
     <state x="220" y="230" width="670" height="676" key="search.everywhere.popup/0.23.1680.947@0.23.1680.947" timestamp="1584585956804" />
   </component>
 </project>
