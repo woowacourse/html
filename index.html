@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
     <meta charset="UTF-8">
     <title>90년생 HTML의 이야기</title>
 </head>
@@ -20,6 +21,12 @@
         <div>HTML을 설명하기 어려우시다고요?</div>
         <div>여기서는 HTML에 대해 알아봅니다.</div>
         <div>더 알아보고 싶으시면 클릭해주세요.</div>
+    </section>
+    <section class="card">
+        <img src="swiss.jpg">
+        <h3>HTML은 스위스에서 태어났습니다.</h3>
+        <div><a href="https://home.cern/">CERN(유럽 입자 물리 연구소)</a>의 연구자들은 많은 정보와 자료를 주고받아야 했습니다.</div>
+        <div>이를 위해 웹의 아버지 팀 버너스리는 "웹"을 창시했습니다.</div>
     </section>
 </main>
 </body>
@@ -87,3 +94,41 @@
         opacity: 0.8;
     }
 </style>
+
+<script>
+    function removeAllStyle() {
+        $(".header-nav").removeAttr("style");
+    }
+
+    function hideAll() {
+        $(".card").hide();
+    }
+
+    function selectCard(index) {
+        $(".header-nav:eq(" + index + ")").css("font-weight", 600)
+            .css("color", "white");
+        $(".card:eq(" + index + ")").show();
+    }
+
+    function focusCard(index) {
+        removeAllStyle();
+        hideAll();
+        selectCard(index);
+    }
+
+    for (let i = 0; i < 4; i++) {
+        $(".header-nav:eq(" + i + ")").click(function () {
+            focusCard(i);
+        });
+    }
+
+    for (let i = 0; i < 3; i++) {
+        $(".card:eq(" + i + ")").click(function () {
+            focusCard(i + 1);
+        });
+    }
+
+    $(document).ready(function () {
+        focusCard(0);
+    })
+</script>
