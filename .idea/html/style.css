@@ -14,24 +14,47 @@ header{
 }
 
 body{
+    height:100%;
     font-family: 'Do Hyeon', sans-serif;
     margin:0;
 }
 
 footer{
-    width:80%;
-    height:100%;
-    padding:20px;
-}
-#div_all{
-    display:flex;
-    flex-direction: column;
-}
-#div_bottom{
-    height: 1000px;
     display: flex;
     flex-direction: row;
-    margin:0 auto;
+    margin: 0px auto;
+}
+.header_menu_button{
+    cursor:pointer;
+    align:left;
+    width: 50px;
+    height: 50px;
+}
+.header_title_logo{
+    width: 70px;
+    hegiht: 70px;
+    margin-right:10px;
+}
+.header_title_link{
+    color: white;
+}
+.footer_menu{
+    height: 1080px;
+}
+.div_menu{
+    width: 20%;
+    padding-right: 10px;
+    background-color: #e6e6e6;
+    text-align: left;
+}
+.footer_text{
+    width:80%;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+}
+.div_text_image{
+    width:95%;
 }
 .div_menu{
     width:20%;
@@ -39,15 +62,7 @@ footer{
     min-width: 200px;
     align-items: center;
     padding:10px;
-    background-color: #e6e6e6;
-}
-.main-logo{
-    width: 70px;
-    hegiht: 70px;
-    margin-right:10px;
-}
-.title{
-    color: white;
+
 }
 .option_button{
     width:80px;
@@ -55,7 +70,7 @@ footer{
     align-content: end;
     margin-top:10px;
 }
-.title_text{
+.header_title{
     margin:5px;
 }
 .title_image{

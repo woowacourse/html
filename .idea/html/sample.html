@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="ko">
 <head>
-    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="//code.jquery.com/jquery-3.3.1.min.js"></script>
     <meta charset="UTF-8">
     <link rel="stylesheet" href="style.css">
     <title>90년생 HTML</title>
@@ -11,66 +11,67 @@
 <div id="div_all">
     <!--    상단바-->
     <header>
-        <h1 class="title_text">
-            <a href="sample.html"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b2/Hamburger_icon.svg/440px-Hamburger_icon.svg.png" alt="" align="left" width="50px" height="50px" class="option_button"></a>
-            <a href="index.html" class="title">
-                <img src="./static_dd.jpeg"
-                     alt="" data-animated="./animated_dd.gif"
-                     data-static="./static_dd.jpeg"
-                     class="main-logo">안녕하세요</a>
+        <h1 class="header_title">
+            <img src="option_button.png" alt="" class="header_menu_button" onclick="button1_click();">
+            <a href="index.html" class="header_title_link">
+                <img src="./static_dd.jpeg" alt="" data-animated="./animated_dd.gif" data-static="./static_dd.jpeg"
+                     class="header_title_logo">안녕하세요</a>
         </h1>
     </header>
     <!--        하단바-->
-    <div id="div_bottom">
+    <footer>
         <!--메뉴-->
-        <div id="div_menu">
-            <h1>menu</h1>
-            <p><a href="intro.html">HTML이란?</a></p>
-            <p><a href="description1.html">아잉</a></p>
-            <p><a href="description1.html">ㅋㅋ</a></p>
-            <p><a href="description1.html">불꽃</a></p>
+        <div class="footer_menu">
+            <div class="div_menu">
+                <h1 class="menu2">menu</h1>
+                <p><a href="intro.html">HTML이란?</a></p>
+                <p><a href="description1.html">아잉</a></p>
+                <p><a href="description1.html">ㅋㅋ</a></p>
+                <p><a href="description1.html">불꽃</a></p>
+            </div>
         </div>
         <!--        영상-->
-        <footer>
-            <!--            제목-->
-            <div>
-                <h2>안녕하세용</h2>
+        <!--            제목-->
+        <div class="footer_text">
+            <div class="text_nav">
+                <nav></nav>
             </div>
-            <!--            영상 첫줄-->
-            <div id="div_first_row">
-                <!--                첫번째영상-->
-                <img src="main_dd.jpg"
-                     alt="" width="100%" height="100%">
+            <div class="div_text_title"><h2>안녕하세용</h2></div>
+            <div class="div_text_image"><img src="main_dd.jpg" alt="" class="div_text_image"></div>
+            <div class="div_text_reply"><h3>댓글</h3>
+                <div class="text_reply_show"></div>
+                <div class="text_reply_enter">
+                    <form action="">
+                        <textarea name="" id="reply"></textarea>
+                        닉네임 : <input type="text" placeholder="아이디" name="id">
+                        비밀번호 : <input type="text" placeholder="비밀번호" name="pw">
+                        <input type="submit" id="submit_reply" value="제출">
+                    </form>
+                </div>
             </div>
-            <!--            영상 둘째줄-->
-            <div>
-                <p>방명록</p>
-                <form action="">
-                    <textarea name="" id="reply"></textarea>
-                    아이디 : <input type="text" placeholder="아이디" name="id">
-                    비밀번호 : <input type="text" placeholder="비밀번호" name="pw">
-                    <input type="submit" id="submit_reply" value="제출">
-                </form>
-                <!--                첫번째영상-->
-                <div></div>
-                <!--                두번재영상-->
-                <div></div>
-                <!--                세번째영상-->
-                <div></div>
-                <!--                네번째영상-->
-                <div></div>
-
-            </div>
-        </footer>
-    </div>
+        </div>
+    </footer>
 </div>
 <script>
-    $(".main-logo").mouseover(function(){
+    $(".header_title_logo").mouseover(function () {
         $(this).attr("src", $(this).data("animated"))
     }),
         $(".main-logo").mouseout(function () {
             $(this).attr("src", $(this).data("static"))
         });
+    function button1_click() {
+        if ($('.div_menu').length) {
+            $('div').remove('.div_menu');
+        } else {
+            $('.footer_menu').append("<div class=\"div_menu\">\n" +
+                "                <h1 class=\"menu2\">menu</h1>\n" +
+                "                <p><a href=\"intro.html\">HTML이란?</a></p>\n" +
+                "                <p><a href=\"description1.html\">아잉</a></p>\n" +
+                "                <p><a href=\"description1.html\">ㅋㅋ</a></p>\n" +
+                "                <p><a href=\"description1.html\">불꽃</a></p>\n" +
+                "            </div>");
+        }
+    }
 </script>
 </body>
 </html>
