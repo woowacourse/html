@@ -1,7 +1,7 @@
 
 ## 🚀 미션: 90년생 HTML 소개하기
 
-## [우아한테크그램](https://woonjangahn.github.io/html)
+## [우아한테코그램](https://woonjangahn.github.io/html)
 
 <p align="center">
   <img src="./screenshot.jpg" alt="screenshot" width="300" />
