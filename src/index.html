@@ -2,8 +2,6 @@
 <html lang="ko">
 <head>
 	<meta charset="UTF-8">
-	<meta content="width=device-width, initial-scale=1.0" name="viewport">
-	<meta content="ie=edge" http-equiv="X-UA-Compatible">
 	<title>90년대 html</title>
 
 	<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css" rel="stylesheet">
@@ -14,29 +12,48 @@
 		.progress {
 			position: fixed;
 			top: 97%;
-			width: 100%;
+			left: 5%;
+			width: 90%;
+		}
+
+		.row {
+			margin: 0px 0px 0px 0px;
+			border: none;
 		}
 	</style>
 </head>
 <body>
 <h1 class="page-header" style="text-align: center;margin-bottom: 10px">
-	HTML 키우기<span class="label label-info">level : 1</span>
+	웹페이지 만들기
 </h1>
+
+<div class="row">
+	<div class="col-md-9" id="content">
+		<button class="btn btn-danger btn-lg" onclick="createHtml()" type="button">시작하기</button>
+	</div>
+</div>
+
 <div class="progress">
 	<div class="progress-bar progress-bar-success" role="progressbar" style="min-width: 0; width: 50%;">
 		50%
 	</div>
 </div>
 
-<span id="content">
-	<div style="width: 50%;margin-left: 25%">
-		<button class="btn btn-danger btn-lg btn-block" onclick="createHtml()" type="button">html 생성하기</button>
-	</div>
-</span>
 <script>
 	function createHtml() {
-
+		$.ajax({
+			url: 'index.html',
+			success: function () {
+				$('.page-header').append('<span class="label label-info">level : 1</span>');
+				$('#content').load('storage/level1.html')
+			}
+		})
 	}
 </script>
+
+<script
+		crossorigin="anonymous"
+		integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+		src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
 </body>
 </html>
