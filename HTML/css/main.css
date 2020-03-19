@@ -1,0 +1,87 @@
+@charset "utf-8";
+
+@font-face {
+  font-family: "BMHANNAPro";
+  src: url(../ttf/BMHANNAPro.ttf);
+}
+
+.main-contents {
+  margin-top: 100px;
+  margin-left: 200px;
+}
+
+.main-contents h1,
+.main-contents h2 {
+  display: inline;
+}
+
+.main-title {
+  font-family: BMHANNAPro;
+  font-size: 100px;
+}
+
+.main-author {
+  font-family: BMHANNAPro;
+  font-size: 70px;
+}
+
+.sideBar {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: white;
+  overflow-x: hidden;
+  transition: 0.5s ease-in-out;
+  padding-top: 60px;
+}
+
+.sideBar a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: black;
+  display: block;
+  transition: 0.2s ease-in-out;
+}
+
+.sideBar a:hover,
+.offcanvas a:focus {
+  color: #000;
+}
+
+.closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px !important;
+  margin-left: 50px;
+}
+
+.openmenu:hover {
+  color: black;
+  transition: 0.5s ease-in-out;
+}
+
+.openmenu {
+  font-size: 25px;
+  cursor: pointer;
+  transition: 0.5s ease-in-out;
+}
+
+.openmenu > i {
+  font-size: 30px;
+}
+
+/* 미디어쿼리 적용 */
+@media screen and (max-height: 450px) {
+  .sideBar {
+    padding-top: 15px;
+  }
+
+  .sideBar a {
+    font-size: 18px;
+  }
+}

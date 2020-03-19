@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="shortcut icon" href="favicon.ico" />
+    <link rel="stylesheet" type="text/css" href="css/main.css" />
+    <title>우테백과</title>
+    <script src="http://code.jquery.com/jquery-latest.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"
+    />
+    <script type="text/javascript">
+      function openNav() {
+        document.getElementById("sideNavigator").style.width = "250px";
+      }
+
+      function closeNav() {
+        document.getElementById("sideNavigator").style.width = "0";
+      }
+    </script>
+  </head>
+
+  <body>
+    <div class="main">
+      <span class="openmenu" onclick="openNav()">
+        <i class="fa fa-angle-double-left fa-5" aria-hidden="true"></i>
+        목록
+      </span>
+      <div id="sideNavigator" class="sideBar">
+        <a class="close-button" href="#" onclick="closeNav()">X</a>
+        <a class="sideBar-HTML" href="#">90년생 HTML</a>
+      </div>
+      <div class="main-contents">
+        <h1 class="main-title">우아백과&nbsp;&nbsp;</h1>
+        <h2 class="main-author">작성자 라빈</h2>
+      </div>
+    </div>
+  </body>
+</html>
