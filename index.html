@@ -13,6 +13,15 @@
         <div class="header-nav">방명록</div>
     </div>
 </header>
+<main>
+    <section class="card">
+        <img src="html_img.jpeg">
+        <h3>90년대생 HTML이 궁금하신가요?</h3>
+        <div>HTML을 설명하기 어려우시다고요?</div>
+        <div>여기서는 HTML에 대해 알아봅니다.</div>
+        <div>더 알아보고 싶으시면 클릭해주세요.</div>
+    </section>
+</main>
 </body>
 </html>
 
@@ -52,5 +61,29 @@
     .header-nav:hover {
         color: white;
         font-weight: 500;
+    }
+
+    main {
+        padding-top: 3.25rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .card {
+        background-color: rgb(100, 191, 187);
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+        transition: 0.3s;
+        border-radius: 5px;
+        width: auto;
+        padding-bottom: 10px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .card:hover {
+        box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+        opacity: 0.8;
     }
 </style>
