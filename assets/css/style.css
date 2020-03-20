@@ -1,0 +1,331 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  display: flex;
+  justify-content: center;
+}
+
+div {
+  background-color: #ffffff;
+  border-radius: 1em;
+  font-size: 14px;
+}
+
+a:link, a:visited {
+  color: #38488f;
+  text-decoration: none;
+}
+
+.container {
+  width: 100%;
+  max-width: 500px;
+  user-select: none;
+}
+
+.posts {
+  -webkit-animation: fadein 2s; /* Safari, Chrome and Opera > 12.1 */
+  -moz-animation: fadein 2s; /* Firefox < 16 */
+  -ms-animation: fadein 2s; /* Internet Explorer */
+  -o-animation: fadein 2s; /* Opera < 12.1 */
+  animation: fadein 2s;
+}
+
+@keyframes fadein {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/* Firefox < 16 */
+@-moz-keyframes fadein {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/* Safari, Chrome and Opera > 12.1 */
+@-webkit-keyframes fadein {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/* Internet Explorer */
+@-ms-keyframes fadein {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/* Opera < 12.1 */
+@-o-keyframes fadein {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.header {
+  padding: 26px 20px;
+  height: 77px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: sticky;
+  top: 0;
+  z-index: 1;
+  background-color: #ffffff;
+}
+
+.header_logo {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+
+.header_logo > img {
+  height: 26px;
+}
+
+.header_title {
+  margin-left: 10px;
+  font-size: 20px;
+  font-family: 'Do Hyeon', sans-serif;
+}
+
+.header_nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.friends {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 8px;
+  border-bottom: 1px solid rgba(219, 219, 219, 1);
+  overflow-x: scroll;
+}
+
+.friend {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0 5px;
+}
+
+.friend_img {
+  width: 66px;
+  height: 66px;
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+.friend_img > img {
+  width: 100%;
+}
+
+.friend_name {
+  margin-top: 6px;
+  font-size: 12px;
+  color: #000000;
+}
+
+.posts {
+  width: 100%;
+}
+
+.post {
+  margin-bottom: 20px;
+}
+
+.post_header {
+  display: flex;
+  align-items: center;
+  height: 60px;
+  padding: 18px 16px;
+}
+
+.author_img {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+.author_img > img {
+  width: 100%;
+}
+
+.author_info {
+  margin-left: 12px;
+}
+
+.author_name {
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.author_location {
+  font-size: 12px;
+}
+
+.more_btn {
+  margin-left: auto;
+}
+
+.post_img {
+  position: relative;
+}
+
+.post_img > img {
+  width: 100%;
+}
+
+.like_heart {
+  width: 20%;
+  position: absolute;
+  left: 40%;
+  opacity: 0;
+  top: 37%;
+}
+
+.like_heart.pop {
+  animation: pop 0.6s linear 1;
+}
+
+@keyframes pop {
+  50% {
+    opacity: 0.8;
+    transform: scale(1.2);
+  }
+}
+
+.post_reaction {
+  margin-top: 4px;
+  padding: 0 16px;
+}
+
+.reaction_btns {
+  display: flex;
+  padding-bottom: 8px;
+}
+
+.btn {
+  margin-right: 8px;
+}
+
+.post_likes {
+  padding: 0 16px;
+  display: flex;
+}
+
+.post_body {
+  margin-top: 8px;
+  padding: 0 32px;
+  display: flex;
+  align-items: center;
+}
+
+.post_content {
+  margin-left: 4px;
+  color: rgb(0, 53, 105);
+}
+
+.comments {
+  padding: 2px 32px;
+}
+
+.comment {
+  margin-top: 2px;
+  display: flex;
+  align-items: baseline;
+  height: 20px;
+}
+
+.comment_content {
+  margin-left: 4px;
+  color: #000000;
+  padding: 2px 0;
+}
+
+.comment_input_box {
+  display: none;
+  align-items: center;
+}
+
+.comment_input {
+  width: 95%;
+  margin: 0 4px;
+  padding: 2px 0;
+  border: none;
+  border-radius: 0;
+  border-bottom: 1px solid rgb(211, 211, 211);
+  font-size: 14px;
+  background-color: transparent;
+}
+
+.comment_input:focus {
+  outline: none;
+}
+
+.comment_input_submit {
+  width: 45px;
+  border: none;
+  text-align: center;
+  background-color: transparent;
+  font-size: 14px;
+  font-weight: 700;
+  height: 100%;
+  color: #3897f0;
+}
+
+.comment_input_submit:disabled {
+  opacity: 0.5;
+  font-weight: 500;
+}
+
+.likes_thumbnail {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+.likes_thumbnail > img {
+  width: 100%;
+}
+
+.likes_info {
+  padding-left: 8px;
+}
+
+.post_footer {
+  padding-left: 16px;
+  margin-top: 10px;
+}
+
+.created_at {
+  font-size: 11px;
+  color: rgb(153, 153, 153);
+}
