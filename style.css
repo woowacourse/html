@@ -28,3 +28,40 @@ header.page-header > h1 {
     height: 80vh;
     width: 100%;
 }
+
+.row {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    margin-right: -15px;
+    margin-left: -15px;
+}
+
+.sideBox {
+
+}
+
+.side {
+    padding-top: 150px;
+    height: auto;
+    vertical-align: center;
+    position: fixed;
+    display: inline-block;
+}
+
+.move {
+    font-family: "배달의민족 한나체 Pro", monospace;
+    padding-left: 13px;
+    height: auto;
+    padding-bottom: 15px;
+    color: rgb(148, 128, 114);
+    text-decoration: none;
+}
+
+
+.move a{
+    color: rgb(148, 128, 114);
+    text-decoration: none;
+}
+
