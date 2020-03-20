@@ -61,11 +61,29 @@ function toggleLike(index) {
   likeCount.innerHTML = parseInt(currentLikeCount) + 1;
 }
 
+function toggleLikeWithDoubleClick(index) {
+  const box = document.querySelector(`.post_img_${index}`);
+  const like = document.querySelector(`.btn_${index}`);
+  const likeCount = document.querySelector(`.like_count_${index}`);
+  const heart = document.querySelector(`.like_heart_${index}`);
+  box.addEventListener("dblclick", () => {
+    heart.classList.add("pop");
+    if (like.innerHTML !== unlikeButton) {
+      likeCount.innerHTML = parseInt(likeCount.innerText) + 1;
+    }
+    like.innerHTML = unlikeButton;
+    setTimeout(() => {
+      heart.classList.remove("pop");
+    }, 600);
+  })
+}
+
 export function addPostEventListener(postData) {
   postData.forEach(({index}) => {
     handleLikeToggle(index);
     handleCommentInputDisplay(index);
     handleCommentInput(index);
     addComment(index)
+    toggleLikeWithDoubleClick(index);
   });
 }
