@@ -15,7 +15,7 @@
             <img src="option_button.png" alt="" class="header_menu_button" onclick="button1_click();">
             <a href="index.html" class="header_title_link">
                 <img src="./static_dd.jpeg" alt="" data-animated="./animated_dd.gif" data-static="./static_dd.jpeg"
-                     class="header_title_logo">안녕하세요</a>
+                     class="header_title_logo">안녕하세용</a>
             <a href="login.html"><img src="login.png" alt="" class="header_login_button"></a>
         </h1>
     </header>
@@ -29,11 +29,13 @@
                     <p>
                     <li><a href="intro.html">HTML이란?</a></li>
                     <p>
-                    <li><a href="description1.html">아잉</a></li>
+                    <li><a href="description1.html">왜 HTML을 배우는가?</a></li>
                     <p>
-                    <li><a href="description1.html">ㅋㅋ</a></li>
+                    <li><a href="description2.html">HTML 태그란?</a></li>
                     <p>
-                    <li><a href="description1.html">불꽃</a></li>
+                    <li><a href="description3.html">간단한 웹 사이트 만들기</a></li>
+                    <p>
+                    <li><a href="final.html">감사합니당</a></li>
                 </ol>
             </div>
         </div>
@@ -43,10 +45,12 @@
             <div>
                 <form action="index.html" method="get" class="login">
                     <div class="input">
-                        <div class = "login_input">아이디 : <input type="text" placeholder="아이디" name="id" class="login_id"></div>
+                        <div class = "login_input">아이디 &nbsp&nbsp&nbsp: <input type="text" placeholder="아이디" name="id" class="login_id"></div>
                         <div class = "login_input">비밀번호 : <input type="password" placeholder="비밀번호" name="password" class="login_pw"></div>
                     </div>
-                    <input type="submit" value="login" >
+                    <div>
+                        <input type="submit" value="login" class="login_submit">
+                    </div>
                 </form>
             </div>
 
@@ -68,10 +72,18 @@
         } else {
             $('.footer_menu').append("<div class=\"div_menu\">\n" +
                 "                <h1 class=\"menu2\">menu</h1>\n" +
-                "                <p><a href=\"intro.html\">HTML이란?</a></p>\n" +
-                "                <p><a href=\"description1.html\">아잉</a></p>\n" +
-                "                <p><a href=\"description1.html\">ㅋㅋ</a></p>\n" +
-                "                <p><a href=\"description1.html\">불꽃</a></p>\n" +
+                "                <ol>\n" +
+                "                    <p>\n" +
+                "                    <li><a href=\"intro.html\">HTML이란?</a></li>\n" +
+                "                    <p>\n" +
+                "                    <li><a href=\"description1.html\">왜 HTML을 배우는가?</a></li>\n" +
+                "                    <p>\n" +
+                "                    <li><a href=\"description2.html\">HTML 태그란?</a></li>\n" +
+                "                    <p>\n" +
+                "                    <li><a href=\"description3.html\">간단한 웹 사이트 만들기</a></li>\n" +
+                "                    <p>\n" +
+                "                    <li><a href=\"final.html\">감사합니당</a></li>\n" +
+                "                </ol>\n" +
                 "            </div>");
         }
     }

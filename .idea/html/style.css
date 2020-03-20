@@ -81,15 +81,22 @@ footer{
     display: flex;
     align-items: center;
 }
-.input{
+.input {
     margin-top: 40px;
 }
+.login_submit{
+    margin-top:50px;
+    margin-left:40px;
+    width:100px;
+    height: 100px;
+    -webkit-appearance: button;
+}
 .login_id{
-    width: 100px;
+    width: 200px;
     height: 40px;
 }
 .login_pw{
-    width: 100px;
+    width: 200px;
     height: 40px;
 }
 .option_button{
