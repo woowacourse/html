@@ -46,9 +46,13 @@
 	function createHtml() {
 		$.ajax({
 			url: './index.html',
+			error: function (error) {
+				$('.page-header').append('<span class="label label-info">level : 1</span>');
+				$('#content').load('./level1.html');
+			},
 			success: function () {
 				$('.page-header').append('<span class="label label-info">level : 1</span>');
-				$('#content').load('./level1.html')
+				$('#content').load('./level1.html');
 			}
 		})
 	}
