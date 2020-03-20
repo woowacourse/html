@@ -41,9 +41,14 @@ header.page-header > h1 {
 .sideBox {
 
 }
+.menuContainer{
+    width: 100px;
+    margin-left: 30px;
+}
+
 
 .side {
-    padding-top: 150px;
+    padding-top: 100px;
     height: auto;
     vertical-align: center;
     position: fixed;
@@ -64,4 +69,64 @@ header.page-header > h1 {
     color: rgb(148, 128, 114);
     text-decoration: none;
 }
+
+.oranges{
+    display: flex;
+    height: 80vh;
+    width: 70%;
+}
+
+.orange1{
+    font-family: bold, "배달의민족 한나체 Pro", cursive;
+    font-size: 10px;
+    float: right;
+}
+
+.orange1box{
+    height: 50px;
+    width: 30px;
+    margin-top: 20%;
+    margin-left: 34%;
+}
+
+.orange2{
+    font-family: bold, "배달의민족 한나체 Pro", cursive;
+    font-size: 10px;
+    float: right;
+}
+
+.orange2box{
+    height: 50px;
+    width: 30px;
+    padding-top: 10%;
+    padding-left: 10%;
+}
+
+.orange3{
+    font-family: bold, "배달의민족 한나체 Pro", cursive;
+    font-size: 10px;
+    float: right;
+}
+
+.orange3box{
+    height: 50px;
+    width: 30px;
+    padding-top: 25%;
+    margin-right: 20%;
+}
+
+.orange4{
+    font-family: bold, "배달의민족 한나체 Pro", cursive;
+    font-size: 10px;
+    float: right;
+}
+
+.orange4box{
+    height: 50px;
+    width: 30px;
+    margin-top: 25%;
+    margin-right: 70%;
+}
+
+
 
