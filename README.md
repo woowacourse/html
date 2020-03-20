@@ -1,24 +1,24 @@
 # 사용하는 태그
 
-- <html></html>
-- <head></head>
-- <body></body>
-- <title></title>
+- <html>
+- <head>
+- <body>
+- <title>
 - <meta charset="utf-8">
 
-- <script></script>
+- <script>
 - <link>
-- <header></header>
-- <footer></footer>
-- <a></a>
-- <h1></h1>
-- <ol></ol>
-- <p></p>
-- <li></li>
-- <table></table>
-- <th></th>
-- <tr></tr>
-- <th></th>
+- <header>
+- <footer>
+- <a>
+- <h1>
+- <ol>
+- <p>
+- <li>
+- <table>
+- <th>
+- <tr>
+- <th>
 - <input>
-- <iframe></iframe>
+- <iframe>
 
