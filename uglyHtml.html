@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <script src="//code.jquery.com/jquery-3.3.1.min.js"></script>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
+    <title>90년생 HTML</title>
+</head>
+<body>
+<!--전체-->
+<div id="div_all">
+    <!--    상단바-->
+    <header>
+        <h1>1990 우아한 테크코스</h1>
+    </header>
+    <!--        하단바-->
+    <footer>
+        <!--메뉴-->
+        <div class="footer_menu">
+            <div class="div_menu">
+                <h1 class="menu2">menu</h1>
+                <br>
+                <ul>
+                    <li><a href="intro.html">HTML이란?</a></li>
+                    <br>
+                    <li><a href="html1990.html">1990 HTML의 형태</a></li>
+                    <br>
+                    <li><a href="uglyHtml.html">못생긴 1990 게시판</a></li>
+                    <br>
+                    <li><a href="modernHtml.html">예뻐진 지금!</a></li>
+                </ul>
+            </div>
+        </div>
+        <!--        영상-->
+        <!--            제목-->
+        <div class="footer_text">
+            <div class="text_nav">
+                <nav></nav>
+            </div>
+            <div class="div_text_title"><h2>포수다를 위한 게시판입니다. 궁금한 부분을 질문해주세요</h2></div>
+            <div class="div_text_reply"><h3>Board</h3>
+                <div class="text_reply_show">
+                    <table class="text_reply_show_table">
+                        <tr>
+                            <th class="text_reply_show_no">NO</th>
+                            <th class="text_reply_show_contents">CONTENT</th>
+                            <th class="text_reply_show_nickname">NICKNAME</th>
+                        </tr>
+                        <tr>
+                            <td class="text_reply_show_no">1</td>
+                            <td class="text_reply_show_contents">포비</td>
+                            <td class="text_reply_show_nickname">존잘</td>
+                        </tr>
+                        <tr>
+                            <td class="text_reply_show_no">2</td>
+                            <td class="text_reply_show_contents">그다음존잘은</td>
+                            <td class="text_reply_show_nickname">두!강</td>
+                        </tr>
+                        <tr>
+                            <td class="text_reply_show_no">3</td>
+                            <td class="text_reply_show_contents">디디는</td>
+                            <td class="text_reply_show_nickname">존못</td>
+                        </tr>
+                    </table>
+                </div>
+                <div class="text_reply_enter">
+                    <form name="postReply" action="" method="POST">
+                        <input type="text" class="text_area_reply text" id="contents" name="reply">
+                        닉네임 : <input type="text" placeholder="닉네임" id="nickname" name="nickname" class="text">
+                        비밀번호 : <input type="password" placeholder="비밀번호" name="password" class="text">
+                        <input type="button" name="submit" value="제출" onclick="abcSubmit();">
+                    </form>
+                </div>
+            </div>
+        </div>
+    </footer>
+</div>
+<script>
+    var no = 4;
+
+    $(".header_title_logo").mouseover(function () {
+        $(this).attr("src", $(this).data("animated"))
+    }),
+        $(".header_title_logo").mouseout(function () {
+            $(this).attr("src", $(this).data("static"))
+        });
+
+    function abcSubmit() {
+        var reply = document.postReply.reply.value;
+        var nickname = document.postReply.nickname.value;
+        $(".text_reply_show_table").append("<tr>\n" +
+            "                            <th class=\"text_reply_show_no\">" + (no++) + "</th>\n" +
+            "                            <th class=\"text_reply_show_contents\">" + reply + "</th>\n" +
+            "                            <th class=\"text_reply_show_nickname\">" + nickname + "</th>\n" +
+            "                        </tr>");
+        var el = document.getElementsByClassName("text");
+        for (var i = 0; i < el.length; i++) {
+            el[i].value = "";
+        }
+        return true;
+    };
+</script>
+</body>
+</html>

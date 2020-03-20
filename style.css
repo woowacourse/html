@@ -1,0 +1,144 @@
+@import url('https://fonts.googleapis.com/css?family=Do+Hyeon&display=swap');
+
+a {
+    color: black;
+    text-decoration: none;
+}
+
+header {
+    height: 10%;
+    text-align: center;
+    padding: 20px;
+    color: white;
+    font-size: 30px;
+    background-color: forestgreen;
+}
+
+body {
+    height: 100%;
+    font-family: 'Do Hyeon', sans-serif;
+    margin: 0;
+}
+
+.woowacourse {
+    width: 100%;
+    height: 1000px;
+}
+
+.html_intro {
+    text-align: center;
+}
+
+.opentutorials {
+    width: 100%;
+    height: 500px;
+}
+
+td {
+    text-align: center;
+}
+
+footer {
+    display: flex;
+    flex-direction: row;
+    margin: 0px auto;
+}
+
+.header_menu_button {
+    cursor: pointer;
+    align: left;
+    width: 50px;
+    height: 50px;
+}
+
+.header_title_logo {
+    width: 70px;
+    hegiht: 70px;
+    margin-right: 10px;
+}
+
+.image1990 {
+    width: 100%;
+}
+
+.header_title_link {
+    color: white;
+}
+
+.footer_menu {
+    height: 1080px;
+}
+
+.div_menu {
+    width: 20%;
+    padding-right: 10px;
+    background-color: #e6e6e6;
+    text-align: left;
+}
+
+.menu2 {
+    text-align: center;
+}
+
+.footer_text {
+    width: 80%;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.div_text_image {
+    width: 95%;
+}
+
+.div_menu {
+    width: 20%;
+    height: 100%;
+    min-width: 200px;
+    align-items: center;
+    padding: 20px;
+}
+
+.div_text_title {
+    text-align: center;
+}
+
+.option_button {
+    width: 80px;
+    height: 80px;
+    align-content: end;
+    margin-top: 10px;
+}
+
+.header_title {
+    margin: 5px;
+}
+
+.title_image {
+    max-width: 80%
+}
+
+.text_area_reply {
+    width: 100%;
+    height: 70px;
+    margin-bottom: 10px;
+}
+
+.text_reply_show_table {
+    border: 1px solid black;
+    width: 100%;
+    margin-bottom: 10px;
+    border-collapse: collapse;
+}
+
+.text_reply_show_no {
+    border: 1px solid black;
+}
+
+.text_reply_show_contents {
+    border: 1px solid black;
+}
+
+.text_reply_show_nickname {
+    border: 1px solid black;
+}
