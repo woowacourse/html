@@ -6,7 +6,6 @@ a {
 
 header{
     height:10%;
-    text-align:center;
     padding:20px;
     color: white;
     font-size: 45px;
@@ -24,9 +23,17 @@ footer{
     flex-direction: row;
     margin: 0px auto;
 }
+.header_title{
+    display: flex;
+    align-items: center;
+}
 .header_menu_button{
     cursor:pointer;
-    align:left;
+    width: 50px;
+    height: 50px;
+}
+.header_login_button{
+    cursor:pointer;
     width: 50px;
     height: 50px;
 }
@@ -37,6 +44,7 @@ footer{
 }
 .header_title_link{
     color: white;
+    margin:0 auto;
 }
 .footer_menu{
     height: 1080px;
@@ -44,6 +52,9 @@ footer{
 .div_menu{
     width: 20%;
     padding-right: 10px;
+    height:100%;
+    min-width: 200px;
+    padding:10px;
     background-color: #e6e6e6;
     text-align: left;
 }
@@ -56,13 +67,30 @@ footer{
 .div_text_image{
     width:95%;
 }
-.div_menu{
-    width:20%;
-    height:100%;
-    min-width: 200px;
+.login{
+    display: flex;
+}
+.input{
+    display: flex;
+    flex-direction: column;
+}
+.login_input{
+    font-size:40px;
+}
+.footer_text.login_text {
+    display: flex;
     align-items: center;
-    padding:10px;
-
+}
+.input{
+    margin-top: 40px;
+}
+.login_id{
+    width: 100px;
+    height: 40px;
+}
+.login_pw{
+    width: 100px;
+    height: 40px;
 }
 .option_button{
     width:80px;
