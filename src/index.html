@@ -1,9 +1,7 @@
 <!DOCTYPE html>
 <html lang="ko">
 <head>
-	<meta content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
-	      name="viewport">
-	<meta content="ie=edge" http-equiv="X-UA-Compatible">
+	<meta charset="UTF-8">
 	<title>90년대 html</title>
 
 	<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css" rel="stylesheet">
@@ -46,10 +44,6 @@
 	function createHtml() {
 		$.ajax({
 			url: './index.html',
-			error: function (error) {
-				$('.page-header').append('<span class="label label-info">level : 1</span>');
-				$('#content').load('./level1.html');
-			},
 			success: function () {
 				$('.page-header').append('<span class="label label-info">level : 1</span>');
 				$('#content').load('./level1.html');
