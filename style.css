@@ -1,0 +1,28 @@
+.content-img{
+    max-width: 100%;
+    height: auto;
+}
+.content-article{
+    margin:10px;
+    height: 500px;
+    width:100%;
+    display: inline-flex;
+    justify-content:center;
+}
+.content-article-row{
+    background-color:#fafafa;
+    margin:10px;
+    height: 500px;
+    width:500px;
+    display: inline-flex;
+    justify-content:center;
+}
+.content-div-block{
+    background-color:#fafafa;
+    display: flex;
+    height:500px;
+    width:500px;
+    justify-content:center;
+    align-items: center;
+    flex-direction: column;
+}

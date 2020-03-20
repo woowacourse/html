@@ -7,11 +7,14 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body style="padding-top: 75px">
 <div id="base-container" style="width: 100%;display: flex;flex-direction: column">
     <header id="header">
-        <h1>메인 헤더입니다.</h1>
+        <div align="center">
+            <h1>HTML의 시작</h1>
+        </div>
         <nav class="navbar navbar-inverse navbar-fixed-top">
             <div class="container-fluid">
                 <div class="navbar-header">
@@ -20,40 +23,70 @@
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
                     </button>
-                    <a class="navbar-brand" href="#">KAFKA.HTML</a>
+                    <a class="navbar-brand" href="index.html">KAFKA.HTML</a>
                 </div>
                 <div class="collapse navbar-collapse" id="myNavbar">
                     <ul class="nav navbar-nav">
-                        <li class="active"><a href="#">HTML의 탄생</a></li>
-                        <li><a href="#">웹페이지</a></li>
-                        <li><a href="#">이어지는 세계</a></li>
-                        <li><a href="#">지평을 넘어서</a></li>
-                    </ul>
-                    <ul class="nav navbar-nav navbar-right">
-                        <li><a href="#"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
-                        <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+                        <li class="active"><a href="intro.html">HTML의 시작</a></li>
+                        <li><a href="oldweb.html">웹페이지의 발전</a></li>
+                        <li><a href="futureweb.html">지평선을 향하여</a></li>
                     </ul>
                 </div>
             </div>
         </nav>
     </header>
-    <section id="main-section" style="width:100%;height: 3000px; padding-left: 10px;padding-right: 10px;display: flex">
+    <section id="main-section" style="width:100%; min-height: 1000px; padding: 10px;display: flex">
         <section id="content-section" style="height: 100%;width: 100%;display: inline-flex;flex-direction: column">
-            <article id="content1" style="background-color: azure; height: 500px;width: 100%;display: inline-flex">
-                <p>메인 컨텐츠입니다.1</p>
+            <article class="content-article" id="content-html">
+                <div class="content-div-block">
+                    <div id="content-html-text" align="center">
+                        <h2>1990년 10월, <br><b>세계 최초의 웹 에디터</b></h2>
+                    </div>
+                    <img alt="최초의 웹 에디터" class="content-img" src="media/first_html.png"/>
+                </div>
             </article>
-            <article id="content2" style="background-color: azure; height: 500px;width: 100%;display: inline-flex">
-                메인 컨텐츠입니다.2
+            <article class="content-article" id="content-w3">
+                <div class="content-div-block">
+                    <div id="content-w3-text" align="center">
+                        <h2>1990년 11월, <br><b>World Wide Web</b></h2>
+                    </div>
+                    <img alt="최초의 인터넷 브라우저" class="content-img" src="media/first_w3.png"/>
+                </div>
             </article>
-            <article id="content3" style="background-color: azure; height: 500px;width: 100%;display: inline-flex">
-                메인 컨텐츠입니다.3
+            <article class="content-article" id="content-server">
+                <div class="content-div-block">
+                    <div id="content1-server-text" align="center">
+                        <h2>1990년 12월, <br>최초의 웹 서버<br><b>info.cern.ch</b></h2>
+                    </div>
+                    <img alt="최초의 서버" class="content-img" src="media/first_server.png"/>
+                </div>
             </article>
-            <iframe width="560" height="315" src="http://users.atw.hu/wolf3d/"  frameborder="1" style="width: 600px;height: 400px">이 브라우저는 iframe을 지원하지 않습니다</iframe></p>
-            <embed type="text/html" src="http://users.atw.hu/wolf3d/" style="width:600px;height: 400px">
         </section>
     </section>
-    <footer id="footer" style="background-color: cadetblue">
-        @kafka
+    <section id="sub-section" style="width:100%;max-height: 500px; padding: 10px;display: flex;font-size:10px">
+        <section id="subcontent-section" style="height: 100%;width: 100%;display: inline-flex;flex-direction: row;justify-content: center">
+            <article class="content-article-row">
+                <div class="content-div-block">
+                    <div id="content-news-text" align="center" style="width: 80%">
+                        <h2>뉴스기사- <br><b>World Wide Web<br>탄생 30주년</b></h2>
+                        <p style="font-size:15px">1990년 월드와이드웹이 개발되고 30년이 지나는 동안 인터넷, 즉 웹은 세상을 바꿔놓았다고 해도 과장이 아닐 정도로 우리 삶에 막대한 영향을 미쳤다.</p>
+                    </div>
+                    <button type="button" class="btn-lg btn-primary" onclick="location.href='https://shindonga.donga.com/BestClick/3/all/13/1990818/1'">더 읽어보기</button>
+                </div>
+            </article>
+            <article class="content-article-row">
+                <div class="content-div-block">
+                    <div id="content-wiki-text" align="center" style="width: 80%">
+                        <h2>위키피디아- <br><b>HTML</b></h2>
+                        <p style="font-size:15px">1990년부터 "하이퍼텍스트가 사용되는 여러 분야의 일부"를 열거했고 백과사전을 그 목록의 첫 번째로 두었다.</p>
+                    </div>
+                    <button type="button" class="btn-lg btn-primary" onclick="location.href='https://ko.wikipedia.org/wiki/HTML#%EC%97%AD%EC%82%AC'">더 읽어보기</button>
+                </div>
+            </article>
+        </section>
+    </section>
+    <footer id="footer" style="background-color: lightslategray">
+        <p align="center"> @kafka </p>
     </footer>
 </div>
 </body>
