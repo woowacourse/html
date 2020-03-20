@@ -24,6 +24,7 @@ a:link, a:visited {
 .container {
   width: 100%;
   max-width: 500px;
+  user-select: none;
 }
 
 .posts {
