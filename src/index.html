@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<title>90년대 html</title>
+
+	<script
+			crossorigin="anonymous"
+			integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
+			src="https://code.jquery.com/jquery-3.4.1.js"></script>
+	<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css" rel="stylesheet">
+	<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap-theme.min.css" rel="stylesheet">
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
+
+	<style>
+		.progress {
+			position: fixed;
+			top: 97%;
+			left: 5%;
+			width: 90%;
+		}
+
+		.row {
+			margin: 0px 0px 0px 0px;
+			border: none;
+		}
+
+		#exp {
+			position: fixed;
+			top: 95%;
+			left: 5%;
+		}
+	</style>
+</head>
+
+<body>
+<h1 class="page-header" style="text-align: center;margin-bottom: 10px">
+	HTML 배우기
+</h1>
+
+<div class="row">
+	<div class="col-md-9" id="content">
+		<button class="btn btn-danger btn-lg" onclick="createHtml()" type="button">시작하기</button>
+	</div>
+</div>
+
+<span class="label label-success" id="exp">경험치</span>
+<div class="progress">
+	<div class="progress-bar progress-bar-success" role="progressbar" style="min-width: 0; width: 0%;">
+		0
+	</div>
+</div>
+
+<script>
+	function createHtml() {
+		$.ajax({
+			url: './index.html',
+			success: function () {
+				$('.page-header').append('<span class="label label-info">level : 1</span>');
+				$('#content').load('./level1.html');
+			}
+		})
+	}
+</script>
+
+<script>
+	function levelOneSubmit() {
+		var userAnswer = document.getElementById('bodyAnswer').value;
+
+		if (userAnswer == 'body') {
+			location.href = 'level2.html';
+		} else {
+			alert("정답이 아닙니다. 힌트 : b * * * (4글자)");
+		}
+	}
+</script>
+</body>
+</html>
