@@ -2,13 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="993e3eb3-44f3-4a04-9cc2-94e9a915b60c" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/html/description1.html" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/html/description1.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/html/description2.html" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/html/description2.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/html/description3.html" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/html/description3.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/html/final.html" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/html/final.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/html/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/html/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/html/intro.html" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/html/intro.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -46,6 +41,7 @@
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.0" />
     <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
@@ -68,7 +64,7 @@
       <workItem from="1584576045585" duration="37000" />
       <workItem from="1584576125370" duration="34875000" />
       <workItem from="1584677690383" duration="2996000" />
-      <workItem from="1584680874768" duration="1148000" />
+      <workItem from="1584680874768" duration="2435000" />
     </task>
     <task id="LOCAL-00001" summary="feat:기본 프레임 구현">
       <created>1584603370335</created>
@@ -119,7 +115,14 @@
       <option name="project" value="LOCAL" />
       <updated>1584681909219</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="feat: 마무리페이지 구현">
+      <created>1584682211684</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1584682211684</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -134,7 +137,8 @@
     <MESSAGE value="feat:메뉴 버튼 구현" />
     <MESSAGE value="feat:내용 작성" />
     <MESSAGE value="feat:로그인 페이지 구현" />
-    <option name="LAST_COMMIT_MESSAGE" value="feat:로그인 페이지 구현" />
+    <MESSAGE value="feat: 마무리페이지 구현" />
+    <option name="LAST_COMMIT_MESSAGE" value="feat: 마무리페이지 구현" />
   </component>
   <component name="WindowStateProjectService">
     <state x="19" y="150" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1584600288729">
@@ -146,23 +150,27 @@
       <screen x="0" y="23" width="1680" height="947" />
     </state>
     <state x="295" y="341" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1/0.23.1680.947@0.23.1680.947" timestamp="1584597925483" />
-    <state x="0" y="23" key="CommitChangelistDialog2" timestamp="1584681909081">
+    <state x="0" y="23" key="CommitChangelistDialog2" timestamp="1584682211540">
       <screen x="0" y="23" width="1680" height="947" />
     </state>
     <state x="0" y="37" key="CommitChangelistDialog2/0.0.1680.1050@0.0.1680.1050" timestamp="1584679596798" />
     <state x="0" y="0" key="CommitChangelistDialog2/0.0.2560.1440@0.0.2560.1440" timestamp="1584621413972" />
-    <state x="0" y="23" key="CommitChangelistDialog2/0.23.1680.947@0.23.1680.947" timestamp="1584681909081" />
-    <state x="43" y="61" key="SettingsEditor" timestamp="1584662140282">
-      <screen x="0" y="0" width="1680" height="1050" />
+    <state x="0" y="23" key="CommitChangelistDialog2/0.23.1680.947@0.23.1680.947" timestamp="1584682211540" />
+    <state x="43" y="78" key="SettingsEditor" timestamp="1584683867583">
+      <screen x="0" y="23" width="1680" height="947" />
     </state>
     <state x="43" y="61" key="SettingsEditor/0.0.1680.1050@0.0.1680.1050" timestamp="1584662140282" />
-    <state x="43" y="78" key="SettingsEditor/0.23.1680.947@0.23.1680.947" timestamp="1584608913805" />
-    <state width="500" height="494" key="SwitcherDM" timestamp="1584680306605">
-      <screen x="0" y="0" width="1680" height="1050" />
+    <state x="43" y="78" key="SettingsEditor/0.23.1680.947@0.23.1680.947" timestamp="1584683867583" />
+    <state width="500" height="445" key="SwitcherDM" timestamp="1584683978375">
+      <screen x="0" y="23" width="1680" height="947" />
     </state>
     <state width="500" height="494" key="SwitcherDM/0.0.1680.1050@0.0.1680.1050" timestamp="1584680306605" />
     <state width="762" height="677" key="SwitcherDM/0.0.2560.1440@0.0.2560.1440" timestamp="1584619857621" />
-    <state width="500" height="445" key="SwitcherDM/0.23.1680.947@0.23.1680.947" timestamp="1584613364747" />
+    <state width="500" height="445" key="SwitcherDM/0.23.1680.947@0.23.1680.947" timestamp="1584683978375" />
+    <state x="155" y="232" key="Vcs.Push.Dialog.v2" timestamp="1584684154141">
+      <screen x="0" y="23" width="1680" height="947" />
+    </state>
+    <state x="155" y="232" key="Vcs.Push.Dialog.v2/0.23.1680.947@0.23.1680.947" timestamp="1584684154141" />
     <state x="203" y="237" width="703" height="518" key="find.popup" timestamp="1584682086883">
       <screen x="0" y="23" width="1680" height="947" />
     </state>
