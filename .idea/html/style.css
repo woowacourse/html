@@ -1,0 +1,134 @@
+@import url('https://fonts.googleapis.com/css?family=Do+Hyeon&display=swap');
+a {
+    color: black;
+    text-decoration: none;
+}
+
+header{
+    height:10%;
+    padding:20px;
+    color: white;
+    font-size: 45px;
+    background-color:#2ac1bc;
+}
+
+body{
+    height:100%;
+    font-family: 'Do Hyeon', sans-serif;
+    margin:0;
+}
+
+footer{
+    display: flex;
+    flex-direction: row;
+    margin: 0px auto;
+}
+.header_title{
+    display: flex;
+    align-items: center;
+}
+.header_menu_button{
+    cursor:pointer;
+    width: 50px;
+    height: 50px;
+}
+.header_login_button{
+    cursor:pointer;
+    width: 50px;
+    height: 50px;
+}
+.header_title_logo{
+    width: 70px;
+    hegiht: 70px;
+    margin-right:10px;
+}
+.header_title_link{
+    color: white;
+    margin:0 auto;
+}
+.footer_menu{
+    height: 1080px;
+}
+.div_menu{
+    width: 20%;
+    padding-right: 10px;
+    height:100%;
+    min-width: 200px;
+    padding:10px;
+    background-color: #e6e6e6;
+    text-align: left;
+}
+.footer_text{
+    width:80%;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+}
+.div_text_image{
+    width:95%;
+}
+.login{
+    display: flex;
+}
+.input{
+    display: flex;
+    flex-direction: column;
+}
+.login_input{
+    font-size:40px;
+}
+.footer_text.login_text {
+    display: flex;
+    align-items: center;
+}
+.input {
+    margin-top: 40px;
+}
+.login_submit{
+    margin-top:50px;
+    margin-left:40px;
+    width:100px;
+    height: 100px;
+    -webkit-appearance: button;
+}
+.login_id{
+    width: 200px;
+    height: 40px;
+}
+.login_pw{
+    width: 200px;
+    height: 40px;
+}
+.option_button{
+    width:80px;
+    height:80px;
+    align-content: end;
+    margin-top:10px;
+}
+.header_title{
+    margin:5px;
+}
+.title_image{
+    max-width:80%
+}
+.text_area_reply{
+    width:100%;
+    height: 70px;
+    margin-bottom: 10px;
+}
+.text_reply_show_table{
+    border: 1px solid black;
+    width: 100%;
+    margin-bottom: 10px;
+    border-collapse: collapse;
+}
+.text_reply_show_no{
+    border: 1px solid black;
+}
+.text_reply_show_contents{
+    border: 1px solid black;
+}
+.text_reply_show_nickname{
+    border: 1px solid black;
+}
+

@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="993e3eb3-44f3-4a04-9cc2-94e9a915b60c" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="HTML File" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectId" id="1ZK7gRKPziSqUkidSJnAdwPs64c" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/.idea/html" />
+    <property name="project.structure.last.edited" value="Project" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.0" />
+    <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/.idea/html" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/.idea/html" />
+    </key>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="993e3eb3-44f3-4a04-9cc2-94e9a915b60c" name="Default Changelist" comment="" />
+      <created>1584576042073</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1584576042073</updated>
+      <workItem from="1584576045585" duration="37000" />
+      <workItem from="1584576125370" duration="34875000" />
+      <workItem from="1584677690383" duration="2996000" />
+      <workItem from="1584680874768" duration="2435000" />
+    </task>
+    <task id="LOCAL-00001" summary="feat:기본 프레임 구현">
+      <created>1584603370335</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1584603370335</updated>
+    </task>
+    <task id="LOCAL-00002" summary="feat:기본 css 구현">
+      <created>1584613391018</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1584613391018</updated>
+    </task>
+    <task id="LOCAL-00003" summary="feat:기본 스크립트 구현">
+      <created>1584617732075</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1584617732075</updated>
+    </task>
+    <task id="LOCAL-00004" summary="feat:댓글 기능 구현">
+      <created>1584621414120</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1584621414120</updated>
+    </task>
+    <task id="LOCAL-00005" summary="feat:메뉴 버튼 구현">
+      <created>1584662193641</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1584662193641</updated>
+    </task>
+    <task id="LOCAL-00006" summary="feat:내용 작성">
+      <created>1584679596960</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1584679596960</updated>
+    </task>
+    <task id="LOCAL-00007" summary="feat:로그인 페이지 구현">
+      <created>1584681909219</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1584681909219</updated>
+    </task>
+    <task id="LOCAL-00008" summary="feat: 마무리페이지 구현">
+      <created>1584682211684</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1584682211684</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+    <MESSAGE value="feat:기본 프레임 구현" />
+    <MESSAGE value="feat:기본 css 구현" />
+    <MESSAGE value="feat:기본 스크립트 구현" />
+    <MESSAGE value="feat:댓글 기능 구현" />
+    <MESSAGE value="feat:메뉴 버튼 구현" />
+    <MESSAGE value="feat:내용 작성" />
+    <MESSAGE value="feat:로그인 페이지 구현" />
+    <MESSAGE value="feat: 마무리페이지 구현" />
+    <option name="LAST_COMMIT_MESSAGE" value="feat: 마무리페이지 구현" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="19" y="150" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1584600288729">
+      <screen x="0" y="0" width="1680" height="1050" />
+    </state>
+    <state x="19" y="150" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1680.1050@0.0.1680.1050" timestamp="1584600288729" />
+    <state x="19" y="158" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.23.1680.947@0.23.1680.947" timestamp="1584598193090" />
+    <state x="295" y="341" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1" timestamp="1584597925483">
+      <screen x="0" y="23" width="1680" height="947" />
+    </state>
+    <state x="295" y="341" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1/0.23.1680.947@0.23.1680.947" timestamp="1584597925483" />
+    <state x="0" y="23" key="CommitChangelistDialog2" timestamp="1584682211540">
+      <screen x="0" y="23" width="1680" height="947" />
+    </state>
+    <state x="0" y="37" key="CommitChangelistDialog2/0.0.1680.1050@0.0.1680.1050" timestamp="1584679596798" />
+    <state x="0" y="0" key="CommitChangelistDialog2/0.0.2560.1440@0.0.2560.1440" timestamp="1584621413972" />
+    <state x="0" y="23" key="CommitChangelistDialog2/0.23.1680.947@0.23.1680.947" timestamp="1584682211540" />
+    <state x="43" y="78" key="SettingsEditor" timestamp="1584683867583">
+      <screen x="0" y="23" width="1680" height="947" />
+    </state>
+    <state x="43" y="61" key="SettingsEditor/0.0.1680.1050@0.0.1680.1050" timestamp="1584662140282" />
+    <state x="43" y="78" key="SettingsEditor/0.23.1680.947@0.23.1680.947" timestamp="1584683867583" />
+    <state width="500" height="445" key="SwitcherDM" timestamp="1584683978375">
+      <screen x="0" y="23" width="1680" height="947" />
+    </state>
+    <state width="500" height="494" key="SwitcherDM/0.0.1680.1050@0.0.1680.1050" timestamp="1584680306605" />
+    <state width="762" height="677" key="SwitcherDM/0.0.2560.1440@0.0.2560.1440" timestamp="1584619857621" />
+    <state width="500" height="445" key="SwitcherDM/0.23.1680.947@0.23.1680.947" timestamp="1584683978375" />
+    <state x="155" y="232" key="Vcs.Push.Dialog.v2" timestamp="1584684154141">
+      <screen x="0" y="23" width="1680" height="947" />
+    </state>
+    <state x="155" y="232" key="Vcs.Push.Dialog.v2/0.23.1680.947@0.23.1680.947" timestamp="1584684154141" />
+    <state x="203" y="237" width="703" height="518" key="find.popup" timestamp="1584682086883">
+      <screen x="0" y="23" width="1680" height="947" />
+    </state>
+    <state x="203" y="237" width="703" height="518" key="find.popup/0.23.1680.947@0.23.1680.947" timestamp="1584682086883" />
+    <state x="220" y="230" width="670" height="750" key="search.everywhere.popup" timestamp="1584603870490">
+      <screen x="0" y="0" width="1680" height="1050" />
+    </state>
+    <state x="220" y="230" width="670" height="750" key="search.everywhere.popup/0.0.1680.1050@0.0.1680.1050" timestamp="1584603870490" />
+    <state x="220" y="230" width="670" height="676" key="search.everywhere.popup/0.23.1680.947@0.23.1680.947" timestamp="1584585956804" />
+  </component>
+</project>

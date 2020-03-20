@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <script src="//code.jquery.com/jquery-3.3.1.min.js"></script>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
+    <title>90년생 HTML</title>
+</head>
+<body>
+<!--전체-->
+<div id="div_all">
+    <!--    상단바-->
+    <header>
+        <h1 class="header_title">
+            <img src="option_button.png" alt="" class="header_menu_button" onclick="button1_click();">
+            <a href="index.html" class="header_title_link">
+                <img src="./static_dd.jpeg" alt="" data-animated="./animated_dd.gif" data-static="./static_dd.jpeg"
+                     class="header_title_logo"><b>안녕하세용</b></a>
+            <a href="login.html"><img src="login.png" alt="" class="header_login_button"></a>
+        </h1>
+    </header>
+    <!--        하단바-->
+    <footer>
+        <!--메뉴-->
+        <div class="footer_menu">
+            <div class="div_menu">
+                <h1 class="menu2">menu</h1>
+                <ol>
+                    <p>
+                    <li><a href="intro.html">HTML이란?</a></li>
+                    <p>
+                    <li><a href="description1.html">왜 HTML을 배우는가?</a></li>
+                    <p>
+                    <li><a href="description2.html">HTML 태그란?</a></li>
+                    <p>
+                    <li><a href="description3.html">간단한 웹 사이트 만들기</a></li>
+                    <p>
+                    <li><a href="final.html">감사합니당</a></li>
+                </ol>
+            </div>
+        </div>
+        <!--        영상-->
+        <!--            제목-->
+        <div class="footer_text">
+            <div class="div_text_title"><h2>3. HTML 태그란?</h2></div>
+            <div class="div_text_image"><img src="https://techcourse-storage.s3.ap-northeast-2.amazonaws.com/2020-03-17T10:40:42.841image.png" alt="" class="div_text_image"></div>
+            <div class="div_text_contents">
+                <p> HTML은 무수히 많은 태그들이 존재합니다. 우리는 HTML을 배우면서 자주 사용되고 필수적인 태그들만 다루어 볼 겁니다. 제가 꼭 필요한 내용 정도만 간추려 봤으니 본 내용만큼은 읽어보면서 실습해 주세요. 태그의 사용법을 외우란 말이 아니라 한번 쯤 읽어서 '아~ 그렇구나'하고 넘어가되, 특정 상황에서 이러한 태그를 만나면 대충 어떠한 기능을 하는 태그다! 라는 정도만 알고 계시면 됩니다. 세세한 문법이나 사용법은 그때 그때 구글링 하시면 됩니다. 이제 VSCode를 통해 직접 실습해보면서 태그 위치를 좀 다르게 해보고, 속성 값도 다르게 줘 보면서 스스로 HTML 문서를 편집할 수 있는 능력을 키워봅시다.</p>
+                <p><iframe width="560" height="315" src="https://www.youtube.com/embed/33DjsANwlJk" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></p>
+            </div>
+            <div class="div_text_reply"><h3>댓글</h3>
+                <div class="text_reply_show">
+                    <table class="text_reply_show_table">
+                        <tr>
+                            <th class="text_reply_show_no">번호</th>
+                            <th class="text_reply_show_contents">내용</th>
+                            <th class="text_reply_show_nickname">닉네임</th>
+                        </tr>
+                    </table>
+                </div>
+                <div class="text_reply_enter">
+                    <form name="postReply" action="" method="POST">
+                        <input type="text" class="text_area_reply text" id="contents" name="reply">
+                        닉네임 : <input type="text" placeholder="닉네임" id="nickname" name="nickname" class="text">
+                        비밀번호 : <input type="password" placeholder="비밀번호" name="password" class="text">
+                        <input type="button" name="submit" value="제출" onclick="abcSubmit();">
+                    </form>
+                </div>
+            </div>
+        </div>
+    </footer>
+</div>
+<script>
+    var no = 1;
+    $(".header_title_logo").mouseover(function () {
+        $(this).attr("src", $(this).data("animated"))
+    }),
+        $(".header_title_logo").mouseout(function () {
+            $(this).attr("src", $(this).data("static"))
+        });
+
+    function button1_click() {
+        if ($('.div_menu').length) {
+            $('div').remove('.div_menu');
+        } else {
+            $('.footer_menu').append("<div class=\"div_menu\">\n" +
+                "                <h1 class=\"menu2\">menu</h1>\n" +
+                "                <ol>\n" +
+                "                    <p>\n" +
+                "                    <li><a href=\"intro.html\">HTML이란?</a></li>\n" +
+                "                    <p>\n" +
+                "                    <li><a href=\"description1.html\">왜 HTML을 배우는가?</a></li>\n" +
+                "                    <p>\n" +
+                "                    <li><a href=\"description2.html\">HTML 태그란?</a></li>\n" +
+                "                    <p>\n" +
+                "                    <li><a href=\"description3.html\">간단한 웹 사이트 만들기</a></li>\n" +
+                "                    <p>\n" +
+                "                    <li><a href=\"final.html\">감사합니당</a></li>\n" +
+                "                </ol>\n" +
+                "            </div>");
+        }
+    }
+
+    function abcSubmit() {
+        var reply = document.postReply.reply.value;
+        var nickname = document.postReply.nickname.value;
+        $(".text_reply_show_table").append("<tr>\n" +
+            "                            <th class=\"text_reply_show_no\">" + (no++) + "</th>\n" +
+            "                            <th class=\"text_reply_show_contents\">" + reply + "</th>\n" +
+            "                            <th class=\"text_reply_show_nickname\">" + nickname + "</th>\n" +
+            "                        </tr>");
+        var el = document.getElementsByClassName("text");
+        for (var i = 0; i < el.length; i++) {
+            el[i].value = "";
+        }
+        return true;
+    };
+</script>
+</body>
+</html>
