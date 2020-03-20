@@ -30,45 +30,45 @@
 <div class="row">
 	<div class="col-md-9" id="content">
 		<div class="col-md-6">
-			<h2>1단계 : 웹페이지에 글을 출력해보자</h2>
+			<h2>2단계 : 태그 더 알아보기</h2>
 			<p>
-				HTML 문서는 크게 head 태그와 <font color="#ff7f50">'어떠한 태그?'</font>로 이루어져 있습니다.<br/>
-				태그? &lt;여는태그&gt; '입력하고 싶은 내용' &lt;/닫는태그&gt;
+				2단계에 오신것을 환영합니다.
 			</p>
 			<p>
-				head 태그에는 문서에 사용되는 메타 데이터의 집합을 나타냅니다.<br/>
-				아래의 빨간색으로 표시된 title 태그를 살펴봅시다.<br/>
-				title 사이의 입력한 'Title'이 브라우저바 타이틀[그림1]에 'Title' 로 표시되는 것을 볼 수 있습니다.
-			</p>
-			<p>
-				다음으로 살펴볼 것은 분홍색으로 표시된 'hello world!'입니다.<br/>
-				이 'hello world' 라는 내용은 <font color="#ff7f50">'어떠한 태그?'</font>로 쌓여 있는데,
-				바로 이 <font color="#ff7f50">'어떠한 태그?'</font>는 문서의 본문을 입력하고자 할 때 사용되는 태그입니다.<br/>
-
-				head 가 문서의 머리를 뜻한다면 문서의 본문, 즉 몸을 뜻하는 이 <font color="#ff7f50">'어떠한 태그?'</font>는 무엇일까요?
+				이번 단계에서는 몇가지 태그를 더 알아보겠습니다.
 			</p>
 			<pre>
 &lt;html&gt;
-	&lt;head&gt;
-		&lt;meta charset="UTF-8"&gt;
-		&lt;<font color="red">title</font>&gt;Title&lt;<font color="red">/title</font>&gt;
-	&lt;/head&gt;
-	&lt;<input style="width: 40px" type="text">&gt;
-		<font color="#ff1493">hello world!</font>
-	&lt;/<input style="width: 40px" type="text">&gt;
+  &lt;head&gt;
+    &lt;meta charset="UTF-8"&gt;
+    &lt;title&gt;Title&lt;/title&gt;
+  &lt;/head&gt;
+  &lt;body&gt;
+    &lt;h1&gt;1단계 : 웹페이지에 글을 출력해보자&lt;/h1&gt;
+    &lt;p&gt;
+      HTML 문서는 크게 head 태그와
+      &lt;font color="#ff7f50"&gt;'어떠한 태그?'&lt;/font&gt;
+      로 이루어져 있습니다.
+    &lt;/p&gt;
+    &lt;input type="text" placeholder="정답"&gt;
+    &lt;button type="button"&gt;제출&lt;/button&gt;
+  &lt;body&gt;
 &lt;/html&gt;
-</pre>
-			<div class="input-group">
-				<input class="form-control" id="bodyAnswer" placeholder="정답" type="text">
-				<span class="input-group-btn">
-            <button class="btn btn-default" onclick="levelOneSubmit()" type="button">제출</button>
-        </span>
+			</pre>
+			<p>
+				위의 코드는 level1 페이지의 html 을 간소화 한것입니다.<br/>
+				사용된 태그들에 대해서 알아봅시다.
+			</p>
+			<div aria-label="..." class="btn-group" role="group">
+				<button class="btn btn-default" onclick="hTag()" type="button">h, p</button>
+				<button class="btn btn-default" onclick="inputTag()" type="button">input</button>
+				<button class="btn btn-default" onclick="fontTag()" type="button">font</button>
+				<button class="btn btn-default" onclick="buttonTag()" type="button">button</button>
 			</div>
 			<br/>
 		</div>
-		<div class="col-md-4">
-			<span class="label label-danger">그림1</span>
-			<img src="storage/helloWorld.png" width="800px">
+		<div class="col-md-4" id="level2img">
+			<img src="storage/level2.png" width="800px">
 		</div>
 	</div>
 </div>
@@ -79,21 +79,51 @@
 	</div>
 </div>
 
-<script>
-	function levelOneSubmit() {
-		var userAnswer = document.getElementById('bodyAnswer').value;
-
-		if (userAnswer == 'body') {
-			location.href = 'level2.html';
-		} else {
-			alert("정답이 아닙니다. 힌트 : b * * * (4글자)");
-		}
-	}
-</script>
-
 <script
 		crossorigin="anonymous"
 		integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
 		src="https://code.jquery.com/jquery-3.4.1.js"></script>
+
+<script>
+	function inputTag() {
+		$.ajax({
+			url: 'level2.html',
+			success: function () {
+				console.log(1);
+				$('#level2img').html('<img id="level2img" src="storage/inputTag.png" width="800px">');
+			}
+		})
+	}
+
+	function hTag() {
+		$.ajax({
+			url: 'level2.html',
+			success: function () {
+				console.log(1);
+				$('#level2img').html('<img id="level2img" src="storage/hTag.png" width="800px">');
+			}
+		})
+	}
+
+	function fontTag() {
+		$.ajax({
+			url: 'level2.html',
+			success: function () {
+				console.log(1);
+				$('#level2img').html('<img id="level2img" src="storage/fontTag.png" width="800px">');
+			}
+		})
+	}
+
+	function buttonTag() {
+		$.ajax({
+			url: 'level2.html',
+			success: function () {
+				console.log(1);
+				$('#level2img').html('<img id="level2img" src="storage/buttonTag.png" width="800px">');
+			}
+		})
+	}
+</script>
 </body>
 </html>
