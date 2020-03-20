@@ -81,6 +81,23 @@ header.page-header > h1 {
     text-decoration: none;
 }
 
+.commentBox{
+    font-family: bold, "배달의민족 한나체 Pro", cursive;
+    font-size: 20px;
+    color: rgb(184, 255, 170);
+    text-shadow: #ff7300 0 0 0.5em;
+    display: flex;
+    height: 80vh;
+    width: 20%;
+    margin-right: 10%;
+}
+
+.comment{
+    margin-top: 50%;
+}
+
+.button{
+}
 .oranges{
     display: flex;
     height: 80vh;
