@@ -20,11 +20,23 @@
 			margin: 0px 0px 0px 0px;
 			border: none;
 		}
+
+		#finalButton {
+			position: relative;
+			top: 10px;
+			left: 70%;
+		}
+
+		#exp {
+			position: fixed;
+			top: 95%;
+			left: 5%;
+		}
 	</style>
 </head>
 <body>
 <h1 class="page-header" style="text-align: center;margin-bottom: 10px">
-	웹페이지 만들기<span class="label label-info">level : 2</span>
+	HTML 배우기<span class="label label-info">level : 2</span>
 </h1>
 
 <div class="row">
@@ -57,7 +69,7 @@
 			</pre>
 			<p>
 				위의 코드는 level1 페이지의 html 을 간소화 한것입니다.<br/>
-				사용된 태그들에 대해서 알아봅시다.
+				다음 태그들을 하나씩 눌러보세요.
 			</p>
 			<div aria-label="..." class="btn-group" role="group">
 				<button class="btn btn-default" onclick="hTag()" type="button">h, p</button>
@@ -66,6 +78,8 @@
 				<button class="btn btn-default" onclick="buttonTag()" type="button">button</button>
 			</div>
 			<br/>
+			<br/>
+			<a class="btn btn-primary" href="https://www.google.com/" id="finalButton">나머지 95% 채우기</a>
 		</div>
 		<div class="col-md-4" id="level2img">
 			<img src="storage/level2.png" width="800px">
@@ -73,9 +87,10 @@
 	</div>
 </div>
 
+<span class="label label-success" id="exp">경험치</span>
 <div class="progress">
-	<div class="progress-bar progress-bar-success" role="progressbar" style="min-width: 0; width: 25%;">
-		25%
+	<div class="progress-bar progress-bar-success" role="progressbar" style="min-width: 0; width: 5%;">
+		5%
 	</div>
 </div>
 
