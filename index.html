@@ -17,18 +17,18 @@
         <nav class="main-nav" role="navigation">
             <ul>
                 <li class="top-level-entry-container">
-                    <button type="button"class="top-level-entry" aria-haspopup="true">
+                    <button type="button" class="top-level-entry" aria-haspopup="true">
                         기술<span class="main-menu-arrow" aria-hidden="true">▼</span>
                     </button>
 
                 </li>
                 <li class="top-level-entry-container">
-                    <button type="button"class="top-level-entry" aria-haspopup="true">
+                    <button type="button" class="top-level-entry" aria-haspopup="true">
                         참조문서 및 가이드<span class="main-menu-arrow" aria-hidden="true">▼</span>
                     </button>
                 </li>
                 <li class="top-level-entry-container">
-                    <button type="button"class="top-level-entry" aria-haspopup="true">
+                    <button type="button" class="top-level-entry" aria-haspopup="true">
                         사용자 의견<span class="main-menu-arrow" aria-hidden="true">▼</span>
                     </button>
 
@@ -36,20 +36,50 @@
             </ul>
         </nav>
         <form class="header-search" id="nav-main-search" action="" method="get" role="search">
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 26 28" aria-hidden="true" class="search-icon"><path d="M18 13c0-3.859-3.141-7-7-7s-7 3.141-7 7 3.141 7 7 7 7-3.141 7-7zm8 13c0 1.094-.906 2-2 2a1.96 1.96 0 0 1-1.406-.594l-5.359-5.344a10.971 10.971 0 0 1-6.234 1.937c-6.078 0-11-4.922-11-11s4.922-11 11-11 11 4.922 11 11c0 2.219-.672 4.406-1.937 6.234l5.359 5.359c.359.359.578.875.578 1.406z"></path></svg>
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 26 28" aria-hidden="true" class="search-icon">
+                <path d="M18 13c0-3.859-3.141-7-7-7s-7 3.141-7 7 3.141 7 7 7 7-3.141 7-7zm8 13c0 1.094-.906 2-2 2a1.96 1.96 0 0 1-1.406-.594l-5.359-5.344a10.971 10.971 0 0 1-6.234 1.937c-6.078 0-11-4.922-11-11s4.922-11 11-11 11 4.922 11 11c0 2.219-.672 4.406-1.937 6.234l5.359 5.359c.359.359.578.875.578 1.406z"></path>
+            </svg>
             <label for="main-q" class="visually-hidden">MDN 검색</label>
-            <input type="search" class="search-input-field" id="main-q" name="q" placeholder="MDN 검색" pattern="(.|\s)*\S(.|\s)*" required>
+            <input type="search" class="search-input-field" id="main-q" name="q" placeholder="MDN 검색"
+                   pattern="(.|\s)*\S(.|\s)*" required>
         </form>
         <a href="" rel="nofollow" class="signin-link">로그인</a>
     </header>
-    <main>
-        <div>
-            <div>HTML 요소 참고서</div>
+    <main role="main">
+        <div class="titlebar-container">
+            <div class="titlebar">
+                <h1 class="title">HTML 요소 참고서</h1>
+            </div>
         </div>
-        <div>
-            <div>
-                <nav></nav>
-                <div></div>
+        <div class="full-width-row-container">
+            <div class="max-content-width-container">
+                <nav class="breadcrumbs" role="navigation">
+                    <ol typeof="BreadcrumbList" vocab="https://schema.org/" aria-label="breadcrumbs">
+                        <li property="itemListElement" typeof="ListItem"><a href=""
+                                                                            class="breadcrumb-chevron" property="item"
+                                                                            typeof="webPage"><span property="name">개발자를 위한 웹기술</span></a>
+                        </li>
+                        <li property="itemListElement" typeof="ListItem"><a href=""
+                                                                            class="breadcrumb-chevron" property="item"
+                                                                            typeof="WebPage"><span property="name">HTML: Hypertext Markup Language</span></a>
+                        </li>
+                        <li property="itemListElement" typeof="ListItem"><a href=""
+                                                                            class="crumb-current-page" property="item"
+                                                                            typeof="WebPage"><span property="name"
+                                                                                                   aria-current="page">HTML 요소 참고서</span></a>
+                        </li>
+                    </ol>
+                </nav>
+                <div class="dropdown-container">
+                    <button id="header-language-menu" type="button" class="dropdown-menu-label" aria-haspopup="true"
+                            aria-owns="language-menu" aria-label="현재 언어는 한국어입니다. 선호 언어를 선택하세요.">한국어<span
+                            class="dropdown-arrow-down" aria-hidden="true">▼</span></button>
+                    <ul id="language-menu" class="dropdown-menu-items right" role="menu">
+                        <li lang="en-US" role="menuitem"><a href="/en-US/docs/Web/HTML/Element" title="영어 (미국)">
+                            <bdi>English (US)</bdi>
+                        </a></li>
+                    </ul>
+                </div>
             </div>
         </div>
         <div>
