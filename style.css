@@ -1,0 +1,40 @@
+h1 {
+    text-align: center;
+}
+
+.container {
+    margin: auto;
+    width: 600px; 
+    display: flex;
+    flex-direction: column;
+}
+
+.diary{
+    border: 1px solid gray;
+    margin: 10px;
+}
+
+.header{
+    border-bottom : 1px solid gray;
+    display: flex;
+}
+
+.date{
+    border-right: 1px solid gray;
+}
+
+.weather{
+
+}
+
+.drawing{
+
+}
+
+.words{
+    border-top : 1px solid gray;
+}
+
+.date{
+    display: flex;
+}
