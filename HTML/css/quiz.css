@@ -1,0 +1,25 @@
+@charset "utf-8";
+
+@font-face {
+  font-family: "BMHANNAPro";
+  src: url(../ttf/BMHANNAPro.ttf);
+}
+
+* {
+  font-family: BMHANNAPro;
+}
+
+h1 {
+  font-size: 40px;
+  text-align: center;
+}
+
+p {
+  font-size: 30px;
+}
+
+.button {
+  width: 55px;
+  height: 40px;
+  font-size: 20px;
+}

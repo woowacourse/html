@@ -1,0 +1,31 @@
+@charset "utf-8";
+
+@font-face {
+  font-family: "BMHANNAPro";
+  src: url(../ttf/BMHANNAPro.ttf);
+}
+
+html,
+body {
+  height: 100%;
+  margin: 0;
+  font-family: BMHANNAPro;
+}
+
+h1 {
+  font-size: 50px;
+}
+
+li {
+  font-size: 30px;
+}
+
+p,
+a {
+  font-size: 25px;
+}
+
+.old-editor,
+.modern-editor {
+  float: left;
+}

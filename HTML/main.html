@@ -2,39 +2,54 @@
 <html lang="ko">
   <head>
     <meta charset="utf-8" />
+    <title>90년생 HTML</title>
     <link rel="shortcut icon" href="favicon.ico" />
     <link rel="stylesheet" type="text/css" href="css/main.css" />
-    <title>우테백과</title>
-    <script src="http://code.jquery.com/jquery-latest.js"></script>
-    <link
-      rel="stylesheet"
-      href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"
-    />
     <script type="text/javascript">
-      function openNav() {
-        document.getElementById("sideNavigator").style.width = "250px";
+      window.onload = function() {
+        introLoad();
+      };
+
+      function introLoad() {
+        document.getElementById("content").setAttribute("src", "intro.html");
       }
 
-      function closeNav() {
-        document.getElementById("sideNavigator").style.width = "0";
+      function historyLoad() {
+        document.getElementById("content").setAttribute("src", "history.html");
+      }
+
+      function videoLoad() {
+        document.getElementById("content").setAttribute("src", "video.html");
+      }
+
+      function quizLoad() {
+        document.getElementById("content").setAttribute("src", "quiz.html");
+      }
+
+      function questionLoad() {
+        document.getElementById("content").setAttribute("src", "question.html");
       }
     </script>
   </head>
 
   <body>
-    <div class="main">
-      <span class="openmenu" onclick="openNav()">
-        <i class="fa fa-angle-double-left fa-5" aria-hidden="true"></i>
-        목록
-      </span>
-      <div id="sideNavigator" class="sideBar">
-        <a class="close-button" href="#" onclick="closeNav()">X</a>
-        <a class="sideBar-HTML" href="#">90년생 HTML</a>
+    <header>
+      <h1 class="header-title">90년생 HTML</h1>
+      <hr class="header-line" noshade />
+    </header>
+    <footer>
+      <div class="all">
+        <div class="menu-bar">
+          <ul>
+            <li><a onclick="introLoad()">소개</a></li>
+            <li><a onclick="historyLoad()">역사</a></li>
+            <li><a onclick="videoLoad()">준의 강의</a></li>
+            <li><a onclick="quizLoad()">퀴즈</a></li>
+            <li><a onclick="questionLoad()">질문 게시판</a></li>
+          </ul>
+        </div>
+        <iframe id="content"></iframe>>
       </div>
-      <div class="main-contents">
-        <h1 class="main-title">우아백과&nbsp;&nbsp;</h1>
-        <h2 class="main-author">작성자 라빈</h2>
-      </div>
-    </div>
+    </footer>
   </body>
 </html>

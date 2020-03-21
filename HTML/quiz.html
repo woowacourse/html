@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" type="text/css" href="css/quiz.css" />
+    <script language="JavaScript">
+        var score = 0;
+        var meterValue = 0;
+
+        function scoreUp() {
+            score = score + 1;
+        }
+
+        function reset() {
+            history.go(0);
+        }
+
+        function calScore() {
+            if (score == 0) {
+                document.getElementById("show").value = 0;
+            } else {
+                meterValue = (score / 3) * 100;
+                document.getElementById("show").value = meterValue;
+            }
+        }
+    </script>
+</head>
+
+<body>
+    <h1>문 제</h1>
+    <hr noshade>
+    <br>
+    <p>1. HTML을 만든 사람은 누구일까요?</p>
+    <input type="radio">포비</input>
+    <input type="radio" onclick="scoreUp()">팀 버너스리</input>
+    <input type="radio">라빈</input>
+    <input type="radio">준</input>
+    <br>
+    <p>2. HTML을 개발한 사람이 속한 연구 기관은 어디일까요?</p>
+    <input type="radio">NASA</input>
+    <input type="radio" onclick="scoreUp()">CERN</input>
+    <input type="radio">WOOWAHANBRO</input>
+    <input type="radio">GOOGLE</input>
+    <br>
+    <p>3. 세계 최초의 웹 사이트의 주소는 무엇일까요?</p>
+    <input type="radio" onclick="scoreUp()">http://info.cern.ch</input>
+    <input type="radio">http://daum.net</input>
+    <input type="radio">http://woowabros.github.io</input>
+    <input type="radio">http://naver.com</input>
+    <br><br>
+    <input type="button" class="button" onclick="calScore()" value="채점"></input>
+    <input type="button" class="button" onclick="reset()" value="리셋"></input>
+    <meter id="show" min="0" max="100" value="0"></meter>
+</body>
+
+</html>

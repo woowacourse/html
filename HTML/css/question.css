@@ -1,0 +1,31 @@
+@charset "utf-8";
+
+@font-face {
+  font-family: "BMHANNAPro";
+  src: url(../ttf/BMHANNAPro.ttf);
+}
+
+* {
+  font-family: BMHANNAPro;
+  font-size: 30px;
+}
+
+table {
+  width: 100%;
+  border: 1px solid #444444;
+}
+
+th,
+td {
+  border: 1px solid #444444;
+  height: 50px;
+}
+
+.table-index {
+  width: 100px;
+}
+
+textarea {
+  width: 600px;
+  height: 500px;
+}
