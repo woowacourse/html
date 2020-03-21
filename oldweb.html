@@ -3,7 +3,7 @@
 <head>
     <title>안녕하세요.</title>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=0.5">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
@@ -13,7 +13,7 @@
 <div id="base-container" style="width: 100%;display: flex;flex-direction: column">
     <header id="header">
         <div align="center">
-            <h1>KAFKA</h1>
+            <h1>웹페이지의 발전</h1>
         </div>
         <nav class="navbar navbar-inverse navbar-fixed-top">
             <div class="container-fluid">
@@ -29,23 +29,46 @@
                     <ul class="nav navbar-nav">
                         <li><a href="intro.html">HTML의 시작</a></li>
                         <li class="active"><a href="oldweb.html">웹페이지의 발전</a></li>
-                        <li><a href="futureweb.html">지평선을 향하여</a></li>
+                        <li><a href="futureweb.html">새로운 가능성</a></li>
                     </ul>
                 </div>
             </div>
         </nav>
     </header>
-    <section id="main-section" style="width:100%;height: 3000px; padding-left: 10px;padding-right: 10px;display: flex">
+    <section id="main-section" style="width:100%;min-height: 2000px; padding-left: 10px;padding-right: 10px;display: flex">
         <section id="content-section" style="height: 100%;width: 100%;display: inline-flex;flex-direction: column;text-align: center">
-            <article id="content1" style="margin:10px;height: 500px;width: 100%;display: inline-flex;justify-content:center;">
+            <article id="content-pcnet" style="margin:10px;height: 500px;width: 100%;display: inline-flex;justify-content:center;">
                 <div class="content-div-block">
-                    <div id="content-html-text" align="center">
-                        <h2>1990년 10월, <br><b>세계 최초의 웹 에디터</b></h2>
+                    <div id="content-pcnet-text" align="center">
+                        <h2>1986년, <br><b>하이텔의 시작</b></h2>
                     </div>
-                    <button type="button" class="btn-lg btn-primary" onclick="location.href='https://ko.wikipedia.org/wiki/HTML#%EC%97%AD%EC%82%AC'">더 읽어보기</button>
+                    <img alt="old_naver" src="media/1990net.gif" width="80%"/></div>
+            </article>
+            <article id="content-pcnet-more" style="margin:10px;height: 500px;width: 100%;display: inline-flex;justify-content:center;">
+                <div class="content-div-block">
+                    <div id="content-pcnet-moretext" align="center">
+                        <h2>하이텔에 대해서 더 읽어보기</b></h2>
+                        <p style="font-size: 15px">한경뉴스속보와 대형 BBS의 효시라고 할 수 있는 전자게시판(큰마을), 전자우편, 채팅, 동호회(현재의 카페), 온라인 바둑 등을 제공하였다.</p>
+                    </div>
+                    <button type="button" class="btn-lg btn-primary" onclick="window.open('https://ko.wikipedia.org/wiki/HTML#%EC%97%AD%EC%82%AC')">더 읽어보기</button>
                 </div>
             </article>
-            <embed type="text/html" src="http://users.atw.hu/wolf3d/" style="width:1200px;height: 800px">
+            <article id="content-naver" style="margin:10px;height: 500px;width: 100%;display: inline-flex;justify-content:center;">
+                <div class="content-div-block">
+                    <div id="content-naver-text" align="center">
+                        <h2>1999년, <br><b>네이버의 시작</b></h2>
+                    </div>
+                    <img src="media/first_naver.png" width="80%"/></div>
+            </article>
+            <article id="content-naver-more" style="margin:10px;height: 500px;width: 100%;display: inline-flex;justify-content:center;">
+                <div class="content-div-block">
+                    <div id="content-naver-moretext" align="center">
+                        <h2>네이버에 대해서 더 읽어보기</b></h2>
+                        <p style="font-size:15px">1999년 6월 2일. 대한민국 포털 1위 네이버가 설립되다.</p>
+                    </div>
+                    <button type="button" class="btn-lg btn-primary" onclick="window.open('https://m.post.naver.com/viewer/postView.nhn?volumeNo=20662503&memberNo=2301197')">더 읽어보기</button>
+                </div>
+            </article>
         </section>
     </section>
     <footer id="footer" style="background-color: cadetblue">
