@@ -1,0 +1,63 @@
+<!DOCTYPE HTML>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+	<title>HTML Introduction</title>
+	<meta http-equiv="content-type" content="text/html; charset=utf-8">
+
+	<link href="./dist/rpgui.css" rel="stylesheet" type="text/css" >
+	<script src="./dist/rpgui.js"></script>
+
+    <style>
+        body
+        {
+            background: #000000;
+        }
+    </style>
+</head>
+
+<body>
+    <center>
+	<div class="rpgui-content">
+        <div class="rpgui-container framed" style="">
+            <button onclick = "playSound()" class="rpgui-button"><p>HTML</p></button>
+            <hr class="golden"/>
+            
+            
+            <label> <em>Tim Berners Lee </em> <br> who invented the Web with HTML</label>
+            <img src="./assets/tim_berners_lee.jpg">
+            <a href="https://en.wikipedia.org/wiki/Tim_Berners-Lee"> Click and read more about him </a>    
+            <hr class="golden"/>
+            
+            
+            <textarea id="features" readonly style = "resize:none;" rows="7" cols="7">
+            </textarea>
+    
+            <hr class="golden"/>
+            <label>Comment Section.</label>
+            <input type="text" name="FirstName" value="" placeholder="Write here.">
+            <br/><br/>
+        </div>
+    </div>
+    </center>
+    
+    <script>
+    var value = "HTML stands for Hyper Text Markup Language. \n";
+    value +=  "HTML describes the structure of a Web page.\n";
+    value += "HTML consists of a series of elements.\n";
+    value += "HTML elements tell the browser how to display the content.\n";
+    value += "HTML tags label pieces of content such as 'heading', 'paragraph', 'table', and so on.\n";
+    value += "Browsers do not display the HTML tags, but use them to render the content of the page.";
+    var features = document.getElementById('features');
+    features.value = value;
+        
+    
+    function playSound() {
+        var audio = new Audio();
+        audio.src = "./assets/laser_sound.mp3";
+        audio.play();
+    }
+    </script>
+</body>
+</html>
