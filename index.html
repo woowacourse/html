@@ -28,7 +28,7 @@
         </section>
         <section class="card">
             <div class="card-image">
-                <img src="swiss.jpg">
+                <img id="swiss-html" src="swiss.jpg">
             </div>
             <h3>HTML은 스위스에서 태어났습니다.</h3>
             <div><a href="https://home.cern/">CERN(유럽 입자 물리 연구소)</a>의 연구자들은 많은 정보와 자료를 주고받아야 했습니다.</div>
@@ -250,4 +250,15 @@
     $(document).ready(function () {
         movePage(currentPage);
     })
+
+    function changeSwissImg() {
+        let imgSources = ["swiss.jpg", "father.jpeg", "cern.jpg"];
+        let index = 0;
+
+        setInterval(function() {
+            $("#swiss-html").attr("src", imgSources[index++ % imgSources.length])
+        }, 2000)
+    }
+
+    changeSwissImg();
 </script>
