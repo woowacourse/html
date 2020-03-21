@@ -1,0 +1,91 @@
+body {
+    background-color: rgba(0, 0, 0, 0.6);
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI";
+    margin: 0;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    height: 75px;
+    z-index: 10;
+}
+
+h1{
+    margin: 0;
+}
+
+.logo {
+    cursor: pointer;
+}
+
+.logo img {
+    width: 200px;
+    height: 80px;
+    margin-top: 4px;
+}
+
+.nav-bar {
+    display: flex;
+    margin: 0 auto;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.8em 50px;
+}
+
+nav div {
+    display: inline-block;
+    font-weight: 400;
+    padding: 0 1.85em;
+    font-size: 1.3em;
+    color: #fff;
+    cursor: pointer;
+}
+
+.content {
+    width: 100vw;
+    height: 100vh;
+    position: relative;
+}
+
+.content img {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    visibility: hidden;
+}
+
+.content .img-cover {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: 1;
+}
+
+.text-container {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.label {
+    position: absolute;
+    color: #fff;
+    font-size: 4em;
+    top: 30%;
+    left: 5%;
+}
+
+.input {
+    background-color: rgba(0, 0, 0, 0);
+    font-size: 1em;
+    color: #fff;
+    border: none;
+    border-bottom: 3px solid #fff;
+}
+
+.input:focus {
+    outline: none;
+}
