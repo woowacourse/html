@@ -1,0 +1,8 @@
+.image {
+    width: 720px;
+}
+
+figure hr {
+    border: 1px dashed gray;
+    margin-bottom: 2rem;
+}
