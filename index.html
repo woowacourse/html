@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body style="padding-top: 75px">
 <div id="base-container" style="width: 100%;display: flex;flex-direction: column">
@@ -34,17 +35,41 @@
             </div>
         </nav>
     </header>
-    <section id="main-section" style="width:100%;height: 3000px; padding-left: 10px;padding-right: 10px;display: flex">
+    <section id="main-section" style="width:100%;min-height: 1500px; padding-left: 10px;padding-right: 10px;display: flex">
         <section id="content-section" style="height: 100%;width: 100%;display: inline-flex;flex-direction: column;text-align: center">
             <article id="content1" style="margin:10px;height: 500px;width: 100%;display: inline-flex;justify-content:center;">
                 <div class="content-div-block">
-                    <div id="content-html-text" align="center">
-                        <h2>1990년 10월, <br><b>세계 최초의 웹 에디터</b></h2>
+                    <div id="content-1-text" align="center">
+                        <h2>1990년<br><b>HTML의 탄생</b></h2>
                     </div>
-                    <img src="media/kafka-the-trial-01.jpg" height="1205" width="720"/>
+                    <img src="1200px-HTML5_logo_and_wordmark.svg.png" height="300" width="300"/>
+                    <div style="padding-top: 20px">
+                        <button type="button" class="btn-lg btn-primary" onclick="location.href='intro.html'">더 읽어보기</button>
+                    </div>
                 </div>
             </article>
-            <embed type="text/html" src="http://users.atw.hu/wolf3d/" style="width:1200px;height: 800px">
+            <article id="content2" style="margin:10px;height: 500px;width: 100%;display: inline-flex;justify-content:center;">
+                <div class="content-div-block">
+                    <div id="content-2-text" align="center">
+                        <h2>2000년<br><b>새로운 웹 페이지</b></h2>
+                    </div>
+                    <img src="media/oldpc.gif" width="480" height="auto"/>
+                    <div style="padding-top: 20px">
+                        <button type="button" class="btn-lg btn-primary" onclick="location.href='intro.html'">더 읽어보기</button>
+                    </div>
+                </div>
+            </article>
+            <article id="content3" style="margin:10px;height: 500px;width: 100%;display: inline-flex;justify-content:center;">
+                <div class="content-div-block">
+                    <div id="content-3-text" align="center">
+                        <h2>2010년<br><b>동적인 페이지()</b></h2>
+                    </div>
+                    <img src="1200px-HTML5_logo_and_wordmark.svg.png" height="300" width="300"/>
+                    <div style="padding-top: 20px">
+                        <button type="button" class="btn-lg btn-primary" onclick="location.href='intro.html'">더 읽어보기</button>
+                    </div>
+                </div>
+            </article>
         </section>
     </section>
     <footer id="footer" style="background-color: cadetblue">
