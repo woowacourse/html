@@ -1,40 +1,83 @@
+@charset "UTF-8";
+
+@font-face{
+    font-family: 'Together-KwonJungae';
+    src: url(Together-KwonJungae.otf) format('truetype');
+}
+
+@font-face{
+    font-family: 'BMHANNAPro';
+    src: url(BMHANNAPro.ttf) format('truetype');
+}
+
+main img {
+    z-index: 2;
+}
+
 h1 {
     text-align: center;
+    font-family: BMHANNAPro;
+    font-size: 50px;
+    margin-top: 100px;
+    margin-bottom: 50px;
 }
 
 .container {
     margin: auto;
     width: 600px; 
+}
+
+.diaries{
     display: flex;
     flex-direction: column;
 }
 
 .diary{
-    border: 1px solid gray;
+    background-image:url("images/note.jpg");
+    background-size: cover;
+    /* border: 1px solid gray; */
     margin: 10px;
+    flex-direction: column;
 }
 
 .header{
-    border-bottom : 1px solid gray;
+    /* border-bottom : 1px solid gray; */
     display: flex;
+    
 }
 
 .date{
-    border-right: 1px solid gray;
+    display: flex;
+    /* border-right: 1px solid gray; */
+    flex-grow: 2;
 }
 
 .weather{
-
+    flex-grow: 1;
 }
+
+
+.year-input, .month-input, .day-input, .day-of-the-week-input{
+    font-family: Together-KwonJungae;
+    font-size: 50px;
+}
+
+.year, .month, .day, .day-of-the-week{
+    font-size: 20px;
+    margin-top: 22px;
+}
+
 
 .drawing{
 
 }
 
 .words{
-    border-top : 1px solid gray;
+    /* border-top : 1px solid gray; */
+    font-family: Together-KwonJungae;
+    font-size: 50px;
 }
 
-.date{
-    display: flex;
+.comment{
+    margin-bottom: 100px;
 }
