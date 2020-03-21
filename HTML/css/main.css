@@ -1,0 +1,61 @@
+@charset "utf-8";
+
+@font-face {
+  font-family: "BMHANNAPro";
+  src: url(../ttf/BMHANNAPro.ttf);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  height: 1080px;
+  margin: 0 0 0 0;
+  font-family: BMHANNAPro;
+}
+
+header {
+  margin-top: 50px;
+}
+
+li {
+  list-style: none;
+}
+
+.header-title {
+  text-align: center;
+  font-size: 50px;
+}
+
+.header-line {
+  size: 5px;
+}
+
+.menu-bar ul li {
+  float: left;
+  width: 20%;
+  height: 100%;
+  line-height: 70px;
+  text-align: center;
+  background: black;
+  color: white;
+  font-size: 30px;
+}
+
+.menu-bar ul li a {
+  display: block;
+  text-decoration: none;
+  color: white;
+}
+
+.menu-bar ul li a:hover {
+  background: gray;
+  color: white;
+}
+
+#content {
+  height: 1080px;
+  width: 100%;
+}

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="utf-8" />
+    <title>90년생 HTML</title>
+    <link rel="shortcut icon" href="favicon.ico" />
+    <link rel="stylesheet" type="text/css" href="css/main.css" />
+    <script type="text/javascript">
+      window.onload = function() {
+        introLoad();
+      };
+
+      function introLoad() {
+        document.getElementById("content").setAttribute("src", "intro.html");
+      }
+
+      function historyLoad() {
+        document.getElementById("content").setAttribute("src", "history.html");
+      }
+
+      function videoLoad() {
+        document.getElementById("content").setAttribute("src", "video.html");
+      }
+
+      function quizLoad() {
+        document.getElementById("content").setAttribute("src", "quiz.html");
+      }
+
+      function questionLoad() {
+        document.getElementById("content").setAttribute("src", "question.html");
+      }
+    </script>
+  </head>
+
+  <body>
+    <header>
+      <h1 class="header-title">90년생 HTML</h1>
+      <hr class="header-line" noshade />
+    </header>
+    <footer>
+      <div class="all">
+        <div class="menu-bar">
+          <ul>
+            <li><a onclick="introLoad()">소개</a></li>
+            <li><a onclick="historyLoad()">역사</a></li>
+            <li><a onclick="videoLoad()">준의 강의</a></li>
+            <li><a onclick="quizLoad()">퀴즈</a></li>
+            <li><a onclick="questionLoad()">질문 게시판</a></li>
+          </ul>
+        </div>
+        <iframe id="content"></iframe>>
+      </div>
+    </footer>
+  </body>
+</html>
