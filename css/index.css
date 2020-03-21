@@ -1,0 +1,50 @@
+@import "reset.css";
+
+@font-face{
+    font-family: "BMHANNAProOTF";
+    src:url(font/BMHANNAProOTF);
+}
+
+h1{
+    font-family: BMHANNAProOTF;
+    position: absolute;
+    font-size: 60px;
+    top:30%; left:50%;
+    width: 650px; height: auto;
+    transform: translate(-50%,-50%)
+}
+
+#box {
+    position:absolute;
+    top:60%; left:50%;
+    transform: translate(-50%,-50%);
+    width: 70px; height: 70px;
+    border-radius: 50%;
+    background-color: gray;
+}
+
+#rocket{
+    position:absolute;
+    top:50%; left:50%;
+    transform: translate(-50%,-50%);
+}
+
+
+#start {
+    font-family: "BMHANNAProOTF";
+    position:absolute;
+    top:68%; left:50%;
+    transform: translate(-50%,-50%);
+}
+
+footer{
+    font-family: "BMHANNAProOTF";
+    position:fixed; 
+    left:0px; 
+    bottom:0px; 
+    height:60px; 
+    width:100%;
+    text-align: center;
+    line-height: 60px;
+    background:grey; 
+}
