@@ -16,20 +16,26 @@
 </header>
 <main>
     <section class="card">
-        <img src="html_img.jpeg">
+        <div class="card-image">
+            <img src="html_img.jpeg">
+        </div>
         <h3>90년대생 HTML이 궁금하신가요?</h3>
         <div>HTML을 설명하기 어려우시다고요?</div>
         <div>여기서는 HTML에 대해 알아봅니다.</div>
         <div>더 알아보고 싶으시면 클릭해주세요.</div>
     </section>
     <section class="card">
-        <img src="swiss.jpg">
+        <div class="card-image">
+            <img src="swiss.jpg">
+        </div>
         <h3>HTML은 스위스에서 태어났습니다.</h3>
         <div><a href="https://home.cern/">CERN(유럽 입자 물리 연구소)</a>의 연구자들은 많은 정보와 자료를 주고받아야 했습니다.</div>
         <div>이를 위해 웹의 아버지 팀 버너스리는 "웹"을 창시했습니다.</div>
     </section>
     <section class="card">
-        <img src="world-wide-web.jpg">
+        <div class="card-image">
+            <img src="world-wide-web.jpg">
+        </div>
         <h3>HTML의 역사는 다음과 같습니다.</h3>
         <ol>
             <li>1990년 10월 - 웹페이지 에디터 생성</li>
@@ -38,7 +44,9 @@
         </ol>
     </section>
     <section class="card" id="guest-book">
-        <img src="lulu.gif">
+        <div class="card-image">
+            <img src="lulu.gif">
+        </div>
         <h3>HTML에 대하여 많이 배우셨나요?</h3>
         <div>도움이 되셨다면 아래 방명록을 작성해주세요.</div>
         <textarea name="guest_book" placeholder="소중한 방명록을 남겨주세요."></textarea>
@@ -103,7 +111,7 @@
         box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
         transition: 0.3s;
         border-radius: 5px;
-        width: auto;
+        width: 600px;
         padding-bottom: 10px;
         display: flex;
         flex-direction: column;
@@ -117,6 +125,14 @@
 
     .card > ol {
         padding: 0;
+    }
+
+    .card > .card-image {
+        width: inherit;
+    }
+
+    .card-image > img {
+        width: 100%;
     }
 
     #guest-book:hover {
