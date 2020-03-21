@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="assets/favicon.ico" rel="shortcut icon" type="image/x-icon">
     <link rel="stylesheet" type="text/css" href="./index.css">
+    <script type="text/javascript" src="./index.js"></script>
+
     <title>94년생 터틀</title>
 </head>
 
@@ -13,21 +15,22 @@
     <header>
         <div class="nav-bar">
             <h1>
-                <div class="logo" onclick=""><img src="./assets/logo.png" /></div>
+                <div class="logo" onclick="setVisibie('ball')"><img src="./assets/logo.png" /></div>
             </h1>
             <nav>
-                <div onclick="">꼬부기</div>
-                <div onclick="">어니부기</div>
-                <div onclick="">거북왕</div>
-                <div onclick="">터틀</div>
+                <div onclick="setVisibie('small')">꼬부기</div>
+                <div onclick="setVisibie('middle')">어니부기</div>
+                <div onclick="setVisibie('large')">거북왕</div>
+                <div onclick="setVisibie('')">터틀</div>
             </nav>
         </div>
     </header>
     <div class="content">
-        <img class="none">
-        <img class="small">
-        <img class="middle">
-        <img class="large">
+        <img id="ball" class="image" src="./assets/ball.jpg">
+        <img id="small" class="image" src="./assets/small.jpeg">
+        <img id="middle" class="image" src="./assets/middle.jpeg">
+        <img id="large" class="image" src="./assets/large.jpeg">
+
         <div class="img-cover">
             <div class="text-container">
                 <div class="label">
