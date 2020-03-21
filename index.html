@@ -9,45 +9,63 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <style type="text/css">
+        body {
+            background-color: #ede9e4;
+        }
+
         #header {
             height: 250px;
-            background-color: pink;
             text-align: center;
             align-items: center;
-
         }
 
         #header h1 {
+            border-top: 5px black double;
+            border-bottom: 5px black double;
             font-size: 9em;
-            background-color: aqua;
         }
 
+        #intro .publish-date{
+            float: right;
+        }
+        
         #content {
-            background-color: beige;
+            clear: both;
+            border-bottom: 5px black double;
+        }
+
+        #content .main-article,
+        .second-article,
+        .third-article,
+        .video-container {
+            padding: 20px;
         }
 
         #content .main-article {
-            background-color: aqua;
+            border: 3px black solid;
         }
 
         #content .main-article .video-container {
-            background-color: blueviolet;
-            height: 600px;
+            height: 450px;
             float: right;
             width: 60%;
         }
-
-        #content .second-article {
-            background-color: burlywood;
+        
+        #content .additional-article{
+            background-color: palegreen;
         }
 
+        #content .second-article {
+            background-color: aqua;
+        }
+
+
         #content .third-article {
-            background-color: crimson;
+            background-color: blue;
         }
 
         #footer {
             height: 100px;
-            background-color: darkgrey;
         }
 
         #footer .support-me {
@@ -75,15 +93,51 @@
             <h1>Woowa Daily</h1>
         </div>
     </div>
+    <div id="intro">
+        <small>
+            여기에 내용을 추가해보자~~~
+            계절이 지나가는 하늘에는
+            가을로 가득 차 있습니다.
+
+            나는 아무 걱정도 없이
+            가을 속의 별들을 다 헤일 듯합니다.
+
+            가슴 속에 하나 둘 새겨지는 별을
+            이제 다 못 헤는 것은
+            쉬이 아침이 오는 까닭이요,
+            내일 밤이 남은 까닭이요,
+            아직 나의 청춘이 다하지 않은 까닭입니다.
+
+            별 하나에 추억과
+            별 하나에 사랑과
+            별 하나에 쓸쓸함과
+            별 하나에 동경과
+            별 하나에 시와
+            별 하나에 어머니, 어머니,
+
+            어머님, 나는 별 하나에 아름다운 말 한마디씩 불러봅니다.
+        </small><br/>
+        <small class="publish-date">간행일: 2020/03/22</small>
+    </div>
     <div id="content" class="row">
         <div class="col-md-12 main-article">
+            <h1>HTML, 탄생 30주년. 그 역사를 돌아보다.</h1>
             <div class="video-container">
                 <div class="embed-responsive embed-responsive-16by9">
-                    <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/rr6fZ2eg0KU" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/sSqZ_hJu9zA" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                 </div>
-                <div class="comment-container">
-                    댓글 자리야~~~
-                </div>
+                <br />
+                <form>
+                    <div class="comment-container form-row">
+                        <div class="col-md-10">
+                            <input type="text" class="form-control mx-sm-6" placeholder="건강한 웹 문화 유지를 위해 매너를 지켜주세요😉" id="comment">
+                        </div>
+                        <div class="col-md-2">
+                            <button type="button" class="btn btn-dark">등록</button>
+                        </div>
+
+                    </div>
+                </form>
             </div>
             계절이 지나가는 하늘에는
             가을로 가득 차 있습니다.
@@ -164,11 +218,51 @@
             내 이름자 묻힌 언덕 위에도
             자랑처럼 풀이 무성할 게외다.
         </div>
-        <div class="col-md-3 second-article">
-            2번 기사 쓸거야
+        <div class="col-md-12 additional-article">
+            <a href="http://info.cern.ch/">최초의 웹페이지</a>
         </div>
-        <div class="col-md-9 third-article">
-            여기는 3번 기사 쇽쇽
+        <div class="col-md-4 second-article">
+            <h3>HTML의 기본 구조</h3><br />
+            <pre>
+<span>&lt;!doctype html&gt;</span>
+<span>&lt;html&gt;</span>
+    <span>&lt;head&gt;</span>
+        <span>&lt;title&gt;Hello HTML&lt;/title&gt;</span>
+    <span>&lt;/head&gt;</span>
+    <span>&lt;body&gt;</span>
+        <span>&lt;p&gt;Hello World!&lt;/p&gt;</span>
+    <span>&lt;/body&gt;</span>
+<span>&lt;/html&gt;</span>
+            </pre>
+        </div>
+        <div class="col-md-8 third-article">
+            <h3>무슨 내용을 추가해볼까나</h3>
+            계절이 지나가는 하늘에는
+            가을로 가득 차 있습니다.
+
+            나는 아무 걱정도 없이
+            가을 속의 별들을 다 헤일 듯합니다.
+
+            가슴 속에 하나 둘 새겨지는 별을
+            이제 다 못 헤는 것은
+            쉬이 아침이 오는 까닭이요,
+            내일 밤이 남은 까닭이요,
+            아직 나의 청춘이 다하지 않은 까닭입니다.
+
+            별 하나에 추억과
+            별 하나에 사랑과
+            별 하나에 쓸쓸함과
+            별 하나에 동경과
+            별 하나에 시와
+            별 하나에 어머니, 어머니,
+
+            어머님, 나는 별 하나에 아름다운 말 한마디씩 불러봅니다. 소학교때 책상을 같이 했던 아이들의 이름과, 패, 경, 옥 이런 이국소녀들의 이름과 벌써 애기 어머니 된 계집애들의 이름과, 가난한 이웃사람들의 이름과, 비둘기, 강아지, 토끼, 노새, 노루, ｢프란시스․쟘｣ ｢라이너․마리아․릴케｣ 이런 시인의 이름을 불러봅니다.
+
+            이네들은 너무나 멀리 있습니다.
+            별이 아슬히 멀 듯이,
+
+            어머님,
+            그리고 당신은 멀리 북간도에 계십니다.
         </div>
     </div>
     <div id="footer" class="row">
