@@ -553,11 +553,13 @@ ul.rpgui-dropdown-imp {
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0.5); }
 
 /* textarea extra rules */
+/*
 .rpgui-content textarea {
   line-height: 22px;
   padding-top: 7px;
   height: 80px;
   resize: none; }
+*/
 
 /* selection highlight */
 .rpgui-content input::selection,
