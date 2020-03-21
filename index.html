@@ -18,44 +18,57 @@
 
     body {
         font-family: BMDOHYEON;
+        margin-bottom: 5%;
     }
 
     header {
         margin-top: 2%;
     }
 
-    #div1 {
-        position: absolute;
-        left: 11%;
-        top: 300px;
+    .articleHtml {
+        display: flex;
+        align-items: center;
+        margin-top: 13%;
+        margin-left: 12%;
+        margin-right: 12%;
+        justify-content: space-between;
+        flex-direction: row;
     }
 
-    #div2 {
-        position: absolute;
-        left: 54%;
-        top: 900px;
+    .articleHtmlReverse {
+        display: flex;
+        align-items: center;
+        margin-top: 13%;
+        margin-left: 12%;
+        margin-right: 12%;
+        justify-content: space-between;
+        flex-direction: row-reverse;
     }
 
-    #div3 {
-        position: absolute;
-        left: 11%;
-        top: 1500px;
+    .highlight {
+        color: blue;
     }
 
-    #div4 {
-        position: absolute;
-        left: 54%;
-        top: 2100px;
+    #comment {
+        margin-top: 5%;
+        margin-left: 12%;
+        margin-right: 12%;
+    }
+
+    #button-comment {
+        margin-top: 1%
     }
 
     footer {
-        font-size: xx-large;
-        position: absolute;
+        position: fixed;
+        left: 0;
+        bottom: 0;
+        width: 100%;
+        background-color: dimgray;
         text-align: center;
-        left: 50%;
-        top: 3000px;
-        margin-bottom: 1%;
+        font-size: xx-large;
     }
+
 </style>
 <body>
 <img width="300px" height="100px" src="img/logo_full_dark.png"/>
@@ -69,44 +82,252 @@
 </header>
 
 <section>
-    <article>
-        <img style="position: absolute; left: 55%;top: 250px" src="img/html.jpg" height="330" width="523"/>
+    <article class="articleHtmlReverse">
+        <img src="img/html.jpg" height="30%" width="45%"/>
         <div id="div1">
             <h3>HTML</h3>
-            div1 : HTML 정의 설명
+            <p>웹페이지를 만들기 위한 언어로 웹브라우저 위에서 동작하는 언어다.</p>
+            <p>HT - HyperText, 문서와 문서가 링크로 연결되어 있다.</p>
+            <p>M - Markup, 태그로 이루어져 있다.</p>
+            <p>L - Language</p>
         </div>
     </article>
 </section>
 
 <section>
-    <article>
-        <img style="position: absolute;left: 10%;top: 750px" src="img/Tim_Berners-Lee_April_2009.jpg" height="300"
-             width="250"/>
+    <article class="articleHtml">
+        <img src="img/Tim_Berners-Lee_April_2009.jpg" height="300px" width="250px" alt="팀 버너스리 형님"/>
         <div id="div2">
             <h3>Web 의 시작</h3>
-            div2 : HTML의 탄생 설명과 90년대임을 설명
+            <p>CERN의 연구원들이 문서를 이용하고 공유하기 위해</p>
+            <p>인터넷 기반 하이퍼텍스트 체계를 팀 버너스리가 제안하였다.</p>
+            <p>HTML 최초의 일반 공개 설명은 1991년 말에 버너스리가 처음으로 인터넷에서 문서를 </p>
+            <p><strong>HTML 태그</strong>(HTML tag)로 부르면서 시작되었다.</p>
         </div>
     </article>
 </section>
 
 <section>
-    <article>
-        <img style="position: absolute;left: 55%;top: 1350px" src="img/hjc.png" height="321" width="546"/>
+    <article class="articleHtmlReverse">
+        <img src="img/hjc.png" height="280" width="460"/>
         <div id="div3">
             <h3>HTML 의 특징</h3>
-            div3 : HTML의 특징 설명
+            <p>HTML 문서는 완전한 HTML 요소로 구성되어 있고,</p>
+            <p>이 요소들로 구조적 마크업과 표현적 마크업을 구현한다.</p>
+            <p>이 외 CSS나 JS 의 도움을 받을수도 있는데</p>
+            <p>CSS는 기존의 HTML에 다양한 모양을 추가하거나, 변경하는 등</p>
+            <p>웹 문서의 모양 표현에 도움을 주고</p>
+            <p>JS는 정적인 페이지를 동적이게 할수 있으며, 함수들도 작성하여 적용가능하다.</p>
         </div>
     </article>
 </section>
 
 <section>
-    <article>
-        <img style="position: absolute;left: 10%;top: 2000px" src="img/tag.png" height="300" width="550"/>
+    <article class="articleHtml">
+        <img src="img/tag.png" height="200px" width="400px"/>
         <div id="div4">
-            <h3>태그</h3>
-            div4 : HTML의 태그 설명
+            <h3>HTML 의 요소</h3>
+            <p>HTML 요소의 가장 보편적인 형태는 세 가지 구성 요소를 가지는데</p>
+            <p>"시작 태그"(Start Tag)와 "종료 태그"(End Tag) 와 같은 <strong class="highlight">태그</strong> 한 쌍</p>
+            <p>태그들 내에서 특성을 부여하는 <strong class="highlight">속성</strong></p>
+            <p>마지막으로 문자와 그래픽, 정보 <strong class="highlight">콘텐츠</strong>를 화면에 표현한다.</p>
         </div>
     </article>
+</section>
+
+<section>
+    <article class="articleHtml">
+        <table>
+            <tbody>
+            <tr style="background-color:#345;">
+                <td style="width:100px; text-align:center;">
+                    <div><span style="color:#FFF"><strong>버전</strong></span>
+                    </div>
+                </td>
+                <td style="width:90px; text-align:center;">
+                    <div><span style="color:#FFF"><strong>공개일</strong></span>
+                    </div>
+                </td>
+                <td style="text-align:center;">
+                    <div><span style="color:#FFF"><strong>내용</strong></span>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td style="text-align:center;">
+                    <div>HTML 1.0</div>
+                </td>
+                <td style="text-align:center;">
+                    <div>1991년</div>
+                </td>
+                <td style="text-align:left;">
+                    <div>최초의 HTML. 팀 버너스 리가 월드 와이드 웹을 발표하면서 내놓은 버전이다. 처음에는 버전이 붙지 않았으나 나중에 보강된
+                        2.0 버전이
+                        나오면서 붙은 이름. 80년대에 존재하던 SGML이라는 마크업 언어를 참조하여 만들어졌다.
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td style="text-align:center;">
+                    <div>HTML 2.0</div>
+                </td>
+                <td style="text-align:center;">
+                    <div>1995년<br>11월 24일</div>
+                </td>
+                <td style="text-align:left;">
+                    <div>HTML 사상 최초로 표준으로 지정되었다. HTML 1.0에서 파일 업로드 양식과 프레임, 테이블, 이미지맵, 국제화 기능이
+                        추가된 것으로, 팀
+                        버너스 리와 여러 다른 사람의 노력으로 표준화되었다. 인터넷의 대중화가 시작되면서 이때부터 HTML도 널리 알려지기 시작했다. 하지만 동시에 HTML의 문제점 역시
+                        두드러졌던 시기이다.
+                        95년대 브라우저 전쟁 시기 웹페이지 관리자는 IE를 위한 페이지와 넷스케이프를 위한 페이지를 따로 만들어야 했었다. 그러하여 그것을 보완하기 위해 W3C에서 보완한 것이
+                        HTML
+                        3.2.
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td style="text-align:center;">
+                    <div>HTML 3.2</div>
+                </td>
+                <td style="text-align:center;">
+                    <div>1997년<br>1월 14일</div>
+                </td>
+                <td>
+                    <div>표준화 작업을 담당하는 W3C에서 처음으로 나왔다. 수학 수식을 사용하는 태그를 완전히 제외하고, 넷스케이프의 비주얼 관련 태그를
+                        수록했다.
+                        <code>&lt;b&gt;</code>나 <code>&lt;font&gt;</code> 태그가 들어간 것이 이 버전.
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td style="text-align:center;">
+                    <div>HTML 4.0</div>
+                </td>
+                <td style="text-align:center;">
+                    <div>1997년<br>12월</div>
+                </td>
+                <td style="text-align:left;">
+                    <div>Strict, Transitional, Frameset의 세 가지 문서 형태를 지원하는 것이 가장 큰 변화이다. Strict는
+                        비표준이나 비권장
+                        태그를 절대 허용하지 않는 엄격한 문서이고, Transitional은 비표준이나 비권장 태그도 허용하는 융통성 있는 문서, Frameset은 웹브라우저 화면을 나눈 프레임
+                        문서에 쓰는
+                        것이다.
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td style="text-align:center;">
+                    <div>HTML 4.01</div>
+                </td>
+                <td style="text-align:center;">
+                    <div>1999년<br>12월</div>
+                </td>
+                <td style="text-align:left;">
+                    <div>2014년 10월 28일 HTML5의 최종 권고안이 확정되면서 구버전이 되었다. 비주얼 태그가 모두 비권장으로 지정된 것이 가장
+                        큰 변화이다.
+                        기존 비주얼 태그는 <a href="https://www.google.com/search?q=CSS" title="CSS">CSS</a>로 빼서 사용할 것을 권장하고 있다.
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td style="text-align:center;">
+                    <div>XHTML 1.0</div>
+                </td>
+                <td style="text-align:center;">
+                    <div>2000년<br>1월 26일</div>
+                </td>
+                <td style="text-align:left;">
+                    <div>HTML 4.01과 함께 가장 많이 사용되는 표준이다. 내용상의 변화는 거의 없고, HTML 4.01을 <a
+                            href="https://www.google.com/search?q=XML" title="XML">XML</a> 형식으로
+                        포팅한 버전. 따라서 HTML 4.01의 내용을
+                        거의 그대로
+                        가지고 있다. 이 때문에 2013년 지금까지도 HTML 4.01과 함께 가장 많이 사용되고 있다.
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td style="text-align:center;">
+                    <div>XHTML 1.1</div>
+                </td>
+                <td style="text-align:center;">
+                    <div>2001년<br>5월 31일</div>
+                </td>
+                <td style="text-align:left;">
+                    <div>XHTML의 가장 최신 버전이지만, 거의 사용되지 않는 실정이다. XHTML 1.0까지 있었던 Transitional 형식이
+                        빠지면서 비표준이나
+                        비권장 태그와의 호환성이 사라져 버렸다. 이 때문에 지나치게 엄격하다는 지적과 함께 사용되지 않게 되었다. 이어 2014년 10월 28일 HTML5의 최종 권고안이
+                        확정되면서 구버전이 된
+                        상태.
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td style="text-align:center;">
+                    <div>XHTML 2.0</div>
+                </td>
+                <td style="text-align:right;">
+                    <div></div>
+                </td>
+                <td style="text-align:left;">
+                    <div>2009년 말에 논의가 중단된 XHTML의 버전이다. 원래 XHTML 1.1을 잇는 차기버전으로 이야기가 되고 있었지만 2008년
+                        HTML 5로
+                        방향을 선회하면서 중단되었다.
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td style="text-align:center;">
+                    <div><a href="https://www.google.com/search?q=HTML5" title="HTML5">HTML 5</a>
+                    </div>
+                </td>
+                <td style="text-align:center;">
+                    <div>2014년<br>10월 28일</div>
+                </td>
+                <td style="text-align:left;">
+                    <div><strong>HTML의 최신 버전</strong>이다.</div>
+                </td>
+            </tr>
+            <tr>
+                <td style="text-align:center;">
+                    <div>HTML 5.1</div>
+                </td>
+                <td style="text-align:center;">
+                    <div>2017년<br>10월 3일</div>
+                </td>
+                <td style="text-align:left;">
+                    <div>이름은 2nd Edition이지만, HTML 5의 차기작이라는 의미다. HTML 5.1 1st Edition은 없다는 의미.
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td style="text-align:center;">
+                    <div>HTML 5.2</div>
+                </td>
+                <td style="text-align:center;">
+                    <div>2017년<br>12월 14일</div>
+                </td>
+                <td style="text-align:left;">
+                    <div><strong>HTML의 최신 마이너 버전</strong>이다.</div>
+                </td>
+            </tr>
+            <tr>
+                <td style="text-align:center;">
+                    <div>HTML 5.3</div>
+                </td>
+            </tr>
+            </tbody>
+        </table>
+    </article>
+</section>
+
+<section>
+    <div id="comment">
+        <div class="form-group">
+            <label for="comment-text">댓글</label>
+            <textarea class="form-control" name="comment-area" id="comment-text" cols="50" rows="2"></textarea>
+            <button id="button-comment" type="submit" class="btn btn-primary">작성</button>
+        </div>
+    </div>
 </section>
 
 <footer id="footer1">
