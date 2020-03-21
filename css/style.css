@@ -1,0 +1,27 @@
+body {
+  display: flex;
+  justify-content: center;
+  font-family: 'Jua', sans-serif;
+}
+
+.header {
+  display: flex;
+}
+
+.header-title > a > img {
+  height: 15px;
+}
+
+.container {
+  width: 100%;
+  max-width: 650px;
+}
+
+#html-cartoon {
+  display: block;
+  margin: 0px auto;
+}
+
+.article-img {
+  width: 100%;
+}
