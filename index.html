@@ -21,11 +21,11 @@
     <center>
 	<div class="rpgui-content">
         <div class="rpgui-container framed" style="">
-            <button class="rpgui-button"><p>HTML</p></button>
+            <button onclick = "playSound()" class="rpgui-button"><p>HTML</p></button>
             <hr class="golden"/>
             
             
-            <label>Tim Berners Lee <br> who invented the Web with HTML</label>
+            <label> <em>Tim Berners Lee </em> <br> who invented the Web with HTML</label>
             <img src="./tim_berners_lee.jpg">
             <a href="https://en.wikipedia.org/wiki/Tim_Berners-Lee"> Click and read more about him </a>    
             <hr class="golden"/>
@@ -51,6 +51,13 @@
     value += "Browsers do not display the HTML tags, but use them to render the content of the page.";
     var features = document.getElementById('features');
     features.value = value;
+        
+    
+    function playSound() {
+        var audio = new Audio();
+        audio.src = "./laser_sound.mp3";
+        audio.play();
+    }
     </script>
 </body>
 </html>

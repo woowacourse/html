@@ -42,3 +42,6 @@
 5. img
 6. input
 7. textarea
+8. var
+9. em
+10. audio
