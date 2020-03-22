@@ -75,15 +75,29 @@ h1 {
     flex-grow: 1;
 }
 
-.weather-input{
+.weather-input1{
     background-image: url(images/circle.png);
     background-size: 85px;
     background-repeat: no-repeat;
     background-position-x: -18px;
     background-position-y: 6px;
 }
+.weather-input2{
+    background-image: url(images/circle.png);
+    background-size: 85px;
+    background-repeat: no-repeat;
+    background-position-x: 20px;
+    background-position-y: 6px;
+}
+.weather-input3{
+    background-image: url(images/circle.png);
+    background-size: 85px;
+    background-repeat: no-repeat;
+    background-position-x: 95px;
+    background-position-y: 6px;
+}
 
-.weather-input img{
+.weather-input1 img,.weather-input2 img,.weather-input3 img{
     width: 33px;
     margin-top: 19px;
     margin-left: 3px;
@@ -114,6 +128,14 @@ h1 {
     font-size: 50px;
 }
 
+.comments{
+    display: flex;
+    font-family: handwriting;
+    font-size: 40px;
+    text-align: center;
+
+}
+
 .comment-background{
     position: relative;
     bottom: 72px;
@@ -126,8 +148,6 @@ h1 {
 
 .input-comment-background{
     position: relative;
-    /* bottom: 72px;
-    left: 32px; */
     background-image: url(images/comment_background.png);
     background-size: 300px;
     width: 300px;
@@ -137,7 +157,7 @@ h1 {
 .comment-profile{
     padding: 20px;
     position: relative;
-    left: 95px;
+    left: -11px;
     top: 40px;
 }
 
@@ -147,11 +167,18 @@ h1 {
 }
 
 .comment {
-    font-family: handwriting;
-    font-size: 40px;
-    text-align: center;
     transform: rotate(-5deg);
     position: relative;
     top: 30px;
+}
+
+.comment textarea{
+    font-family: handwriting;
+    font-size: 40px;
+    background-color: transparent;
+    overflow: hidden;
+    width: 200px;
+    height: 100px;
+    resize: none;
 }
 
