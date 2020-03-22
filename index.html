@@ -1,18 +1,100 @@
 <!DOCTYPE html>
 <html lang="ko">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>WOO | 90년생 HTML</title>
 
     <!-- css -->
-    <link rel="stylesheet" href="css/style.css"/>
+    <link rel="stylesheet" type="text/css" href="vendor/fullpage.css" />
+    <link rel="stylesheet" href="css/style.css" />
 </head>
+
 <body>
-    <div class="wrap">
+    <div id="fullpage">
+        <div class="section video">
+            <iframe width="90%" height="90%" src="https://www.youtube.com/embed/rr6fZ2eg0KU" frameborder="0"
+                allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen
+                data-autoplay></iframe>
+        </div>
+        <div class="section active">
+            <div class="home">
+                <div class="up">▲<br>위에 동영상이 있어요!</div>
+                <h1 class="title">90년생 HTML</h1>
+                <div class="down">아래로 내리면 설명이!<br>▼</div>
+            </div>
+        </div>
+        <div class="section">
+            <div class="slide" data-anchor="3-1">
+                <h1 style="font-size: 50px;">90년생 HTML의 일생</h1>
+                <p>누군가의 이야기는 태어난 곳에서부터 시작을 하죠. HTML의 고향은 어디일까요?<br>
+                    미국이 워낙 IT로 유명하다 보니 HTML의 고향도 미국으로 생각할 수 있는데요.<br>
+                    의외로 HTML의 고향은 아름다운 자연경관으로 유명한 🇨🇭스위스입니다.<br>
+                    스위스에는 유럽 입자 물리 연구소 CERN이라는 저명한 물리학 연구소가 있는데요.<br>
+                    이곳은 개별 국가의 범위를 넘어서는 연구를 수행하기 위해 만들어진 곳입니다.<br>
+                    이런 국제적인 연구소에서 1990년도에 <b>역사적인 사건</b>이 발생합니다. ▶</p>
+            </div>
+            <div class="slide" data-anchor="3-2">
+                <div class="section3_slide2">
+                    <div class="section3_slide2_left">
+                        그것은 바로 <br>
+                        <b style="font-size: 50px;">웹의 등장</b><br>
+                        입니다!
+                        <img src="imgs/WEB.png" width="90%" style="margin-top: 30px;">
+                    </div>
+                    <div class="section3_slide2_right">이 웹이라는 서비스를 통해서 HTML이 세상에 드러났습니다.<br>
+                        웹과 HTML을 만든 사람이 웹의 아버지라고 불리는
+                        <a href="https://ko.wikipedia.org/wiki/%ED%8C%80_%EB%B2%84%EB%84%88%EC%8A%A4%EB%A6%AC">팀
+                            버너스리</a>
+                        입니다.<br>
+                        <br>
+                        유럽입자물리연구소는 특성상 한 개별적인 국가의 범위를 넘어서는 연구를 위해 만들어진 곳입니다.
+                        그렇다보니 자연스레 여러 연구자들이 엄청나게 많은 정보와 자료를 주고 받게 되었습니다.
+                        그래서 팀 버너스리가 효율적으로 정보를 주고 받을 수 있는 시스템을 1980년도부터 약 10년동안 연구하다가 1990년도에 결과물들을 세상에 드러내기 시작했습니다. ▶
+                    </div>
+                </div>
+            </div>
+            <div class="slide" data-anchor="3-3">
+                <div class="section3_slide3">
+                    <div class="section3_slide3_top">
+                        <div>
+                            <h1>1990년 10월</h1>
+                            <img src="imgs/199010.png" width="100%"><br>
+                            세계 최초의 웹페이지 에디터를 만듭니다.
+                        </div>
+                        <div>
+                            <h1>1990년 11월</h1>
+                            <img src="imgs/199011.png" width="100%"><br>
+                            HTML 페이지를 볼 수 있는 최초의 웹브라우저 World Wide Web을 만듭니다.
+                        </div>
+                        <div>
+                            <h1>1990년 12월</h1>
+                            <img src="imgs/199012.png" width="100%"><br>
+                            웹서버라는 프로그램을 만들고 설치된 컴퓨터에 info.cern.ch라는 주소를 부여합니다.
+                        </div>
+                    </div>
+                    <div>
+                        아직도 <a href="info.cern.ch">info.cern.ch</a>에 들어가면 웹의 시작점을 알리는 HTML 페이지에 여러분도 도달할 수 있습니다.<br>
+                        이 사건이 있었기에 지금 우리가 웹이라는 서비스를 누구나 자유롭게 사용할 수 있게 되었습니다.<br>
+                        그리고 처음에는 단순한 문서였던 HTML은 웹의 폭발적인 성장과 함께 발전하고 있습니다.<br>
+                        <br>
+                        이는 HTML에게 CSS와 Javascript라는 언어가 함께 있기 때문에 가능한 것인데요. ▼
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="section">
+            앗! 이야기를 더 해드리고 싶지만, 미션을 마무리할 시간이 거의 다 되어버렸습니다!<br><br>
+            아쉽지만 다음에 만나요!<br><br>
+            <input type="textbox" placeholder="댓글을 달고 싶으셔도 기능이 없어요!" size="100px" style="text-align: center;">
+        </div>
     </div>
 
     <!-- script -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script type="text/javascript" src="vendor/fullpage.js"></script>
+    <script type="text/javascript" src="script/main.js"></script>
 </body>
+
 </html>
