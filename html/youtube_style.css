@@ -1,0 +1,118 @@
+body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    overflow: scroll;
+}
+
+header {
+    height: 60px;
+    margin-bottom: 20px;
+}
+
+header img {
+    display: inline-block;
+    width: 27px;
+    height: 27px;
+    margin: 25px;
+}
+
+header #title {
+    width: 90px;
+    margin-left: 0px;
+}
+
+header input {
+    display: inline-block;
+    position: fixed;
+    top: 25px;
+    left: 30%;
+    padding: 5px;
+    padding-left: 1%;
+    padding-right: 20%;
+}
+
+header button {
+    display: inline-block;
+    position: fixed;
+    top: 25px;
+    left: 62%;
+    padding: 3px;
+    padding-left: 1%;
+    padding-right: 1%;
+}
+
+header .profile {
+    position: fixed;
+    top: 20px;
+    left: 93%;
+    width: 40px;
+    height: 40px;
+    margin: 0;
+}
+
+nav {
+    display: inline-block;
+    float: left;
+    width: 17%;
+}
+
+section {
+    display: inline-block;
+    float: left;
+    width: 83%;
+    height: 100%;
+    background-color: #f8f8f8;
+}
+
+.navImg {
+    width: 23px;
+    height: 23px;
+    padding: 10px;
+    padding-left: 25px;
+    opacity: 0.6;
+}
+
+.navText {
+    font-size: 14px;
+    padding-left: 10px;
+}
+
+#sectionTitle {
+    font-size: 22px;
+    text-align: left;
+    vertical-align: top;
+    margin: 20px;
+}
+
+.video {
+    display: inline-block;
+    margin: 1%;
+    padding: 0px;
+    width: 22%;
+    font-size: 15px;
+}
+
+.thumbnail {
+    width: 100%;
+    height: 150px;
+    margin-bottom: 10px;
+}
+
+.profile {
+    margin: 1%;
+    width: 35px;
+    height: 35px;
+    border-radius: 100%;
+}
+
+.videoTitle {
+    margin: 1%;
+    padding-left: 3%;
+    width: 100%;
+}
+
+.channelName, .viewAndDate {
+    padding-left: 4%;
+    color: #777777;
+}
