@@ -16,14 +16,18 @@ h1 {
     margin: 0;
 }
 
+a {
+    text-decoration: none;
+}
+
 .logo {
     cursor: pointer;
 }
 
 .logo img {
     width: 200px;
-    height: 80px;
-    margin-top: 4px;
+    height: 35px;
+    margin-top: 20px;
 }
 
 .nav-bar {
@@ -34,7 +38,7 @@ h1 {
     padding: 0.8em 50px;
 }
 
-nav div {
+nav a {
     display: inline-block;
     font-weight: 400;
     padding: 0 1.85em;
@@ -83,6 +87,10 @@ section {
 
 .mb-3 {
     margin-bottom: 3px;
+}
+
+.word{
+    color: rgb(231, 229, 123);
 }
 
 .input {
