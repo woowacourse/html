@@ -1,6 +1,6 @@
 h1 {
-  margin-top: 4px;
-  margin-bottom: 4px;
+  margin-top: 8px;
+  margin-bottom: 0px;
   font-size: 45px;
 }
 
@@ -17,7 +17,6 @@ h1 {
 .mainTable {
   width: 870px;
   height: 200px;
-  border: 1px solid black;
   margin: 0 auto;
   background-color: #FBFBEF;
 
@@ -46,7 +45,27 @@ h1 {
 
 hr {
   border: 2px solid gray;
-  margin-top: 30px;
-  margin-bottom: 30px;
+  margin-top: 15px;
+  margin-bottom: 15px;
 }
+
+form{
+  margin-top: 15px;
+}
+
+form > label {
+  font-size: 20px;
+}
+
+form > input {
+  width: 714px;
+  height: 30px;
+}
+
+form > button {
+  height: 35.6px;
+  position: relative;
+  top: 7.5px;
+}
+
 
