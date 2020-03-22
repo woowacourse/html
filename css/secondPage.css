@@ -57,3 +57,11 @@ a {
 .subTitle {
     padding-top:40px;
 }
+
+.colored {
+    color: red;
+}
+
+.bigSize {
+    font-size: 2em;
+}
