@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>90년생 HTML을 소개합니다.</title>
+        <link rel="stylesheet" href="./public/css/style.css">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+        <script src="./public/js/about_display.js"></script>
+        <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    </head>
+    <body>
+    <div class="navigation-bar">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top">
+            <a class="navbar-brand" href="./index.html">
+                <img src="./public/img/woowa.png" alt="우아한테크코스 로고" width="50" height="50"/>
+            </a>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="./introduce.html">HTML이란?</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./history.html">HTML의 역사</a>
+                    </li>
+                </ul>
+                <form class="form-inline my-2 my-lg-0">
+                    <input class="form-control mr-sm-2" type="search" placeholder="검색할 내용을 입력하세요" aria-label="Search">
+                    <button class="btn btn-outline-success my-2 my-sm-0" type="submit">검색</button>
+                </form>
+            </div>
+        </nav>
+    </div>
+        <section class="introduce" id="introduce">
+            <div class="introducing-image" id="introducing-image">
+                <a href="#" onclick="show_text();">
+                    <img src="./public/img/introduce_image.png" alt="90년생 HTML" width="100%" height="100%"/>
+                </a>
+            </div>
+            <div class="introducing-text container" id="introducing-text">
+                <h2>1. 90년생 HTML</h2>
+                <hr class="divider-thick">
+                <div class="explain">
+                    <div class="definition">
+                        <h2>📗정의</h2>
+                        <hr class="divider">
+                        <div class="explain-image">
+                            <img src="https://techcourse-storage.s3.ap-northeast-2.amazonaws.com/2020-03-17T10:33:49.861image.png" alt="HTML은 줄임말이다" width="40%"/>
+                        </div>
+                        <p>어떤 단어든 그 이름과 정의가 가지는 의미는 매우 추상적이어서 한번에 이해하기는 어렵지만,</p>
+                        <p>그 대상의 가장 큰 특징을 나타내고 있기에 집중해서 살펴볼 가치가 있습니다.</p>
+                        <p>HTML이란 <code>HyperText</code> <code>Markup</code> <code>Language</code>의 약자입니다.</p>
+                        <p>각 단어마다 띄어쓰기가 있기 때문에 단어별로 의미를 나눠서 살펴보도록 하겠습니다.</p>
+                        <div class="explain-image">
+                            <img src="https://techcourse-storage.s3.ap-northeast-2.amazonaws.com/2020-03-17T10:33:31.928image.png" alt="HTML의 의미" width="40%"/>
+                        </div>
+                        <p>의미를 위와 같이 나눌 수 있는데요. 풀어서 이야기하면 하이퍼텍스트를 중요한 특징으로 가지는 마크업 형식의 언어라는 것입니다.</p>
+                        <p>웹페이지를 보면 언제나 있는게 있습니다. 세계 최초의 <a href="http://info.cern.ch/">웹페이지</a>에도 있는 것인데요 그것은 바로 링크입니다. 그 링크라고 하는 기능이 하이퍼 텍스트입니다.</p>
+                        <p>그리고 마크업이라고 하는 것은 다음에 나오는 언어와 관련있는데</p>
+                        <p>마크업이라는 문법적인 특성을 가지고 있는 언어라는 뜻입니다.</p>
+                        <p>즉 하이퍼텍스트를 가장 중요한 특징으로 하고 마크업이라는 형식을 가진 언어가 <strong>HTML</strong>인 것입니다.</p>
+                    </div>
+                    <div class="tags">
+                        <h2>🔖태그</h2>
+                        <hr class="divider">
+                        <p>언어의 가장 핵심적인 특징은 바로 약속입니다.</p>
+                        <p>이 약속이 있기 때문에 우리는 상대방의 이야기를 해석하고 소통할 수 있습니다.</p>
+                        <p>html은 웹브라우저에 표시되는 웹페이지를 만들어 달라고 컴퓨터에게 요청하는 언어입니다</p>
+                        <p>사람과 컴퓨터 사이의 약속일 뿐만 아니라 사람과 웹브라우저라고 하는 프로그램 사이에서 서로가 이해할 수 있는 약속이 바로 html인 것이죠</p>
+                        <p>우리가 시간을 제한된 숫자로 나타내듯이 html도 정보를 표현하기 위한 약속들이 있습니다.</p>
+                        <p>그것은 바로 <code>태그</code>입니다. 어떤 상품에 붙어있는 태그는 그 상품에 대한 정보를 나타내고 있습니다.</p>
+                        <p>HTML에서도 마찬 가지입니다</p>
+                        <div class="explain-image">
+                            <img src="https://techcourse-storage.s3.ap-northeast-2.amazonaws.com/2020-03-17T10:40:31.999image.png" alt="h1태그 예시" width="40%"/>
+                        </div>
+                        <br>
+                        <p>위와 같은 문장이 있다고 해봅시다.</p>
+                        <p>이 내용에 태그를 붙임으로써 이 문장이 웹페이지에서 어떤 역할을 하는지 다르게 표현할 수 있습니다.</p>
+                        <p>예를들어 문장의 앞 뒤에 h1이라는 태그를 붙여보도록 하겠습니다. 
+                        여기서 <a href="https://developer.mozilla.org/ko/docs/Web/HTML/Element/Heading_Elements">h1</a>이라는 것은 제목을 나타내는 태그입니다. 
+                        즉 <code>&lt;h1&gt;</code> 태그를 붙임으로써 이 문장은 해당 웹페이지에서 제목을 나타내는 역할을 가지게 됩니다. 다른 태그를 이용해서 h1과 동일하게 보이게 만드는 방법도 있지만 h1을 사용한다는 것은 해당 내용이 제목이 된다는 정보를 주는 것이기 때문에 구분해서 사용해야 합니다.</p>
+                        <div class="explain-image">
+                            <img src="https://techcourse-storage.s3.ap-northeast-2.amazonaws.com/2020-03-17T10:40:42.841image.png" alt="태그에 대한 설명" width="40%"/>
+                        </div>
+                        <br>
+                        <p>이 구조를 좀 더 상세히 살펴보면 앞에 태그를 <code>여는 태그</code>, 뒤에 슬러시와 함께 있는 태그를 <code>닫는 태그</code>라고 합니다.</p>
+                        <p>그리고 태그 사이에 잇는 내용을 <code>콘텐츠</code>라고 하고, 콘텐츠와 태그를 포함한 전체를 한 <code>엘리먼트</code>라고 표현합니다.</p>
+                        <p>이렇게 html에서 사용하는 태그들이 약 150개 이상이 있고 시간이 지날수록 추가되는 태그들도 있습니다. 하지만 이것들을 전부 외울 필요는 없습니다. 자주 사용하는 것들만 외우고 나머지는 필요에 따라 찾아서 사용하면 되기 때문인데요. 그렇다면 자주 사용하는 것들은 어떻게 알 수 있을까요?</p>
+                        <p>가장 확실한 방법은 통계수치를 이용해서 데이터의 중요도를 나누는 것입니다.</p>
+                        <p>구글에서 전 세계에서 만들어진 수 많은 웹페이지를 분석하고, 그 통계를 바탕으로 자주 사용하는 html tag를 분석해 놓은 <a href="https://www.advancedwebranking.com/html/">리포트</a>가 있습니다. 총 700만개 이상의 웹페이지를 분석한 결과 평균적으로 약 28개의 서로 다른 엘리먼트를 사용하였습니다</p>
+                        <div class="explain-image">
+                            <img src="https://techcourse-storage.s3.ap-northeast-2.amazonaws.com/2020-03-17T11:01:51.866%E1%84%89%E1%85%B3%E1%84%8F%E1%85%B3%E1%84%85%E1%85%B5%E1%86%AB%E1%84%89%E1%85%A3%E1%86%BA%202020-03-17%20%E1%84%8B%E1%85%A9%E1%84%8C%E1%85%A5%E1%86%AB%2010.58.58.png" alt="평균 엘리먼트 종류" width="40%"/>
+                        </div>
+                        <p>그리고 그 28개의 태그들을 내림차순으로 분류한게 아래 표입니다.</p>
+                        <div class="explain-image">
+                            <img src="https://techcourse-storage.s3.ap-northeast-2.amazonaws.com/2020-03-17T11:01:54.879%E1%84%89%E1%85%B3%E1%84%8F%E1%85%B3%E1%84%85%E1%85%B5%E1%86%AB%E1%84%89%E1%85%A3%E1%86%BA%202020-03-17%20%E1%84%8B%E1%85%A9%E1%84%8C%E1%85%A5%E1%86%AB%2010.59.09.png" alt="엘리먼트 비율 그래프" width="40%"/>
+                        </div>
+                        <p>우선 위 28개의 태그들을 높은 우선순위로 익히는게 훨씬 효율적인 HTML학습방법일 것입니다.</p>
+                        <p>그럼 다음 장에서 미션을 통해 HTML 태그들을 익혀보도록 합시다.</p>
+                        <button onclick="go_mission();">🚀미션으로 이동</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </body>
+</html>
