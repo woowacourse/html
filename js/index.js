@@ -31,7 +31,7 @@ function typing(){
 
         setTimeout(function(){
             tyInt = setInterval(typing,50);
-        },1000);
+        },2000);
 
         } else if(liIndex==liLength-1){
 
@@ -46,7 +46,7 @@ function typing(){
                 $(".typing ul li").html("")
 
                 tyInt = setInterval(typing,50);
-            }, 1000);
+            }, 2000);
         }
     }
 }
