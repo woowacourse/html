@@ -10,13 +10,17 @@
     src: url(BMHANNAPro.ttf) format('truetype');
 }
 
+@font-face{
+    font-family: 'handwriting';
+    src: url(handwriting.ttf) format('truetype');
+}
+
 html{    
 
 }
 
 body{
     background-image: url(images/wood_background.png);
-    /* background-size: 1000px; */
     margin:auto;
 }
 
@@ -71,8 +75,16 @@ h1 {
     flex-grow: 1;
 }
 
+.weather-input{
+    background-image: url(images/circle.png);
+    background-size: 85px;
+    background-repeat: no-repeat;
+    background-position-x: -18px;
+    background-position-y: 6px;
+}
+
 .weather-input img{
-    width: 35px;
+    width: 33px;
     margin-top: 19px;
     margin-left: 3px;
 }
@@ -102,6 +114,44 @@ h1 {
     font-size: 50px;
 }
 
-.comment{
-    margin-bottom: 100px;
+.comment-background{
+    position: relative;
+    bottom: 72px;
+    left: 32px;
+    background-image: url(images/comment_background.png);
+    background-size: 300px;
+    width: 300px;
+    height: 300px;
 }
+
+.input-comment-background{
+    position: relative;
+    /* bottom: 72px;
+    left: 32px; */
+    background-image: url(images/comment_background.png);
+    background-size: 300px;
+    width: 300px;
+    height: 300px;
+}
+
+.comment-profile{
+    padding: 20px;
+    position: relative;
+    left: 95px;
+    top: 40px;
+}
+
+.comment-profile img{
+    border-radius: 50%;
+    width: 50px;
+}
+
+.comment {
+    font-family: handwriting;
+    font-size: 40px;
+    text-align: center;
+    transform: rotate(-5deg);
+    position: relative;
+    top: 30px;
+}
+
