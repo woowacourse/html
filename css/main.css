@@ -19,7 +19,7 @@ header {
     height: 100%;
 }
 
-.logo > img {
+.logo > a > img {
     width: 100px;
     height: 100px;
     padding: 20px 0;
@@ -149,11 +149,10 @@ button {
 .news-title {
     font-size: 30px;
     font-weight: 700;
-    font-family: fantasy;
 }
 
 .news-body {
-    padding: 10px 0;
+    padding: 20px 0;
 }
 
 .news-author {

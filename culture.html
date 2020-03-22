@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Ninty Centry HTML</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/main.css">
+</head>
+
+<body>
+    <div id="app">
+        <header>
+            <div class="logo">
+                <a href="main.html"><img src="img/logo_thumnail_dark (1).png" alt="우아한 뉴스"></a>
+            </div>
+            <div id="header-name">
+                <h1 id="news-name">Woowa&nbsp;&nbsp;News</h1>
+            </div>
+            <div class="logo"></div>
+        </header>
+        <div id="search">
+            <input type="text" placeholder="검색어 입력">
+            <button>검색</button>
+        </div>
+        <main class="posts">
+            <div class="list">
+                <nav class="main-menu-container">
+                    <ul role="tablist" id="main-menu" class="main">
+                        <li><a href="breaking-news.html" role="tab">속보</a></li>
+                        <li><a href="sports.html">스포츠</a></li>
+                        <li><a href="it.html">IT</a></li>
+                        <li><a href="culture.html">문화/예술</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <section id="stream-panel" class="content-area">
+                <article aria-live="polite" class="content">
+                    <div class="content-date">
+                        <time>Mar.21.2020</time>
+                    </div>
+                    <div class="content-news">
+                        <div class="news-title">
+                            놀면 뭐하니? - 방구석 콘서트
+                        </div>
+                        <div class="news-body">
+                            “신나게 춤 춰 봐. 인생은 멋진 거야.” 뮤지컬 ‘맘마미아’의 감동이 
+                            MBC ‘놀면 뭐하니?-방구석 콘서트’를 통해 안방 1열 팬들에게 전달된다. 
+                        </div>
+                        <div class="news-author">
+                            By Jun Hyun
+                        </div>
+                    </div>
+                    <div class="content-image">
+                        <img src="./img/yoo.jpg" alt="유재석">
+                    </div>
+                </article>
+            </section>
+        </main>
+    </div>
+</body>
+</html>
