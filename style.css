@@ -10,21 +10,30 @@
     src: url(BMHANNAPro.ttf) format('truetype');
 }
 
-main img {
-    z-index: 2;
+html{    
+
+}
+
+body{
+    background-image: url(images/wood_background.png);
+    /* background-size: 1000px; */
+    margin:auto;
 }
 
 h1 {
+    background-image: url(images/title_background.png);
+    background-size: 600px;
     text-align: center;
     font-family: BMHANNAPro;
-    font-size: 50px;
+    font-size: 40px;
     margin-top: 100px;
     margin-bottom: 50px;
+    padding: 56px;
 }
 
 .container {
     margin: auto;
-    width: 600px; 
+    width: 605px; 
 }
 
 .diaries{
@@ -32,39 +41,51 @@ h1 {
     flex-direction: column;
 }
 
+.diary-background{
+    background-image: url(images/diary-background.png);
+    background-size: 605px;
+    width: 525px;
+    height: 725px;
+    padding-top: 25px;
+    padding-bottom: 38px;
+    padding-left: 40px;
+    padding-right: 40px;
+}
+
 .diary{
-    background-image:url("images/note.jpg");
-    background-size: cover;
-    /* border: 1px solid gray; */
-    margin: 10px;
     flex-direction: column;
 }
 
 .header{
-    /* border-bottom : 1px solid gray; */
     display: flex;
     
 }
 
-.date{
+.date-and-weather{
     display: flex;
-    /* border-right: 1px solid gray; */
     flex-grow: 2;
 }
 
 .weather{
+    margin-left: 19px;
     flex-grow: 1;
 }
 
+.weather-input img{
+    width: 35px;
+    margin-top: 19px;
+    margin-left: 3px;
+}
 
 .year-input, .month-input, .day-input, .day-of-the-week-input{
     font-family: Together-KwonJungae;
     font-size: 50px;
 }
 
-.year, .month, .day, .day-of-the-week{
+.year, .month, .day, .day-of-the-week, .weather{
     font-size: 20px;
     margin-top: 22px;
+    margin-right: 5px;
 }
 
 
@@ -72,8 +93,11 @@ h1 {
 
 }
 
+.drawing img {
+    width: 550px;
+}
+
 .words{
-    /* border-top : 1px solid gray; */
     font-family: Together-KwonJungae;
     font-size: 50px;
 }
