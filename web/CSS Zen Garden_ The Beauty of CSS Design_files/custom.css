@@ -3,3 +3,15 @@ textarea#comment {
 	margin-top: 20px;
 	border-width: 0;
 }
+div#example-code {
+	margin : 10px;
+	font-size: 20px;
+	text-align: center;
+	margin-bottom: 20px;
+}
+
+div#tag-ranking {
+	display: block;
+	text-align: center;
+	background-color: rgb(49, 198, 220);
+}
