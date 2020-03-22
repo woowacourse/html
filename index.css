@@ -6,3 +6,7 @@ figure hr {
     border: 1px dashed gray;
     margin-bottom: 2rem;
 }
+
+img {
+    width: 100%;
+}
