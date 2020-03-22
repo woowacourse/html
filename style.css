@@ -98,63 +98,65 @@ header.page-header > h1 {
 
 .button{
 }
-.oranges{
+.middleBox{
     display: flex;
     height: 80vh;
     width: 70%;
 }
 
-.orange1{
+.learnHTML{
     font-family: bold, "배달의민족 한나체 Pro", cursive;
     font-size: 10px;
     float: right;
 }
 
-.orange1box{
+.learnHTMLbox{
     height: 50px;
     width: 30px;
     margin-top: 20%;
     margin-left: 34%;
 }
 
-.orange2{
+.aboutHTML{
     font-family: bold, "배달의민족 한나체 Pro", cursive;
     font-size: 10px;
     float: right;
 }
 
-.orange2box{
+.aboutHTMLBox{
     height: 50px;
     width: 30px;
     padding-top: 10%;
     padding-left: 10%;
 }
 
-.orange3{
+.aboutDeveloper{
     font-family: bold, "배달의민족 한나체 Pro", cursive;
     font-size: 10px;
     float: right;
 }
 
-.orange3box{
+.aboutDeveloperBox{
     height: 50px;
     width: 30px;
     padding-top: 25%;
     margin-right: 20%;
 }
 
-.orange4{
+.moreTag{
     font-family: bold, "배달의민족 한나체 Pro", cursive;
     font-size: 10px;
     float: right;
 }
 
-.orange4box{
+.moreTagBox{
     height: 50px;
     width: 30px;
     margin-top: 25%;
     margin-right: 70%;
 }
+
+
 
 
 
