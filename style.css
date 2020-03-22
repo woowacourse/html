@@ -1,0 +1,184 @@
+@charset "UTF-8";
+
+@font-face{
+    font-family: 'Together-KwonJungae';
+    src: url(Together-KwonJungae.otf) format('truetype');
+}
+
+@font-face{
+    font-family: 'BMHANNAPro';
+    src: url(BMHANNAPro.ttf) format('truetype');
+}
+
+@font-face{
+    font-family: 'handwriting';
+    src: url(handwriting.ttf) format('truetype');
+}
+
+html{    
+
+}
+
+body{
+    background-image: url(images/wood_background.png);
+    margin:auto;
+}
+
+h1 {
+    background-image: url(images/title_background.png);
+    background-size: 600px;
+    text-align: center;
+    font-family: BMHANNAPro;
+    font-size: 40px;
+    margin-top: 100px;
+    margin-bottom: 50px;
+    padding: 56px;
+}
+
+.container {
+    margin: auto;
+    width: 605px; 
+}
+
+.diaries{
+    display: flex;
+    flex-direction: column;
+}
+
+.diary-background{
+    background-image: url(images/diary-background.png);
+    background-size: 605px;
+    width: 525px;
+    height: 725px;
+    padding-top: 25px;
+    padding-bottom: 38px;
+    padding-left: 40px;
+    padding-right: 40px;
+}
+
+.diary{
+    flex-direction: column;
+}
+
+.header{
+    display: flex;
+    
+}
+
+.date-and-weather{
+    display: flex;
+    flex-grow: 2;
+}
+
+.weather{
+    margin-left: 19px;
+    flex-grow: 1;
+}
+
+.weather-input1{
+    background-image: url(images/circle.png);
+    background-size: 85px;
+    background-repeat: no-repeat;
+    background-position-x: -18px;
+    background-position-y: 6px;
+}
+.weather-input2{
+    background-image: url(images/circle.png);
+    background-size: 85px;
+    background-repeat: no-repeat;
+    background-position-x: 20px;
+    background-position-y: 6px;
+}
+.weather-input3{
+    background-image: url(images/circle.png);
+    background-size: 85px;
+    background-repeat: no-repeat;
+    background-position-x: 95px;
+    background-position-y: 6px;
+}
+
+.weather-input1 img,.weather-input2 img,.weather-input3 img{
+    width: 33px;
+    margin-top: 19px;
+    margin-left: 3px;
+}
+
+.year-input, .month-input, .day-input, .day-of-the-week-input{
+    font-family: Together-KwonJungae;
+    font-size: 50px;
+}
+
+.year, .month, .day, .day-of-the-week, .weather{
+    font-size: 20px;
+    margin-top: 22px;
+    margin-right: 5px;
+}
+
+
+.drawing{
+
+}
+
+.drawing img {
+    width: 550px;
+}
+
+.words{
+    font-family: Together-KwonJungae;
+    font-size: 50px;
+}
+
+.comments{
+    display: flex;
+    font-family: handwriting;
+    font-size: 40px;
+    text-align: center;
+
+}
+
+.comment-background{
+    position: relative;
+    bottom: 72px;
+    left: 32px;
+    background-image: url(images/comment_background.png);
+    background-size: 300px;
+    width: 300px;
+    height: 300px;
+}
+
+.input-comment-background{
+    position: relative;
+    background-image: url(images/comment_background.png);
+    background-size: 300px;
+    width: 300px;
+    height: 300px;
+}
+
+.comment-profile{
+    padding: 20px;
+    position: relative;
+    left: -11px;
+    top: 40px;
+}
+
+.comment-profile img{
+    border-radius: 50%;
+    width: 50px;
+}
+
+.comment {
+    transform: rotate(-5deg);
+    position: relative;
+    top: 30px;
+}
+
+.comment textarea{
+    font-family: handwriting;
+    font-size: 40px;
+    background-color: transparent;
+    overflow: hidden;
+    width: 200px;
+    height: 100px;
+    resize: none;
+}
+
