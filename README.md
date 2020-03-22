@@ -21,7 +21,9 @@
 
 ## 사용한 태그들의 기능
 
+- `<a>` : hyperlink 태그로, href 속성에 url을 넣어야 한다.
 - `<img>` : 이미지를 가져오는 태그로, src 속성에 이미지의 소스 주소를 넣어야 하고, alt 속성에 접근성을 위한 이미지의 설명을 첨부해야 한다.
+- `<video>` : 비디오를 가져오는 태크로, src 속성에 비디오의 소스 주소를 넣어햐 하고, controls, autoplay 등을 설정할 수 있다.
 - `<input>` : 사용자 입력에 관련된 태그로, type에 따라 text, number, date 등 다양한 입력을 받을 수 있다.
 - `<button>` : 사용자가 누를 수 있는 버튼 태그
 - `<header>` : Semantic Elements로, 헤더를 명시적으로 나타낸다.
