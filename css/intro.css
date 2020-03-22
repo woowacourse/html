@@ -1,0 +1,123 @@
+@import "reset.css";
+
+@font-face {
+  font-family: "BMHANNAProOTF";
+  src: url(../font/BMHANNAProOTF.otf) format(opentype);
+}
+
+html,
+body {
+  height: 100vh;
+  font-family: BMHANNAProOTF;
+  background-image: url(../background/background2.jpeg);
+  background-repeat: repeat;
+  background-position: center;
+  background-size: 100% 100%;
+  background-position: fixed;
+}
+header {
+  position: relative;
+  height: 30vh;
+}
+#title {
+  position: absolute;
+  width: max-content;
+  height: max-content;
+  text-align: center;
+  font-size: 4rem;
+  left: 50%;
+  bottom: 0px;
+  transform: translate(-50%, 0);
+}
+#contents-box {
+  position: relative;
+  min-height: calc(100vh - 30vh - 5vh);
+  /* background-color: aqua; */
+}
+.nav {
+  position: relative;
+  min-height: 10vh;
+  width: 100%;
+  text-align: center;
+  /* background-color: bisque; */
+}
+.box {
+  position: relative;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  /* background-color: gray; */
+}
+.wrapper {
+  left: 50%;
+  display: inline-block;
+  padding: 0 80px;
+  text-align: center;
+  /* background-color: blueviolet; */
+}
+.arrowIcon {
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.content {
+  position: relative;
+  left: 50%;
+  transform: translate(-50%);
+  width: 650px;
+  padding: 20px;
+  padding-bottom: 60px;
+  /* background-color: blue; */
+  font-size: 1.5rem;
+}
+
+.h2-title {
+  position: relative;
+  font-size: 3rem;
+  padding: 5% 0;
+  width: max-content;
+  height: max-content;
+
+  /* background-color: aliceblue; */
+}
+
+.h3-title {
+  position: relative;
+  font-size: 2rem;
+  padding: 10px 0;
+  width: max-content;
+  height: max-content;
+
+  /* background-color: aliceblue; */
+}
+
+.image-box {
+  position: relative;
+  left: 50%;
+  transform: translate(-50%);
+  width: 390px;
+  padding-bottom: 60px;
+  padding: 60px;
+  /* background-color: brown; */
+}
+
+.perhaps {
+  text-indent: 20px;
+}
+
+#information-box {
+  padding: 20px;
+}
+.sub-information-box {
+  padding: 5px;
+}
+footer {
+  left: 0px;
+  bottom: 0px;
+  height: 60px;
+  width: 100%;
+  text-align: center;
+  line-height: 60px;
+  background: grey;
+}
