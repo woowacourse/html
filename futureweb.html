@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <title>안녕하세요.</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=0.5">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body style="padding-top: 75px">
+<div id="base-container" style="width: 100%;display: flex;flex-direction: column">
+    <header id="header">
+        <div align="center">
+            <h1>새로운 가능성</h1>
+        </div>
+        <nav class="navbar navbar-inverse navbar-fixed-top">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="index.html">KAFKA.HTML</a>
+                </div>
+                <div class="collapse navbar-collapse" id="myNavbar">
+                    <ul class="nav navbar-nav">
+                        <li><a href="intro.html">HTML의 시작</a></li>
+                        <li><a href="oldweb.html">웹페이지의 발전</a></li>
+                        <li class="active"><a href="futureweb.html">새로운 능성</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <section id="main-section" style="width:100%;min-height: 2000px; padding: 10px;display: flex; flex-direction: column">
+        <section class="content-section">
+            <article id="content-apps" style="margin:10px;height: 500px;width: 100%;display: inline-flex;justify-content:center;">
+                <div class="content-div-block">
+                    <div id="content-apps-test" align="center">
+                        <h2><b>웹으로 만드는 멀티미디어</b></h2>
+                        <div style="padding: 10px"><img src="media/1200px-HTML5_logo_and_wordmark.svg.png" width="50%"/></div>
+                        <div style="width: 80%">
+                            <p style="font-size:15px">HTML5는 웹 제작에 활용되는 기본 프로그래밍 언어인 HTML의 최신 규격으로, 이를 활용하면 단순한 웹페이지는 물론 멀티미디어 콘텐츠나 서버와 연동되는 게임까지 구현할 수 있는 점이 특징이다.</p>
+                        </div>
+                    </div>
+                    <button type="button" class="btn-lg btn-primary" onclick="window.open('https://news.appstory.co.kr/plan12120')">더 읽어보기</button>
+                </div>
+            </article>
+            <article class="content-article">
+                <div class="content-div-block">
+                    <div id="content-html-text" align="center">
+                        <h1>HTML 웹게임</h1>
+                        <h2><br>2012년<br> FPS의 시초이자 92년생 동생,<br>wolfenstein 3D를<br>HTML5로 이식</h2>
+                        <div style="padding: 10px"><img src="media/wolf.jpg" width="50%"/></div>
+                        <button type="button" class="btn-lg btn-primary" onclick="window.open('https://www.sitepoint.com/wolfenstein-3d-html5-browser-game/')">더 읽어보기</button>
+                    </div>
+                </div>
+            </article>
+            <div style="justify-items: center;padding-top: 20px">
+                <embed type="text/html" src="http://users.atw.hu/wolf3d/" style="width:1000px;height: 600px">
+            </div>
+        </section>
+        <section id="comment-section" style="width: 100%;min-height: 200px;padding-top: 20px; text-align: center">
+            <h3>점수를 입력해 주세요.</h3>
+            <textarea>여기에 입력하세요.</textarea>
+            <input type="submit" value="제출">
+        </section>
+    </section>
+    <footer id="footer" style="background-color: black">
+        <p align="center" style="color: whitesmoke"> @2020 kafka <a href="https://github.com/include42">contact</a></p>
+    </footer>
+</div>
+</body>
+</html>

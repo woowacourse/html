@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <title>안녕하세요.</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=0.5">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body style="padding-top: 75px">
+<div id="base-container" style="width: 100%;display: flex;flex-direction: column">
+    <header id="header">
+        <div align="center">
+            <h1>웹페이지의 발전</h1>
+        </div>
+        <nav class="navbar navbar-inverse navbar-fixed-top">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="index.html">KAFKA.HTML</a>
+                </div>
+                <div class="collapse navbar-collapse" id="myNavbar">
+                    <ul class="nav navbar-nav">
+                        <li><a href="intro.html">HTML의 시작</a></li>
+                        <li class="active"><a href="oldweb.html">웹페이지의 발전</a></li>
+                        <li><a href="futureweb.html">새로운 가능성</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <section id="main-section" style="width:100%;min-height: 2000px; padding-left: 10px;padding-right: 10px;display: flex">
+        <section id="content-section" style="height: 100%;width: 100%;display: inline-flex;flex-direction: column;text-align: center">
+            <article id="content-pcnet" style="margin:10px;height: 500px;width: 100%;display: inline-flex;justify-content:center;">
+                <div class="content-div-block">
+                    <div id="content-pcnet-text" align="center">
+                        <h2>1986년, <br><b>하이텔의 시작</b></h2>
+                    </div>
+                    <img alt="old_naver" src="media/1990net.gif" width="80%"/></div>
+            </article>
+            <article id="content-pcnet-more" style="margin:10px;height: 500px;width: 100%;display: inline-flex;justify-content:center;">
+                <div class="content-div-block">
+                    <div id="content-pcnet-moretext" align="center">
+                        <h2>하이텔에 대해서 더 읽어보기</b></h2>
+                        <p style="font-size: 15px">한경뉴스속보와 대형 BBS의 효시라고 할 수 있는 전자게시판(큰마을), 전자우편, 채팅, 동호회(현재의 카페), 온라인 바둑 등을 제공하였다.</p>
+                    </div>
+                    <button type="button" class="btn-lg btn-primary" onclick="window.open('https://ko.wikipedia.org/wiki/%ED%95%98%EC%9D%B4%ED%85%94')">더 읽어보기</button>
+                </div>
+            </article>
+            <article id="content-naver" style="margin:10px;height: 500px;width: 100%;display: inline-flex;justify-content:center;">
+                <div class="content-div-block">
+                    <div id="content-naver-text" align="center">
+                        <h2>1999년, <br><b>네이버의 시작</b></h2>
+                    </div>
+                    <img src="media/first_naver.png" width="80%"/></div>
+            </article>
+            <article id="content-naver-more" style="margin:10px;height: 500px;width: 100%;display: inline-flex;justify-content:center;">
+                <div class="content-div-block">
+                    <div id="content-naver-moretext" align="center">
+                        <h2>네이버에 대해서 더 읽어보기</b></h2>
+                        <p style="font-size:15px">1999년 6월 2일. 대한민국 포털 1위 네이버가 설립되다.</p>
+                    </div>
+                    <button type="button" class="btn-lg btn-primary" onclick="window.open('https://m.post.naver.com/viewer/postView.nhn?volumeNo=20662503&memberNo=2301197')">더 읽어보기</button>
+                </div>
+            </article>
+        </section>
+    </section>
+    <footer id="footer" style="background-color: black">
+        <p align="center" style="color: whitesmoke"> @2020 kafka <a href="https://github.com/include42">contact</a></p>
+    </footer>
+</div>
+</body>
+</html>
