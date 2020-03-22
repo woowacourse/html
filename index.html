@@ -8,6 +8,7 @@
         @import url(//fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic);
         @import url(//fonts.googleapis.com/css?family=Ubuntu+Mono:400,700,400italic);
         @import url(//fonts.googleapis.com/earlyaccess/hanna.css);
+
         @font-face {
             font-family: "BMHANNAAir";
             src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_four@1.0/BMHANNAAir.woff") format("woff");
@@ -31,19 +32,21 @@
         }
 
         div {
-            margin-right: 550px;
-            margin-left: 550px;
+            padding-top: 40px;
+            padding-bottom: 20px;
+            margin-right: 35em;
+            margin-left: 35em;
             text-align: center;
             font-family: 'BMHANNAAir';
         }
 
         th {
             position: center;
-            /*padding: 1px;*/
-            /*margin: 3px;*/
         }
 
         .topnav {
+            padding-top: 0;
+            padding-bottom: 0;
             display: block;
             margin: auto;
             background-color: darkgray;
@@ -67,31 +70,37 @@
             color: black;
         }
 
+        #comment {
+            height: 22px;
+            width: 600px;
+            font-size: 20px;
+            margin-bottom: 40px;
+        }
+
     </style>
 
+    <div class="topnav">
+        <table>
+            <tr>
+                <th><a href="#top">HOME</a></th>
+                <th><a href="#first">90년생 HTML</a></th>
+                <th><a href="#second">90년생 HTML의 일생</a></th>
+                <th><a href="#third">최초의 웹페이지</a></th>
+                <th><a href="#forth">웹의 발전</a></th>
+                <th><a href="#fifth">HTML의 정의</a></th>
+                <th><a href="#sixth">HTML의 태그</a></th>
+                <th><a href="#seventh">자주 사용되는 태그</a></th>
+                <th><a href="#eighth">댓글 달기</a></th>
+            </tr>
+        </table>
+    </div>
 
 </head>
 <body>
-<div class="topnav">
-    <table>
-        <tr>
-            <th><a href="#top">home</a></th>
-            <th><a href="#first">first</a></th>
-            <th><a href="#second">second</a></th>
-            <th><a href="#third">third</a></th>
-            <th><a href="#forth">forth</a></th>
-            <th><a href="#fifth">fifth</a></th>
-            <th><a href="#sixth">sixth</a></th>
-            <th><a href="#seventh">seventh</a></th>
-            <th><a href="#eighth">eighth</a></th>
-            <th><a href="#ninth">ninth</a></th>
-            <th><a href="#tenth">tenth</a></th>
-            <th><a href="#eleven">eleven</a></th>
-        </tr>
-    </table>
-</div>
 
-<h1 id="top">HTML 알아보기</h1>
+<div id="top">
+    <h1>HTML 알아보기</h1>
+</div>
 
 <div id="first">
     <hr>
@@ -125,20 +134,16 @@
         <br>
         이런 국제적인 연구소에서 1990년도에 역사적인 사건이 발생합니다.
         <br></p>
-</div>
-
-<div id="third">
     <img src="https://techcourse-storage.s3.ap-northeast-2.amazonaws.com/2020-03-17T09:24:30.013image.png" width="600">
-</div>
-
-<div id="forth">
     <p>그것은 바로 웹의 등장입니다. 이 웹이라는 서비스를 통해서 HTML이 세상에 드러났습니다.
         이 웹이라는 서비스와 HTML을 만든 사람은 웹의 아버지라고 불리는 팀 버너스리입니다.
         유럽입자물리연구소는 특성상 한 개별적인 국가의 범위를 넘어서는 연구를 위해 만들어진 곳입니다.
         그렇다보니 자연스레 여러 연구자들이 엄청나게 많은 정보와 자료를 주고 받게 되었습니다.
         그래서 팀 버너스리가 효율적으로 정보를 주고 받을 수 있는 시스템을 1980년도부터 약 10년동안 연구하다가 1990년도에 결과물들을 세상에 드러내기 시작했습니다.</p>
 </div>
-<div id="fifth">
+
+<div id="third">
+    <hr>
     <p>
         1990년 10월
         세계 최초로 웹페이지를 만드는 에디터를 만듭니다
@@ -163,7 +168,8 @@
     </p>
 </div>
 
-<div id="sixth">
+<div id="forth">
+    <hr>
     <p>
         웹은 여기서 시작합니다.
         <br>
@@ -192,12 +198,7 @@
         쇼핑과 지금 우리가 사용하는 다양한 경험을 실시간 상호작용을 하는 페이지로 진화하기에 이르렀습니다.
         <br>
     </p>
-</div>
-<div id="seventh">
     <img src="https://techcourse-storage.s3.ap-northeast-2.amazonaws.com/2020-03-17T09:30:59.161image.png" width="600">
-</div>
-
-<div id="eighth">
     <p>
         여기까지 90년생 HTML의 이야기를 함께 살펴보았습니다. 이름만 알았을 때보다는 좀 더 가까워진 느낌인 것 같습니다.
         <br>
@@ -207,7 +208,8 @@
         <br>
     </p>
 </div>
-<div id="ninth">
+
+<div id="fifth">
     <hr>
     <h2>다시, HTML이란</h2>
     <h3>📗정의</h3>
@@ -235,7 +237,7 @@
     </p>
 </div>
 
-<div id="tenth">
+<div id="sixth">
     <hr>
     <h3>🔖태그</h3>
     <p>언어의 가장 핵심적인 특징은 바로 약속입니다.
@@ -252,26 +254,24 @@
         <br>
         HTML에서도 마찬 가지입니다.
         <br>
-
+    </p>
 
     <p>
         <img src="https://techcourse-storage.s3.ap-northeast-2.amazonaws.com/2020-03-17T10:40:31.999image.png"
              width="400">
     </p>
-    위와 같은 문장이 있다고 해봅시다.
-    <br>
-    이 내용에 태그를 붙임으로써 이 문장이 웹페이지에서 어떤 역할을 하는지 다르게 표현할 수 있습니다.
-    <br>
-    예를들어 문장의 앞 뒤에 h1이라는 태그를 붙여보도록 하겠습니다. 여기서 h1이라는 것은 제목을 나타내는 태그입니다.
-    <br>
-    즉<\h1> 태그를 붙임으로써 이 문장은 해당 웹페이지에서 제목을 나타내는 역할을 가지게 됩니다.
-    <br>
-    다른 태그를 이용해서 h1과 동일하게 보이게 만드는 방법도 있지만 h1을 사용한다는 것은 해당 내용이 제목이 된다는 정보를 주는 것이기 때문에 구분해서 사용해야 합니다.
-    <br>
+    <p>
+        위와 같은 문장이 있다고 해봅시다.
+        <br>
+        이 내용에 태그를 붙임으로써 이 문장이 웹페이지에서 어떤 역할을 하는지 다르게 표현할 수 있습니다.
+        <br>
+        예를들어 문장의 앞 뒤에 h1이라는 태그를 붙여보도록 하겠습니다. 여기서 h1이라는 것은 제목을 나타내는 태그입니다.
+        <br>
+        즉<\h1> 태그를 붙임으로써 이 문장은 해당 웹페이지에서 제목을 나타내는 역할을 가지게 됩니다.
+        <br>
+        다른 태그를 이용해서 h1과 동일하게 보이게 만드는 방법도 있지만 h1을 사용한다는 것은 해당 내용이 제목이 된다는 정보를 주는 것이기 때문에 구분해서 사용해야 합니다.
+        <br>
     </p>
-</div>
-
-<div id="eleven">
     <p><img src="https://techcourse-storage.s3.ap-northeast-2.amazonaws.com/2020-03-17T10:40:42.841image.png"
             width="400"></p>
     <p>
@@ -289,11 +289,17 @@
         <br>
         총 700만개 이상의 웹페이지를 분석한 결과 평균적으로 약 28개의 서로 다른 엘리먼트를 사용하였습니다.
         <br>
+    </p>
+</div>
+
+<div id="seventh">
     <p>
         <img src="https://techcourse-storage.s3.ap-northeast-2.amazonaws.com/2020-03-17T11:01:51.866스크린샷%202020-03-17%20오전%2010.58.58.png"
              width="400">
     </p>
-    그리고 그 28개의 태그들을 내림차순으로 분류한게 아래 표입니다.
+    <p>
+        그리고 그 28개의 태그들을 내림차순으로 분류한게 아래 표입니다.
+    </p>
     <br>
     <p>
         <img src="https://techcourse-storage.s3.ap-northeast-2.amazonaws.com/2020-03-17T11:01:54.879스크린샷%202020-03-17%20오전%2010.59.09.png"
@@ -302,15 +308,17 @@
     <br>
     우선 위 28개의 태그들을 높은 우선순위로 익히는게 훨씬 효율적인 HTML학습방법일 것입니다.
     <br>
-    그럼 다음 장에서 미션을 통해 HTML 태그들을 익혀보도록 합시다.
-    <br>
-    <br>  <br>  <br>  <br>  <br>  <br>  <br>  <br>  <br>
-    </p>
 </div>
+
+<div id="eighth">
+    <input id="comment" type="text" placeholder="댓글 남기는 척을 해보아요.">
+</div>
+
 
 </body>
 
 <footer>
-    <p>@Copyright. <a href="https://github.com/toneyparky">toneyparky</a> || Support. 우리은행 1002-693-950707 박승완 </p>
+    <p>@Copyright. toneyparky   <a href="https://github.com/toneyparky"><i class="fab fa-github-alt mr-4 fa-lg"></i></a>   ||   Support. 우리은행 1002-693-950707 박승완 </p>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.11.2/css/all.css">
 </footer>
 </html>
