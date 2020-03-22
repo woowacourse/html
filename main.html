@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+
+    <style>
+        #header {
+            margin: 30px 30px;
+        }
+
+        #emailButton {
+            display: inline;
+            float: right;
+            position: relative;
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            overflow: hidden;
+            cursor: pointer;
+        }
+
+        #emailText {
+            visibility: hidden;
+            position: absolute;
+            width: 60px;
+            height: 60px;
+            top: 0;
+            left: 0;
+            opacity: 0.7;
+            background-color: white;
+            font-size: 16px;
+            font-weight: bold;
+            text-align: center;
+            line-height: 60px;
+        }
+
+        #emailLink:link {
+            color: black;
+            text-decoration: none;
+        }
+
+        #emailLink:hover {
+            color: black;
+            text-decoration: none;
+        }
+
+        #logo {
+            display: inline;
+            float: left;
+            width: 300px;
+            height: 60px;
+            overflow: hidden;
+            position: relative;
+            cursor: pointer;
+        }
+
+        #logoImg {
+            margin-top: 5px;
+        }
+
+    </style>
+
+    <title> + HTML profile + </title>
+</head>
+<body>
+    <header id="header">
+        <div id="logo">
+            <a href="https://woowacourse.github.io/" target="_blank">
+                <img id="logoImg" src="resource/logo.png" style="width: 100%" />
+            </a>
+        </div>
+        <div id="emailButton">
+            <img src="resource/cool-lime.png" id="emailBtnImg" style="width: 100%" />
+            <div id="emailText">
+                <a id="emailLink" href="mailto:dev.icymojito@gmail.com">EMAIL</a>
+            </div>
+        </div>
+    </header>
+
+    <div>
+        <section></section>
+    </div>
+
+    <div>
+        <footer></footer>
+    </div>
+
+</body>
+
+<script>
+    function emailBtnEvent() {
+        const emailBtn = document.getElementById("emailButton");
+        const emailText = document.getElementById("emailText");
+        emailBtn.onmouseover = function () {
+            emailText.style.visibility = "visible";
+        }
+        emailBtn.onmouseout = function () {
+            emailText.style.visibility = "hidden";
+        }
+    }
+
+    emailBtnEvent();
+</script>
+
+</html>
