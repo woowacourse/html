@@ -1,0 +1,40 @@
+#menu {
+    width: 20%;
+    height: 800px;
+    float: left;
+    box-sizing: border-box;
+    font-family: BMHANNAPro, sans-serif;
+    padding: 50px;
+}
+
+.mark li:before {
+    content: '# ';
+    color: cadetblue;
+}
+
+.mark {
+    list-style-type: none;
+}
+
+.mark li {
+    font-size: 125%;
+    padding: 10px 0;
+    cursor: pointer;
+    margin-left: -10px;
+}
+
+.title {
+    font-size: 140%;
+    color: darkcyan;
+    position: relative;
+}
+
+.title:before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    top: calc(100% - 5px);
+    background-color: rgba(255, 255, 0, 0.3);
+    height: 10px;
+    z-index: -1;
+}

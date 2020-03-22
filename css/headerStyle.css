@@ -1,5 +1,6 @@
 #header {
-    margin: 30px 30px;
+    margin: 15px 30px;
+    overflow: auto;
 }
 
 #emailButton {

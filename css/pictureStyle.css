@@ -1,0 +1,12 @@
+#picture {
+    width: 35%;
+    height: 800px;
+    float: left;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+#picture img {
+    animation: fadein 1s;
+    animation-timing-function: ease-in-out;
+}
