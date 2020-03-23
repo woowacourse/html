@@ -1,0 +1,69 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1, user-scalable=no">
+    <title>90년생 HTML</title>
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="./assets/css/dark-theme.css">
+    <link rel="stylesheet" href="./assets/css/light-theme.css">
+</head>
+<body class="dark-theme">
+    <div class="wrapper">
+        <div class="menu-bar">
+            <div class="menu">
+                <div class="menu-logo"></div>
+            </div>
+            <div class="menu">
+                <div class="menu-name">Web</div>
+                <ul class="menu-list">
+                    <li class="menu-item" onclick="changeMode('dark')">다크 모드</li>
+                    <li class="menu-item" onclick="changeMode('light')">라이트 모드</li>
+                </ul>
+            </div>
+            <div class="menu">
+                <div class="menu-name">도움말</div>
+                <ul class="menu-list">
+                    <li class="menu-item"><a target="_blank" href="./README.md">README</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="window">
+            <div class="app">
+                <header class="header">
+                    <div class="control">
+                        <button class="close"></button>
+                        <button class="minimization"></button>
+                        <button class="fullscreen"></button>
+                    </div>
+                    <div class="receiver">
+                        <div class="photo">준</div>
+                        <div class="name">준 코치 봇</div>
+                    </div>
+                    <div class="control"></div>
+                </header>
+                <div class="main">
+                    <ul class="messages">
+                        <li class="message left">
+                            <div class="content">
+                                사용 가능한 명령어: !이야기, !태그목록, !태그(ex: !태그, !div, !span)
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <footer class="footer">
+                    <div class="interaction">
+                        <div class="chat">
+                            <input class="input-message" placeholder="Message">
+                            <button class="send">
+                                <div class="send-image">send</div>
+                            </button>
+                        </div>
+                    </div>
+                </footer>
+            </div>
+        </div>
+    </div>
+    <script src="./assets/js/index.js"></script>
+</body>
+</html>

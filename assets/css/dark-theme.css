@@ -1,0 +1,80 @@
+.dark-theme {
+    background: #111;
+    color: #FFF;
+}
+
+.dark-theme .menu-bar {
+    background: #1E1E1E;
+    opacity: 0.9;
+}
+
+.dark-theme .menu-list {
+    background-color: #1A1A1A;
+}
+
+.dark-theme .menu-logo {
+    background-image: url('../img/light-logo.png');
+}
+
+.dark-theme .menu-name {
+    color: #FFF;
+}
+
+.dark-theme .window {
+    background: #111;
+    border-color: #000;
+}
+
+.dark-theme .app {
+    border-color: #454545;
+}
+
+.dark-theme .header {
+    background: #191C1D;
+    border-color: #454545;
+}
+
+.dark-theme .receiver {
+    color: #FFF;
+}
+
+.dark-theme .main::-webkit-scrollbar-track {
+    background-color:#333637;
+    border-color: #454545;
+}
+
+.dark-theme .main::-webkit-scrollbar-thumb { 
+    background-color: #808384;
+}
+
+.dark-theme .main::-webkit-scrollbar-thumb:hover {
+    background-color: #A7AAAB;
+}
+
+.dark-theme .message.left {
+    background: #26252A;
+    color: #FFF;
+}
+
+.dark-theme .message.right {
+    background: #0087FF;
+    color: #FFF;
+}
+
+.dark-theme .footer {
+    background: #1C1C1C;
+    border-color: #454545;
+}
+
+.dark-theme .chat {
+    background: #4D4B4D;
+    border-color: #616062;
+}
+
+.dark-theme .input-message {
+    color: #E1E1E1;
+}
+
+.dark-theme .send {
+    background: #0087FF;
+}

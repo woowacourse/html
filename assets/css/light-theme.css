@@ -1,0 +1,93 @@
+.light-theme {
+    background: #FFF;
+    color: #FFF;
+}
+
+.light-theme .menu-bar {
+    background: #E1E1E1;
+    opacity: 0.9;
+}
+
+.light-theme .menu-list {
+    background-color: #E1E1E1;
+    color: #000;
+}
+
+.light-theme .menu-logo {
+    background-image: url('../img/dark-logo.png');
+}
+
+.light-theme .menu.active > .menu-logo {
+    background-image: url('../img/light-logo.png');
+}
+
+.light-theme .menu-name {
+    color: #000;
+}
+
+.light-theme .menu.active .menu-name {
+    color: #FFF;
+}
+
+.light-theme .menu-item:hover {
+    color: #FFF
+}
+
+.light-theme .window {
+    background: #FFF;
+    border-color: #D2D2D2;
+}
+
+.light-theme .app {
+    border-color: #F8F8F8;
+}
+
+.light-theme .header {
+    background: #F2F2F2;
+    border-color: #DBDBDB;
+}
+
+.light-theme .receiver {
+    color: #000;
+}
+
+.light-theme .main::-webkit-scrollbar-track {
+    background-color:transparent;
+    border-color: transparent;
+}
+
+.light-theme .main::-webkit-scrollbar-thumb { 
+    background-color: #CCC;
+}
+
+.light-theme .main::-webkit-scrollbar-thumb:hover {
+    background-color: #888;
+}
+
+.light-theme .message.left {
+    background: #E9E9EB;
+    color: #000;
+}
+
+.light-theme .message.right {
+    background: #0087FF;
+    color: #FFF;
+}
+
+.light-theme .footer {
+    background: #F2F2F2;
+    border-color: #DBDBDB;
+}
+
+.light-theme .chat {
+    background: #FFF;
+    border-color: #CCC;
+}
+
+.light-theme .input-message {
+    color: #5A5A5A;
+}
+
+.light-theme .send {
+    background: #0087FF;
+}
