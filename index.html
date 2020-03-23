@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="icon" href="favicon.ico?v=2">
+    <title>HTML 용어사전</title>
+    <style>
+    </style>
+</head>
+
+<body>
+    <header>
+        <a href="/ko/">MDN 마크</a>
+        <nav class="main-nav" role="navigation">
+            <ul>
+                <li>
+                    <button>기술▼</button>
+                </li>
+                <li>
+                    <button>참조문서 및 가이드▼</button>
+                </li>
+                <li>
+                    <button>사용자 의견▼</button>
+                </li>
+            </ul>
+        </nav>
+        <div>
+            돋보기 이미지
+            <input type="search" placeholder="MDN 검색">
+        </div>
+    </header>
+    
+    <main>
+        <div>
+            <div>
+                <h1>HTML</h1>
+            </div>
+        </div>
+        <div>
+            <div>
+                <nav>
+                    <ol>
+                        <li>
+                            <a href="/ko/docs/Glossary"><span>용어 사전</span></a>
+                        </li>
+                        <li>
+                            <a href="/ko/docs/Glossary/HTML"><span>HTML</span></a>
+                        </li>
+                    </ol>
+                </nav>
+                <div>
+                    <button>한국어▼</button>
+                </div>
+            </div>
+        </div>
+
+        <div>
+            <aside>
+                <section>
+                    <header>
+                        <h2>On this page</h2>
+                    </header>
+                    <ul>
+                        <li>
+                            <a href="#간략한_역사">간략한 역사</a>
+                        </li>
+                        <li>
+                            <a href="#개념과_문법">개념과 문법</a>
+                        </li>
+                        <li>
+                            <a href="#더_알아보기">더 알아보기</a>
+                        </li>
+                    </ul>
+                </section>
+            </aside>
+
+            <!-- 본문 -->
+            <div>
+                <article>
+                    <br>
+                    <div>
+                        <b>HTML</b>
+                        (Hypertext Markup Language)은 웹페이지의 구조를 지정하는 기술적인 언어입니다.
+                    </div>
+                    <h2 id="간략한_역사">간략한 역사</h2>
+                    <p>
+                        1990년, 팀 버너스리는 Web의 비전 중 하나로서 하이퍼텍스트라는 개념을 정의하고, 그 이듬해에 SGML에 기초한 마크업을 통해 구체화했습니다. 
+                        IETF는 1993년에 HTML을 공식 지정했으며, 1995년 몇 차례 초안을 거쳐 2.0 버전을 발표했습니다. 1994년, 팀 버너스리는 웹의 발전을 위해 W3C를 설립했습니다. 
+                        W3C는 1996년부터 HTML 작업을 시작하고, 1년 후 HTML 3.2 권고안을 발표했습니다. HTML 4.0은 1999년에 발표됐으며 2000년에 ISO 표준이 됐습니다.
+                    </p>
+                    <p>이 때, W3C는 HTML을 버리고 <a href="/ko/docs/XHTML">XHTML</a>을 채택하려 했습니다. 이 움직임은,
+                        2004년, <a href="/ko/docs/Glossary/WHATWG">WHATWG</a>라는 독립 단체가 만들어지는 계기가 됩니다. WHATWG 덕분에 HTML5 작업이 계속 됐고, 두 단체는 2008년 첫 초안을, 2014년 최종 표준안을 발표합니다.
+                    </p>
+
+                    <h2 id="개념과_문법">개념과 문법</h2>
+                    <p>
+                        HTML 문서는 <a href="/ko/docs/Glossary/element">요소</a>로 구조화한 일반 텍스트 문서입니다. 
+                        요소는 한 쌍의 <a href="/ko/docs/Glossary/tag">태그</a>로 열고 닫으며, 각각의 태그는 부등호(<code>&lt;&gt;</code>)로 감쌉니다. 
+                        <a href="/ko/docs/Web/HTML/Element/img"><code>&lt;img&gt;</code></a>처럼 텍스트를 감싸지 못하는 "빈 태그"도 있습니다.
+                    </p>
+
+                    <p>HTML 태그는 <a href="/ko/docs/Glossary/attribute">특성</a>을 사용해 확장할 수 있고, 브라우저가 요소를 읽어들일 때 추가 정보를
+                        제공합니다.
+                    </p>
+
+                    <p>
+                        <img alt="Detail of the structure of an HTML element"
+                            src="https://mdn.mozillademos.org/files/7659/anatomy-of-an-html-element.png"
+                            style="height: 181px; width: 609px;">
+                    </p>
+                    <p>
+                        HTML은 보통 <code>.htm</code>이나 <code>.html</code> 확장자로 저장해 
+                        <a href="/ko/docs/Glossary/server">서버</a>로 제공하며, 아무 <a href="/ko/docs/Glossary/browser">브라우저</a>로
+                        렌더링할 수 있습니다.
+                    </p>
+
+                    <h2 id="더_알아보기">더 알아보기</h2>
+                    <h3 id="일반_지식">일반 지식</h3>
+                    <ul>
+                        <li>위키백과 <a href="https://ko.wikipedia.org/wiki/HTML">HTML</a></li>
+                    </ul>
+                    <h3 id="HTML_배우기">HTML 배우기</h3>
+                    <ul>
+                        <li><a href="http://developer.mozilla.org/ko/Learn/HTML">HTML 자습서</a></li>
+                        <li><a href="http://www.codecademy.com/en/tracks/web">The web course on
+                                codecademy.com</a></li>
+                    </ul>
+                    <h3 id="기술_참조서">기술 참조서</h3>
+                    <ul>
+                        <li><a href="/ko/docs/Web/HTML">MDN의 HTML 문서</a></li>
+                        <li><a href="http://www.w3.org/TR/html5/" rel="external noopener">HTML 명세</a></li>
+                    </ul>
+                </article>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div>
+            <a href="">모질라 이미지</a>
+            <div>
+                <li>
+                    <a href="ko/docs/Web">웹 기술</a>
+                </li>
+                <li>
+                    <a href="ko/docs/Web">웹 개발 배우기</a>
+                </li>
+                <li>
+                    <a href="ko/docs/Web">MDN 정보</a>
+                </li>
+                <li>
+                    <a href="ko/docs/Web">사용자 의견</a>
+                </li>
+                <li>
+                    <a href="https://github.com/taejinseok">
+                        옥토캣이미지
+                    </a>
+                </li>
+            </div>
+        </div>
+        <div id="license" class="contentinfo">
+            <p>© 2005-2020 Mozilla and individual contributors.</p>
+            <p>Content is available under
+                <a href="/docs/MDN/About#Copyrights_and_licenses">these licenses</a>.
+            </p>
+        </div>
+    </footer>
+</body>
+</html>
