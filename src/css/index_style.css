@@ -1,0 +1,420 @@
+body {
+    font-family: 'Helvetica Neue','Apple SD Gothic Neo','ë‚˜ëˆ”ê³ ë”•',NanumGothic,'ë§‘ì€ ê³ ë”•','Malgun Gothic','ë‹ì›€',Dotum,sans-serif;
+    font-size: 12px;
+    line-height: 1.2;
+}
+
+/* 맨 위 로고와 검색창 */
+.head-bar {
+    height: 62px;
+    border-bottom: 1px solid #eef0f4;
+}
+
+.head-inner {
+    width: 77%;
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    margin: 0 auto;
+    padding-top: 15px;
+}
+
+#logo {
+    font-size: 14px;
+    font-weight: 900;
+    color: #00C73C;
+    padding: 10px 8px 10px 10px;
+}
+
+#name {
+    font-size: 20px;
+    padding-top: 4px;
+}
+
+.search-area {
+    height: 31px;
+    width: 288px;
+    border: 1px solid #00C73C;
+    margin: 0 0 0 18px;
+}
+
+#search {
+    border: 0px;
+    width: 230px;
+    height: 100%;
+    padding-top: 3px;
+}
+
+#search-magnifier {
+    height: 20px;
+    margin-top: 2px;
+}
+
+/* 카테고리 칸 */
+.category-bar {
+    height: 50px;
+    border-bottom: 1px solid #ddd;
+}
+
+.category {
+    width: 77%;
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    margin: 0 auto;
+}
+
+.item {
+    float: left;
+    padding: 0 15px;
+    font-weight: 500;
+    font-size: 14px;
+    color: #4c4c4c;
+    text-decoration: none;
+    margin-top: 15px;
+}
+
+.nav-button-question {
+    position: absolute;
+    top: -1px;
+    right: 0;
+    bottom: -1px;
+    height: 50px;
+    padding: 0 18px;
+    line-height: 50px;
+    border: 1px solid #00bd39;
+    background-color: #00c73c;
+    color: #fff;
+    font-size: 15px;
+}
+
+#delimiter {
+    font-weight: 400;
+    color: lightgray;
+}
+
+/* 질문 란 */
+.question {
+    padding: 42px 0 43px;
+}
+
+.question-content__inner {
+    width: 700px;
+    margin: 0 auto;
+}
+
+#Q {
+    height: 52px;
+}
+
+.qna-title-wrap {
+    display: flex;
+    overflow: hidden;
+    align-items: center;
+}
+
+.question-title {
+    font-size: 24px;
+}
+
+.question-content {
+    font-size: 16px;
+    padding-left: 5px;
+    padding-top: 3px;
+    line-height: 28px;
+}
+
+.question-info {
+    display: flex;
+    flex-direction: row;
+    margin-top:25px;
+    width: 100%;
+}
+
+.questioner-profile {
+    height: 24px;
+    border: 1px solid rgba(0,0,0,0.1);
+    box-sizing: border-box;
+    border-radius: 50%;
+}
+
+.questioner-nickname {
+    font-size: 13px;
+    padding-left: 10px;
+}
+
+.question-web-info {
+    font-size: 13px;
+    color: #909090;
+    margin-bottom: 0;
+}
+
+.question-reply-button {
+    margin-left: auto;
+    border: none;
+}
+
+.question-reply {
+    float: right;
+    height: 30px;
+    margin-left: auto;
+}
+
+
+.reply-content {
+    display: none;
+    margin-top: 28px;
+    margin-inline-start: 2px;
+    margin-inline-end: 2px;
+    padding-block-start: 0.35em;
+    padding-inline-start: 0.75em;
+    padding-inline-end: 0.75em;
+    padding-block-end: 0.625em;
+    min-inline-size: min-content;
+    border-width: 1px;
+    border-style: groove;
+    border-color: snow;
+    border-image: initial;
+}
+
+.opinion-write-textarea {
+    display: block;
+    overflow-x: hidden;
+    overflow-y: auto;
+    width: 100%;
+    height: 85px;
+    margin: 0;
+    padding: 20px;
+    border: 0;
+    background-color: rgba(255,255,255,0.001);
+    font-size: 14px;
+    line-height: 22px;
+    vertical-align: top;
+    resize: none;
+    box-sizing: border-box;
+}
+
+.opinion-write-form {
+    display: block;
+}
+
+.opinion-write-upload {
+    position: relative;
+    height: 43px;
+    border-top: 1px solid #f4f4f4;
+}
+
+.reply-upload-button {
+    position: absolute;
+    right: -1px;
+    bottom: -1px;
+    width: 68px;
+    height: 52px;
+    border: 1px solid #00b336;
+    background: #00c73c;
+    font-size: 13px;
+    font-weight: bold;
+    line-height: 43px;
+    color: #fff;
+    margin-right: -9px;
+    margin-bottom: -8px;
+}
+
+/* 답변 란 */
+.answer {
+    position: relative;
+    padding: 22px 0 40px;
+    border: 1px solid #eee;
+    background-color: #f4f5f6;
+}
+
+.classify-sorting {
+    height: 40px;
+    width: 700px;
+    margin: 0 auto;
+}
+
+.img-sorting {
+    height: 40px;
+    position:absolute;
+    right: 438px;
+}
+
+.answer-wrapper {
+    width: 800px;
+    margin: 0 auto;
+    position: relative;
+}
+
+.answer-box {
+    position: relative;
+    padding: 28px 0 0;
+    border: 1px solid #e5e5e5;
+    background-color: #fff;
+}
+
+.answer-title {
+    height: 70px;
+    display: table;
+    table-layout: fixed;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.profile-image {
+    position: absolute;
+    top: 20px;
+    left: 49px;
+    height: 56px;
+    border: 1px solid rgba(0,0,0,0.1);
+    box-sizing: border-box;
+    border-radius: 50%;
+}
+
+.heading-answer {
+    display: inline-block;
+    font-size: 16px;
+    position: relative;
+    padding-left: 120px;
+}
+
+.user-info {
+    font-size:13px;
+}
+
+.selected-or-not {
+    display: table-cell;
+}
+
+.selected {
+    height: 66px;
+    margin-left: 300px;
+    margin-top: -40px;
+}
+
+.answer-content {
+    font-family: se-nanumgothic,sans-serif;
+    border-top: 1px solid #eee;
+    padding-top: 20px;
+    font-size:16px;
+    margin: 0 49px;
+    padding-bottom: 30px;
+    line-height: 40px;
+}
+
+/* 다른 페이지 연결 */
+.wrap-end {
+    padding: 52px 0;
+}
+
+.related-questions {
+    width: 950px;
+    height: 258px;
+    margin: 0 auto;
+}
+
+.related-questions-title {
+    /*max-width: 990px;*/
+    font-size: 17px;
+    display: block;
+    font-weight: 600;
+}
+
+.relationQNAlist-top-panel {
+    margin-top:34px;
+}
+
+.detail-list-area {
+    position: relative;
+    white-space: nowrap;
+    box-sizing: border-box;
+    height: 172px;
+}
+
+.detail-qna {
+    white-space: normal;
+    float: left;
+    display: block;
+    width: 200px;
+    height: 168px;
+    /*overflow: hidden;*/
+    margin-right: 30px;
+}
+
+.qna-icon {
+    position: relative;
+    top: -3px;
+    left: 0;
+    padding-right: 0;
+    white-space: nowrap;
+    display: block;
+}
+
+.qna-title {
+    overflow: hidden;
+    display: block;
+    max-height: 56px;
+    width: 100%;
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 600;
+    white-space: nowrap;
+}
+
+.qna-content {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    height: 104px;
+    font-size:14px;
+    line-height: 26px;
+}
+
+/* footer */
+
+.footer-wrap {
+    border-top: 1px solid #ebebeb;
+}
+
+.footer {
+    width: 980px;
+    margin: 0 auto;
+    padding: 27px 0;
+    line-height: 20px;
+    font-size: 12px;
+    color: black;
+    text-align: center;
+}
+
+.footer-menu {
+    margin-bottom: 11px;
+}
+
+.footer-click {
+    color: black;
+}
+
+.delimiter {
+    font-weight: 400;
+    color: lightgray;
+}
+
+.copyright {
+    font-family: Verdana,sans-serif;
+    font-size: 10px;
+}
+
+
+
+/* 사이드바 */
+.side-bar {
+    position: fixed;
+    top: 150px;
+    right: 10%;
+    z-index: 100;
+    display: block;
+}
+
+.side-bar-menu {
+    /*height: 50px;*/
+    width: 80px;
+}

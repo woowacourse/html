@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>HTML</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="../css/index_style.css">
+    <script
+            src="https://code.jquery.com/jquery-3.4.1.min.js"
+            integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+            crossorigin="anonymous"></script>
+
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
+</head>
+<body>
+<div class="page-layout">
+    <header class="head-bar">
+        <div class="head-inner">
+            <p id="logo">WOOWA</p>
+            <p id="name">지식iN</p>
+            <div class="search-area">
+                <input id="search">
+                <a href="#">
+                    <img src="../media/search-magnifier.png" id="search-magnifier">
+                </a>
+            </div>
+        </div>
+    </header>
+    <div class="category-bar">
+        <div class="category">
+            <a class="item">홈</a>
+            <a class="item" style="color: #00C73C">Q&A</a>
+            <a class="item">답변하기</a>
+            <a class="item">지식기부</a>
+            <a class="item">사람들</a>
+            <a class="item">베스트</a>
+            <a class="item">명예의전당</a>
+            <span class="item" id="delimiter">|</span>
+            <a class="item">프로필</a>
+            <a class="item">파트너센터</a>
+            <a class="item">룰렛</a>
+            <a class="nav-button-question"> 질문하기 </a>
+        </div>
+    </div>
+    <div class="question">
+        <div class="question-content__inner">
+            <div class="question-title">
+                <img src="../media/Q.png" id="Q">
+                <span>HTML이 많이 발전했다고 들었는데여..</span>
+            </div>
+            <div class="question-content">
+                <div>
+                    안녕하세요 지식인 여러분 ^^
+                    <br/> 제가 또 왔어요^^
+                    <br/> HTML이라는 언어가 많이 발전해왔다고 들었는데요
+                    <br/> 그 이유가 뭔가여??!
+                    <br/> 궁금해 궁금해~
+                    <br/> 지식인 여러분 도와주세요~
+                </div>
+            </div>
+            <div class="question-info">
+                <img class="questioner-profile" src="../media/woowacrew.png">
+                <p class="questioner-nickname">  yeji**** </p>
+                <p class="question-web-info"> ∙  2020.03.21 </p>
+                <p class="question-web-info"> ∙  조회수 51</p>
+                <button class="question-reply-button">
+                    <img src="../media/reply.png" class="question-reply">
+                </button>
+            </div>
+            <div class="reply-content">
+                <div class="opinion-write-form">
+                    <textarea class="opinion-write-textarea" style="color: lightgray">개인정보를 공유 및 요청하거나, 명예 훼손, 무단 광고, 불법 정보 유포시 모니터링 후 삭제될 수 있으며, 이에 대한 민형사상 책임은 게시자에게 있습니다.</textarea>
+                </div>
+                <div class="opinion-write-upload">
+                    <button class="reply-upload-button">등록</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="answer">
+        <div class="classify-sorting">
+            <img src="../media/A.png" style="height: 30px">
+            <span style="font-size: 16px; font-weight: 800"> 1개 </span>
+            <img class="img-sorting" src="../media/sorting.png">
+        </div>
+        <div class="answer-wrapper">
+            <div class="answer-box">
+                <div class="answer-title">
+                    <div>
+                        <img class="profile-image" src="../media/woowacrew.png">
+                    </div>
+                    <div class="heading-answer">
+                        <p>yege****님 답변</p>
+                        <span class="user-info" style="color:#3867E8"> 시민 ∙ </span>
+                        <span class="user-info" style="color:#8C8C8C"> 채택답변수 3</span>
+                    </div>
+                    <div class="selected-or-not">
+                        <img src="../media/selected-answer.png" class="selected">
+                    </div>
+                </div>
+                <div class="answer-content">
+                    네, 맞습니다. HTML은 웹의 폭발적인 성장과 함께 발전해왔습니다.
+                    <br/> 이는 HTML에게 CSS와 Javascript라는 언어가 함께 있기 때문에 가능한 것인데요.
+                    <br/> 셋의 역할은 분명합니다.
+                    <br/> HTML은 정보의 골격을 나타내고
+                    <br/> CSS는 그 정보를 꾸며주고
+                    <br/> Javascript는 동작하게 도와주는 것입니다.
+                    <br/> 이 문장만으로는 쉽게 와닿지 않을 수 있습니다. 
+                    <br/> https://html-css-js.com/ 에 접속하면 셋의 역할을 재밌게 확인해볼 수 있습니다.
+                    <br/> CSS, Javascript와 함께 HTML은 정적인 콘텐츠를 보여주는 문서 즉 홈페이지에서,
+                    <br/> 게시판에 글을 쓰고 수정하고 공유하던 웹사이트에서,
+                    <br/> 쇼핑과 지금 우리가 사용하는 다양한 경험을 실시간 상호작용을 하는 웹서비스,
+                    <br/> 그리고 웹앱으로까지 진화하기에 이르렀습니다.
+                    <br/> HTML은 정말 좋은 친구들을 가지고 있네요 푸핫
+                    <br/> 도움이 되셨길 바랍니다.
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="wrap-end">
+        <div class="related-questions">
+            <div class="related-questions-title">연관 Q&A</div>
+            <div class="relationQNAlist-top-panel">
+                <div class="detail-list-area">
+                    <div class="detail-qna">
+                        <div class="qna-title-wrap">
+                            <img src="../media/Q.png" style="height: 20px">
+                            <a href="history.html" class="qna-title">HTML의 기원은 어떻게 되나요??</a>
+                        </div>
+                        <div class="qna-content">
+                            공부를 시작할 때 기초부터 시작하는 것은 항상 중요하죠! HTML 공부를 시작하시는군요! 답변해드리겠습니다^^
+                            HTML이란 HyperText Markup Language의 약자입니다!
+                            각 단어마다 띄어쓰기가 있기 때문에 단어별로 의미를 나눠서 살펴봐야 하는데요^^
+                            하나씩 설명해드리겠습니다^^
+                            HyperText, 즉 하이퍼텍스트는 웹페이지에 언제나 있는 기능인 링크라는 기능을 뜻합니다.
+                        </div>
+                    </div>
+                    <div class="detail-qna">
+                        <div class="qna-title-wrap">
+                            <img src="../media/Q.png" style="height: 20px">
+                            <a class="qna-title" href="definition.html">HTML의 정의에 대해 알려주세요~</a>
+                        </div>
+                        <div class="qna-content">
+                            공부를 시작할 때 기초부터 시작하는 것은 항상 중요하죠! HTML 공부를 시작하시는군요! 답변해드리겠습니다^^
+                            HTML이란 HyperText Markup Language의 약자입니다!
+                            각 단어마다 띄어쓰기가 있기 때문에 단어별로 의미를 나눠서 살펴봐야 하는데요^^
+                            하나씩 설명해드리겠습니다^^
+                        </div>
+                    </div>
+                    <div class="detail-qna">
+                        <div class="qna-title-wrap">
+                            <img src="../media/Q.png" style="height: 20px">
+                            <a href="tag-introduction.html" class="qna-title">HTML에 태그라는게 있다고 들었는데여..</a>
+                        </div>
+                        <div class="qna-content">
+                            우리가 시간을 제한된 숫자로 나타내듯이 html도 정보를 표현하기 위한 약속들이 있습니다.
+                            그것이 바로 태그, 인데요.
+                            어떤 상품에 붙어있는 태그는 그 상품에 대한 정보를 나타내고 있듯이
+                            HTML에서도 마찬가지에요^^
+                            어떤 문장이 있다면 이 내용에 태그를 붙임으로써
+                            이 문장이 웹페이지에서 어떤 역할을 하는지 다르게 표현할 수 있습니다.</div>
+                    </div>
+                    <div class="detail-qna">
+                        <div class="qna-title-wrap">
+                            <img src="../media/Q.png" style="height: 20px">
+                            <a class="qna-title" href="tags.html">HTML 태그 공부하는데여..</a>
+                        </div>
+                        <div class="qna-content">
+                            네, 열 가지 정도 소개해드릴게요.
+                            div : 이 태그는 HTML 문서에서 경계선이나 구획을 뜻합니다. 보통 이 태그는 CSS에서 스타일을 입히거나 Javascript로 특정 임무를 수행할 수 있도록 HTML 엘리먼트들을 감싸주는 컨테이너 역할을 합니다.
+                            header: 이 태그는 소개용 목차를 의미하거나 네비게이터 링크들의 집합을 나타냅니다. 보통 이 태그에는 헤더 엘리먼트들이나 로고나 아이콘, 원저자에 대한 정보가 들어있습니다. 한 문서에 여러 개의 헤더를 가질 수 있습니다.
+                            footer: 이 태그는 어떤 문서나 섹션의 꼬리말을 의미합니다. 보통 원저자 정보, 저작권 정보, 연락정보, 사이트맵, 맨 위로 올라가는 링크, 관련문서들을 포함합니다. 헤더와 마찬가지로 한 문서에 여러 개의 헤더를 가질 수 있습니다.
+                            script: 이 태그는 클라이언트쪽 스크립트를 정의하기 위해 쓰입니다. 엘리먼트는 스크립트문들을 포함하거나 src 속성을 통해 외부의 스크립트 파일을 가리켜야 합니다.
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer class="footer-wrap">
+        <div class="footer">
+            <div class="footer-menu">
+                <a class="footer-click">우와 이용약관 </a>
+                <span class="delimiter">|</span>
+                <a class="footer-click">지식iN 운영원칙 </a>
+                <span class="delimiter">|</span>
+                <a class="footer-click" style="font-weight: bold">개인정보처리방침 </a>
+                <span class="delimiter">|</span>
+                <a class="footer-click">게시중단요청서비스 </a>
+                <span class="delimiter">|</span>
+                <a class="footer-click">지식iN 고객센터</a>
+            </div>
+            <p class="copyright">
+                <span style="color:#00C73C; font-weight: 900; font-size:14px" >WOOWA</span>
+                <span>Copyright © </span>
+                <span style="font-weight: 600">WOOWA Corp. </span>
+                <span>All Rights Reserved.</span>
+            </p>
+
+        </div>
+    </footer>
+
+    <div class="side-bar">
+        <img class="side-bar-menu" src="../media/side-menu.png">
+    </div>
+</div>
+<script src="../javascript/myjs.js"></script>
+</body>
+</html>
