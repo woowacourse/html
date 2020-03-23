@@ -74,6 +74,6 @@ HTML은 사진, 오디오, 비디오 등 다양한 멀티미디어 리소스를 
 
 <br/>
 
-## 👏 Contributing
+## CopyRight
 
-만약 미션 수행 중에 개선사항이 보인다면, 언제든 자유롭게 PR을 보내주세요. 
+[HTML 요소 참고서](https://developer.mozilla.org/ko/docs/Web/HTML/Element) by [Mozilla Contributors](https://developer.mozilla.org/ko/) is licensed under [CC-BY-SA 2.5](https://creativecommons.org/licenses/by-sa/2.5/).
