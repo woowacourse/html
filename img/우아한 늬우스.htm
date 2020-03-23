@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<!-- saved from url=(0023)http://127.0.0.1:8080/# -->
+<html lang="ko"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <title>우아한 늬우스</title>
+    <link rel="stylesheet" href="./우아한 늬우스_files/index.css">
+    <link rel="stylesheet" href="./우아한 늬우스_files/modal.css">
+  </head>
+  <body>
+    <div class="container">
+      <div class="left-hand">
+        <a class="news-control-prev" id="news-detail-prev" href="http://127.0.0.1:8080/#" role="button" data-slide="prev">
+          <span class="news-control-prev-icon news-control-icon" aria-hidden="true"></span>
+        </a>
+      </div>
+
+      <div class="content-container">
+        <div class="news-container">
+          <div class="news-id-container">
+            <div id="news-id">1</div>
+          </div>
+          <div class="woowatech-logo-container">
+            <img src="./우아한 늬우스_files/woowa_tech_news.png">
+          </div>
+          <div class="anchor-container">
+            <img src="./우아한 늬우스_files/jun_seokhee.jpeg">
+          </div>
+          <div class="thumbnail-container" id="news-detail-opener">
+            <img id="news-thumbnail" src="./우아한 늬우스_files/tim_verners-lee.jpeg">
+            <!--img_source-->
+          </div>
+          <div class="head-line-container">
+            <h1 id="head-line">팀 버너스리 골방에서 html 만들어...</h1>
+          </div>
+        </div>
+      </div>
+
+      <div class="right-hand">
+        <a class="news-control-next" id="news-detail-next" href="http://127.0.0.1:8080/#" role="button" data-slide="next">
+          <span class="news-control-next-icon news-control-icon" aria-hidden="true"></span>
+        </a>
+      </div>
+    </div>
+
+    <!-- 모달 창 -->
+    <div class="modal fade" tabindex="-1" role="dialog" id="news-detail-modal" style="display: block;">
+      <div class="modal-dialog modal-dialog-centered" id="news-modal-dialog" style="
+    display: flex;
+    justify-content: center;
+">
+        <div class="modal-content" id="news-modal-content" style="
+    width: 50%;
+">
+          <div class="modal-body" id="profile-area"></div>
+
+          <div class="modal-body" id="content-area">
+            <div class="mypet-body">
+              <div class="mypet-picture">
+                <div class="picture">
+                  <div class="picture-wrapper" ondblclick="likeDoubleClick()">
+                    <div id="post-picture">
+                      <!-- <img src="https://s3.amazonaws.com/cdn-origin-etr.akc.org/wp-content/uploads/2018/05/22224952/beagle-puppy-in-large-cushion-chair.jpg"> -->
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="mypet-content-body">
+              <div class="mypet-title">
+                <h4 id="post-title"></h4>
+              </div>
+
+              <div class="mypet-created-date">
+                <span id="created-date"></span>
+              </div>
+
+              <div class="mypet-content" id="post-content"></div>
+            </div>
+
+            <div class="reply-like">
+              <table class="s-caption-table">
+                <tbody><tr>
+                  <td class="pr-1">
+                    <i id="like-icon" class="like-icon fas fa-paw s-likes-icon" onclick="likeClick()"></i>
+                    좋아요 <span class="s-likes" id="like-count"></span>
+                  </td>
+                  <td class="px-1">
+                    <i id="comment-icon" class="comment-icon far fa-comment"></i>
+                    댓글 <span id="comment-count" class="s-comments"></span>
+                  </td>
+                </tr>
+              </tbody></table>
+            </div>
+
+            <div id="mypet-replies-body" class="mypet-replies"></div>
+          </div>
+
+          <div class="modal-body" id="reply-form">
+            <form>
+              <input name="content" id="comment-save-part" class="form-control" placeholder="댓글 달기...">
+              <input name="postId" id="post-id" type="hidden" value="2">
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  
+  <script src="./우아한 늬우스_files/news.js" type="module"></script>
+  <script src="./우아한 늬우스_files/index.js" type="module"></script>
+
+</body></html>

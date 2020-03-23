@@ -1,0 +1,102 @@
+html, body {
+    width: 100%;
+    height: 100%;
+    margin: 0px;
+    font-family: 'Do Hyeon', sans-serif;
+}
+img {
+    width: 100%;
+    max-height: 100%;
+    object-fit: cover;
+    object-position: top;
+}
+h1 {
+    color: white;
+    opacity: 100%;
+}
+.container {
+    width: 100%;
+    height: 100%;
+    min-width: 500px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: black;
+}
+
+.left-hand, .right-hand {
+    width: 12%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: black;
+}
+.news-control-next, .news-control-prev {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-align: center;
+    align-items: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    color: #fff;
+    text-align: center;
+    opacity: .5;
+}
+.news-control-icon:hover {
+    background-color: grey;
+}
+.news-control-next-icon, .news-control-prev-icon {
+    display: inline-block;
+    width: 60px;
+    height: 60px;
+    background: transparent no-repeat center center;
+    background-size: 100% 100%;
+}
+.news-control-next-icon {
+    background-image: url("../img/next_arrow.png")
+}
+.news-control-prev-icon {
+    background-image: url("../img/prev_arrow.png")
+}
+.news-id-container {
+    display: none;
+}
+.content-container {
+    width: 76%;
+    display: flex;
+    justify-content: center;
+}
+.news-container {
+    width: 100%;
+    position: relative;
+}
+.woowatech-logo-container {
+    width: 20%;
+    position: absolute;
+    top: 5px;
+    left: 15px;
+}
+.thumbnail-container {
+    width: 30%;
+    height: 35%;
+    display: flex;
+    align-items: center;
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    background-color: white;
+}
+
+.head-line-container {
+    width: 100%;
+    height: 15%;
+    position: absolute;
+    bottom: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(0, 0, 255, 0.6);
+}
