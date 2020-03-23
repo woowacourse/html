@@ -15,10 +15,12 @@ body {
   background-size: 100% 100%;
   background-position: fixed;
 }
+
 header {
   position: relative;
   height: 30vh;
 }
+
 #title {
   position: absolute;
   width: max-content;
@@ -27,40 +29,16 @@ header {
   font-size: 4rem;
   left: 50%;
   bottom: 0px;
+  padding: 0 0 40px 0;
   transform: translate(-50%, 0);
 }
+
 #contents-box {
   position: relative;
   min-height: calc(100vh - 30vh - 5vh);
-  /* background-color: aqua; */
+  background-color: aqua;
 }
-.nav {
-  position: relative;
-  min-height: 10vh;
-  width: 100%;
-  text-align: center;
-  /* background-color: bisque; */
-}
-.box {
-  position: relative;
-  width: 50px;
-  height: 50px;
-  border-radius: 50%;
-  /* background-color: gray; */
-}
-.wrapper {
-  left: 50%;
-  display: inline-block;
-  padding: 0 80px;
-  text-align: center;
-  /* background-color: blueviolet; */
-}
-.arrowIcon {
-  position: relative;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-}
+
 .content {
   position: relative;
   left: 50%;
@@ -68,8 +46,40 @@ header {
   width: 650px;
   padding: 20px;
   padding-bottom: 60px;
-  /* background-color: blue; */
+  background-color: blue;
   font-size: 1.5rem;
+}
+
+.nav {
+  position: relative;
+  min-height: 10vh;
+  width: 100%;
+  text-align: center;
+  background-color: bisque;
+}
+
+.box {
+  position: relative;
+  left: 50%;
+  transform: translate(-50%);
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: gray;
+}
+
+.wrapper {
+  position: relative;
+  display: inline-block;
+  padding: 0 80px;
+  background-color: green;
+}
+
+.arrowIcon {
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
 .h2-title {
@@ -79,7 +89,7 @@ header {
   width: max-content;
   height: max-content;
 
-  /* background-color: aliceblue; */
+  background-color: aliceblue;
 }
 
 .h3-title {
@@ -89,7 +99,7 @@ header {
   width: max-content;
   height: max-content;
 
-  /* background-color: aliceblue; */
+  background-color: aliceblue;
 }
 
 .image-box {
@@ -97,9 +107,7 @@ header {
   left: 50%;
   transform: translate(-50%);
   width: 390px;
-  padding-bottom: 60px;
-  padding: 60px;
-  /* background-color: brown; */
+  background-color: brown;
 }
 
 .perhaps {
@@ -109,9 +117,11 @@ header {
 #information-box {
   padding: 20px;
 }
+
 .sub-information-box {
   padding: 5px;
 }
+
 footer {
   left: 0px;
   bottom: 0px;
@@ -120,4 +130,18 @@ footer {
   text-align: center;
   line-height: 60px;
   background: grey;
+}
+
+.mark-code {
+  background-color: rgb(201, 195, 195);
+  color: rgb(209, 39, 39);
+  border-radius: 5px;
+  font-size: 1.3rem;
+  padding: 0 3px;
+}
+
+.text {
+  position: relative;
+  width: 100%;
+  background-color: #cccccc;
 }
