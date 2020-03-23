@@ -225,7 +225,7 @@ const commands = {
         messages.addMessage({
             message: `
             <b>&lt;img&gt;</b> 요소는 문서에 이미지를 넣습니다.<br><br>
-            <img src="./assets/img/white-logo.png">
+            <img src="./assets/img/light-logo.png">
             `
         })
     },
