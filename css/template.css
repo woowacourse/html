@@ -152,7 +152,12 @@ input {
 
 input[type="submit"] {
   border-radius: 5px;
+  background-color: gray;
   color: #fff;
   font-family: BMHANNAProOTF;
   font-size: 14pt;
+}
+
+#answer {
+  width: 50%;
 }

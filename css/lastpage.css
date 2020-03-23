@@ -68,6 +68,7 @@ footer {
 input[type="submit"] {
   display: block;
   border-radius: 5px;
+  background-color: gray;
   color: #fff;
   font-family: BMHANNAProOTF;
   font-size: 14pt;
