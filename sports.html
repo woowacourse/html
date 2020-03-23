@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Ninty Centry HTML</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/main.css">
+</head>
+
+<body>
+    <div id="app">
+        <header>
+            <div class="logo">
+                <a href="main.html"><img src="img/logo_thumnail_dark (1).png" alt="우아한 뉴스"></a>
+            </div>
+            <div id="header-name">
+                <h1 id="news-name">Woowa&nbsp;&nbsp;News</h1>
+            </div>
+            <div class="logo"></div>
+        </header>
+        <div id="search">
+            <input type="text" placeholder="검색어 입력">
+            <button>검색</button>
+        </div>
+        <main class="posts">
+            <div class="list">
+                <nav class="main-menu-container">
+                    <ul role="tablist" class="menu">
+                        <li><a href="breaking-news.html" role="tab">속보</a></li>
+                        <li><a href="sports.html">스포츠</a></li>
+                        <li><a href="it.html">IT</a></li>
+                        <li><a href="culture.html">문화/예술</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <section id="stream-panel" class="content-area">
+                <article aria-live="polite" class="content">
+                    <div class="content-date">
+                        <time>Mar.20.2020</time>
+                    </div>
+                    <div class="content-news">
+                        <div class="news-title">
+                            류현진이 말하는 캠프 중단 그 후
+                        </div>
+                        <div class="news-body">
+                            코로나바이러스감염증-19(코로나19)로 인해 MLB사무국이 스프링캠프 훈련 및 시범경기를 중단시켰고, 
+                            최근 캐나다 정부가 외국인들의 캐나다 입국을 제한한 터라 류현진은 TD볼파크에 남아 훈련하는 방법 외에는 별다른 선택지가 없었다.  
+                        </div>
+                        <div class="news-author">
+                            By Young Mi
+                        </div>
+                    </div>
+                    <div class="content-image">
+                        <img src="./img/ryu.jpg" alt="류현진">
+                    </div>
+                </article>
+                <article aria-live="polite" class="content">
+                    <div class="content-date">
+                        <time>Mar.19.2020</time>
+                    </div>
+                    <div class="content-news">
+                        <div class="news-title">
+                            손흥민, 지단 감독 '원픽'으로 올 여름 레알 마드리드로 이적
+                        </div>
+                        <div class="news-body">
+                            대한민국을 대표하는 축구선수 손흥민이 스페인 명문 레알 마드리드 이적설에 휩싸였다.
+                        </div>
+                        <div class="news-author">
+                            By Sang Woo
+                        </div>
+                    </div>
+                    <div class="content-image">
+                        <img src="./img/son.jpg" alt="손흥민">
+                    </div>
+                </article>
+            </section>
+        </main>
+    </div>
+</body>
+</html>

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Ninty Centry HTML</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/main.css">
+</head>
+
+<body>
+    <div id="app">
+        <header>
+            <div class="logo">
+                <a href="main.html"><img src="img/logo_thumnail_dark (1).png" alt="우아한 뉴스"></a>
+            </div>
+            <div id="header-name">
+                <h1 id="news-name">Woowa&nbsp;&nbsp;News</h1>
+            </div>
+            <div class="logo"></div>
+        </header>
+        <div id="search">
+            <input type="text" placeholder="검색어 입력">
+            <button>검색</button>
+        </div>
+        <main class="posts">
+            <div class="list">
+                <nav class="main-menu-container">
+                    <ul role="tablist" class="menu">
+                        <li><a href="breaking-news.html" role="tab">속보</a></li>
+                        <li><a href="sports.html">스포츠</a></li>
+                        <li><a href="it.html">IT</a></li>
+                        <li><a href="culture.html">문화/예술</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <section id="stream-panel" class="content-area">
+                <article aria-live="polite" class="content">
+                    <div class="content-date">
+                        <time>Mar.22.2020</time>
+                    </div>
+                    <div class="content-news">
+                        <div class="news-title">
+                            21일 코로나 확진자 98명 증가
+                        </div>
+                        <div class="news-body">
+                            22일 국내 코로나19 확진자 수는 총 8천897명으로 집계됐습니다.
+                            중앙방역대책본부는 이날 0시 기준 코로나19 확진자가 전날 0시보다 98명 증가했다고 밝혔습니다.
+                        </div>
+                        <div class="news-author">
+                            By Tae Hoon
+                        </div>
+                    </div>
+                    <div class="content-image">
+                        <img src="./img/corona.jpg" alt="코로나">
+                    </div>
+                </article>
+            </section>
+        </main>
+    </div>
+</body>
+</html>
