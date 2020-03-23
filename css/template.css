@@ -1,0 +1,163 @@
+@import "reset.css";
+
+@font-face {
+  font-family: "BMHANNAProOTF";
+  src: url(../font/BMHANNAProOTF.otf) format(opentype);
+}
+
+html,
+body {
+  height: 100vh;
+  font-family: BMHANNAProOTF;
+  background-image: url(../background/background2.jpeg);
+  background-repeat: repeat;
+  background-position: center;
+  background-size: 100% 100%;
+  background-position: fixed;
+}
+
+header {
+  position: relative;
+  height: 30vh;
+}
+
+#title {
+  position: absolute;
+  width: max-content;
+  height: max-content;
+  text-align: center;
+  font-size: 4rem;
+  left: 50%;
+  bottom: 0px;
+  padding: 0 0 40px 0;
+  transform: translate(-50%, 0);
+}
+
+#contents-box {
+  position: relative;
+  min-height: calc(100vh - 30vh - 60px);
+}
+
+.content {
+  position: relative;
+  left: 50%;
+  transform: translate(-50%);
+  width: 650px;
+  padding: 20px;
+  padding-bottom: 60px;
+  font-size: 1.5rem;
+}
+
+.nav {
+  position: relative;
+  width: 100%;
+  text-align: center;
+  min-height: 15vh;
+}
+
+.box {
+  position: relative;
+  left: 50%;
+  transform: translate(-50%);
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: gray;
+}
+
+.wrapper {
+  position: relative;
+  display: inline-block;
+  padding: 0 80px;
+}
+
+.arrowIcon {
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.h2-title {
+  position: relative;
+  font-size: 3rem;
+  padding: 5% 0;
+  width: max-content;
+  height: max-content;
+}
+
+.h3-title {
+  position: relative;
+  font-size: 2rem;
+  padding: 10px 0;
+  width: max-content;
+  height: max-content;
+}
+
+.image-box {
+  position: relative;
+  left: 50%;
+  transform: translate(-50%);
+  width: 390px;
+}
+
+.perhaps {
+  text-indent: 20px;
+}
+
+#information-box {
+  padding: 20px;
+}
+
+.sub-information-box {
+  padding: 5px;
+}
+
+footer {
+  left: 0px;
+  bottom: 0px;
+  height: 60px;
+  width: 100%;
+  text-align: center;
+  line-height: 60px;
+  background: grey;
+}
+
+.mark-code {
+  background-color: rgb(201, 195, 195);
+  color: rgb(209, 39, 39);
+  border-radius: 5px;
+  font-size: 1.3rem;
+  padding: 0 3px;
+}
+
+.text {
+  position: relative;
+  width: 100%;
+  background-color: #cccccc;
+}
+
+label {
+  display: block;
+  font: 1rem;
+  margin: 0.4rem 0;
+}
+
+input {
+  border-radius: 5px;
+  font-family: BMHANNAProOTF;
+  font-size: 14pt;
+  margin: 0.4rem 0;
+}
+
+input[type="submit"] {
+  border-radius: 5px;
+  background-color: gray;
+  color: #fff;
+  font-family: BMHANNAProOTF;
+  font-size: 14pt;
+}
+
+#answer {
+  width: 50%;
+}

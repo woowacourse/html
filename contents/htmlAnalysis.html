@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="jeseok95@gmail.com" />
+    <script src="https://kit.fontawesome.com/c9677c888c.js"></script>
+    <title>90's HTML 이야기</title>
+    <link href="../css/template.css" rel="stylesheet" />
+  </head>
+  <body>
+    <header>
+      <div id="title">
+        <h1>다시, HTML이란</h1>
+      </div>
+    </header>
+    <article id="contents-box">
+      <section class="content">
+        <div class="h2-title"><h2>📗html의 정의</h2></div>
+        <div>
+          <div class="image-box" style="padding: 10px;">
+            <img
+              src="../image/html-justice.png"
+              alt="html정의"
+              style="width: 100%;"
+            />
+          </div>
+          <p class="perhaps">
+            어떤 단어든 그 이름과 정의가 가지는 의미는 매우 추상적이어서 한번에
+            이해하기는 어렵지만, 그 대상의 가장 큰 특징을 나타내고 있기에
+            집중해서 살펴볼 가치가 있습니다. HTML이란
+            <code>HyperText</code>,<code>Markup</code>,<code>Language</code>의
+            약자입니다. 각 단어마다 띄어쓰기가 있기 때문에 단어별로 의미를
+            나눠서 살펴보도록 하겠습니다.
+          </p>
+        </div>
+        <div class="image-box" style="padding: 10px;">
+          <img
+            src="../image/html-seperate-justice.png"
+            alt="html개별 정의"
+            style="width: 100%;"
+          />
+        </div>
+        <p class="perhaps">
+          의미를 위와 같이 나눌 수 있는데요. 풀어서 이야기하면 하이퍼텍스트를
+          중요한 특징으로 가지는 마크업 형식의 언어라는 것입니다. 웹페이지를
+          보면 언제나 있는게 있습니다. 세계 최초의 웹페이지에도 있는 것인데요
+          그것은 바로 링크입니다. 그 링크라고 하는 기능이 하이퍼
+          텍스트입니다.<br />
+          그리고 <span style="color: grey">마크업</span>이라고 하는 것은 다음에
+          나오는 언어와 관련있는데
+          <span style="color: grey">마크업이라는 문법적인 특성</span>을 가지고
+          있는 언어라는 뜻입니다. 즉
+          <span style="color: grey"
+            >하이퍼텍스트를 가장 중요한 특징으로 하고 마크업</span
+          >이라는 형식을 가진 언어가 <span style="color: grey">HTML</span>인
+          것입니다
+        </p>
+      </section>
+      <section class="content">
+        <div class="h2-title"><h2>🔖태크</h2></div>
+        <div>
+          <p class="perhaps">
+            언어의 가장 핵심적인 특징은 바로 약속입니다. 이 약속이 있기 때문에
+            우리는 상대방의 이야기를 해석하고 소통할 수 있습니다. html은
+            웹브라우저에 표시되는 웹페이지를 만들어 달라고 컴퓨터에게 요청하는
+            언어입니다 사람과 컴퓨터 사이의 약속일 뿐만 아니라 사람과
+            웹브라우저라고 하는 프로그램 사이에서 서로가 이해할 수 있는 약속이
+            바로 html인 것이죠 우리가 시간을 제한된 숫자로 나타내듯이 html도
+            정보를 표현하기 위한 약속들이 있습니다. 그것은 바로 태그입니다. 어떤
+            상품에 붙어있는 <code class="mark-code">태그</code>는 그 상품에 대한
+            정보를 나타내고 있습니다. HTML에서도 마찬 가지입니다.
+          </p>
+        </div>
+        <div class="image-box" style="padding: 30px;">
+          <img
+            src="../image/eample-tag(1).png"
+            alt="테그 예시"
+            style="width: 100%;"
+          />
+        </div>
+        <div>
+          <p class="perhaps">
+            위와 같은 문장이 있다고 해봅시다. 이 내용에 태그를 붙임으로써 이
+            문장이 웹페이지에서 어떤 역할을 하는지 다르게 표현할 수 있습니다.
+            예를들어 문장의 앞 뒤에 h1이라는 태그를 붙여보도록 하겠습니다.
+            여기서 h1이라는 것은 제목을 나타내는 태그입니다. 즉
+            <cdoe class="mark-code">&lt;h1&gt;</cdoe> 태그를 붙임으로써 이
+            문장은 해당 웹페이지에서 제목을 나타내는 역할을 가지게 됩니다. 다른
+            태그를 이용해서 h1과 동일하게 보이게 만드는 방법도 있지만 h1을
+            사용한다는 것은 해당 내용이 제목이 된다는 정보를 주는 것이기 때문에
+            구분해서 사용해야 합니다.
+          </p>
+        </div>
+        <div class="image-box" style="padding: 30px;">
+          <img
+            src="../image/example-tag(2).png"
+            alt="테그 예시2"
+            style="width: 100%;"
+          />
+        </div>
+        <div>
+          <p class="perhaps">
+            이 구조를 좀 더 상세히 살펴보면 앞에 태그를
+            <code class="mark-code">여는 태그</code>여는 태그, 뒤에 슬러시와
+            함께 있는 태그를<code class="mark-code">닫는 태그</code>라고
+            합니다.<br />
+            그리고 태그 사이에 잇는 내용을
+            <code class="mark-code">콘텐츠</code>라고 하고, 콘텐츠와 태그를
+            포함한 전체를 한 <code class="mark-code">엘리먼트</code>라고
+            표현합니다.<br />
+          </p>
+          <p class="perhaps">
+            이렇게 html에서 사용하는 태그들이 약 150개 이상이 있고 시간이
+            지날수록 추가되는 태그들도 있습니다. 하지만 이것들을 전부 외울
+            필요는 없습니다. 자주 사용하는 것들만 외우고 나머지는 필요에 따라
+            찾아서 사용하면 되기 때문인데요. 그렇다면 자주 사용하는 것들은
+            어떻게 알 수 있을까요?
+          </p>
+          <p class="perhaps">
+            가장 확실한 방법은 통계수치를 이용해서 데이터의 중요도를 나누는
+            것입니다. 구글에서 전 세계에서 만들어진 수 많은 웹페이지를 분석하고,
+            그 통계를 바탕으로 자주 사용하는 html tag를 분석해 놓은 
+            <a href =https://www.advancedwebranking.com/html>리포트</a>가
+            있습니다. 총 700만개 이상의 웹페이지를 분석한 결과 평균적으로 약
+            28개의 서로 다른 엘리먼트를 사용하였습니다.
+          </p>
+          <div style="width:100%;font-size: 1rem; margin-top: 50px;">
+            그림 출처:<br />https://techcourse.woowahan.com/s/wTqesI5s/ls/BJaPsQCm</div>
+        </div>
+      </section>
+      <section class="content">
+        <div style="text-align: center">자! 이제 html에 대해 알아봤으니 퀴즈를 풀어봅시다.</div>
+      </section>
+    </article>
+    <nav class="nav">
+      <div class="wrapper">
+        <div class="box">
+          <div class="arrowIcon">
+            <a href="./intro.html">
+              <i class="fas fa-arrow-left fa-2x"></i>
+            </a>
+          </div>
+        </div>
+        <div class="text"">앞 전</div>
+      </div>
+      <div class="wrapper">
+        <div class="box">
+          <div class="arrowIcon">
+            <a href="./quiz.html">
+              <i class="fas fa-arrow-right fa-2x"></i>
+            </a>
+          </div>
+        </div>
+        <div class="text"">Quiz start</div>
+      </div>
+    </nav>
+    <footer class="footer">
+      <p>
+        Copyright 2020
+        <a href="https://github.com/joseph415">https://github.com/joseph415</a>
+        All rights reserved
+      </p>
+    </footer>
+  </body>
+</html>
