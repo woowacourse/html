@@ -1,0 +1,115 @@
+@import url(//fonts.googleapis.com/css?family=Yanone+Kaffeesatz);
+
+@import url(//fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic);
+
+@import url(//fonts.googleapis.com/css?family=Ubuntu+Mono:400,700,400italic);
+
+@import url(//fonts.googleapis.com/earlyaccess/hanna.css);
+
+@font-face { font-family: 'BMHANNAAir'; src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_four@1.0/BMHANNAAir.woff') format('woff'); font-weight: normal; font-style: normal; }
+
+body {
+    font-family: 'BMHANNAAir', sans-serif; 
+    margin: 0;
+}
+
+h1, h2, h3 {
+    font-family: 'Hanna', sans-serif;
+    font-weight: normal;
+    font-size: 2em;
+}
+
+header {
+    background-color: white;
+    font-size: 3em;
+}
+
+header h1 {
+    text-align: center;
+}
+
+footer {
+    text-align: center;
+    padding: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+img {
+    max-width: 100%;
+}
+
+.sidenav {
+    border: 1px solid rgb(170, 170, 170);
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: white;
+    position: -webkit-sticky; /* Safari */
+    position: sticky;
+    top: 0;
+}
+  
+li {
+    float: left;
+}
+  
+li a {
+    display: block;
+    color: black;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover {
+    background-color: black;
+    color: white;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+  
+.active {
+    background-color: black;
+    color: white;
+}
+
+.wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.content {
+    display: flex;
+    align-items: left;
+    flex-direction: column;
+    width: 1080px;
+}
+
+div.gallery {
+    margin: 5px;
+    border: 1px solid #ccc;
+    float: left;
+    width: 300px;
+}
+  
+div.gallery:hover {
+    border: 1px solid #777;
+}
+  
+div.gallery img {
+    width: 100%;
+    height: auto;
+}
+  
+div.desc {
+    padding: 15px;
+    text-align: center;
+}

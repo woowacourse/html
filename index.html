@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>90년생 HTML</title>
+    <link rel="shortcut icon" href="https://techcourse.woowahan.com/favicon.ico">
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+    <div class="app">
+        <header>
+            <h1>90년생 HTML</h1>
+        </header>
+
+        <div class="wrapper">
+            <ul class="sidenav">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#video">Video</a></li>
+                <li><a href="#images">Images</a></li>
+                <li><a href="#comment">Comment</a></li>
+            </ul>
+
+            <div class="content">
+                <a name="home">
+                    <h2>HTML을 소개합니다.</h2>
+                </a>
+                <div class="home">
+                    <img src="./img/html_introduce.png" width="100%">
+                </div>
+
+                어떤 단어든 그 이름과 정의가 가지는 의미는 매우 추상적이어서 한번에 이해하기는 어렵지만,
+                그 대상의 가장 큰 특징을 나타내고 있기에 집중해서 살펴볼 가치가 있습니다.
+                HTML이란 HyperText Markup Language의 약자입니다.
+                각 단어마다 띄어쓰기가 있기 때문에 단어별로 의미를 나눠서 살펴보도록 하겠습니다.
+
+
+                의미를 위와 같이 나눌 수 있는데요. 풀어서 이야기하면 하이퍼텍스트를 중요한 특징으로 가지는 마크업 형식의 언어라는 것입니다.
+                웹페이지를 보면 언제나 있는게 있습니다. 세계 최초의 웹페이지에도 있는 것인데요 그것은 바로 링크입니다. 그 링크라고 하는 기능이 하이퍼 텍스트입니다.
+
+                그리고 마크업이라고 하는 것은 다음에 나오는 언어와 관련있는데
+                마크업이라는 문법적인 특성을 가지고 있는 언어라는 뜻입니다.
+                즉 하이퍼텍스트를 가장 중요한 특징으로 하고 마크업이라는 형식을 가진 언어가
+                HTML인 것입니다.
+
+                <a name="video">
+                    <h2>동영상</h2>
+                </a>
+                <div class="video" name="video">
+                    <iframe width="1080" height="720" src="https://www.youtube.com/embed/rr6fZ2eg0KU" frameborder="0"
+                        allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen></iframe>
+                </div>
+
+                <a name="images">
+                    <h2>갤러리</h2>
+                </a>
+                <div class="images">
+                    <div class="gallery">
+                        <img src="./img/1990-10.png" alt="1990년 10월" width="800" height="600">
+                        <div class="desc">
+                            <h3>1990년 10월</h3></br>
+                            세계 최초로 웹페이지를 만드는 에디터를 만듭니다
+                        </div>
+                    </div>
+
+                    <div class="gallery">
+                        <img src="./img/1990-11.png" alt="1990년 11월" width="800" height="600">
+                        <div class="desc">
+                            <h3>1990년 11월</h3></br>
+                            HTML 페이지를 볼 수 있는 세계 최초의 웹브라우저인 World Wide Web을 만듭니다.
+                        </div>
+                    </div>
+
+                    <div class="gallery">
+                        <img src="./img/1990-12.png" alt="1990년 12월" width="800" height="600">
+                        <div class="desc">
+                            <h3>1990년 12월</h3></br>
+                            웹서버라는 프로그램을 만들고 그 프로그램이 설치되어있는 컴퓨터에 info.cern.ch라는 주소를 부여합니다.
+                        </div>
+                    </div>
+                </div>
+
+                <a name="comment"></a>
+                <div id="form-commentInfo">
+                    <div id="comment-count">
+                        <h1>댓글: <span id="count">0</h1></span>
+                    </div>
+                    <input id="comment-input" placeholder="댓글을 입력해 주세요."> <button id="submit">등록</button>
+                </div>
+
+                <div id=comments>
+                </div>
+
+                <footer>Copyright © KS-KIM. All rights reserved.</footer>
+                <script src="./js/index.js"></script>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
