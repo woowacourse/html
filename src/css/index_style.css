@@ -107,6 +107,12 @@ body {
     height: 52px;
 }
 
+.qna-title-wrap {
+    display: flex;
+    overflow: hidden;
+    align-items: center;
+}
+
 .question-title {
     font-size: 24px;
 }
@@ -143,12 +149,75 @@ body {
     margin-bottom: 0;
 }
 
+.question-reply-button {
+    margin-left: auto;
+    border: none;
+}
+
 .question-reply {
-    /*position: absolute;*/
-    /*right: 300px;*/
-    /*margin-bottom: 5px;*/
     float: right;
     height: 30px;
+    margin-left: auto;
+}
+
+
+.reply-content {
+    display: none;
+    margin-top: 28px;
+    margin-inline-start: 2px;
+    margin-inline-end: 2px;
+    padding-block-start: 0.35em;
+    padding-inline-start: 0.75em;
+    padding-inline-end: 0.75em;
+    padding-block-end: 0.625em;
+    min-inline-size: min-content;
+    border-width: 1px;
+    border-style: groove;
+    border-color: snow;
+    border-image: initial;
+}
+
+.opinion-write-textarea {
+    display: block;
+    overflow-x: hidden;
+    overflow-y: auto;
+    width: 100%;
+    height: 85px;
+    margin: 0;
+    padding: 20px;
+    border: 0;
+    background-color: rgba(255,255,255,0.001);
+    font-size: 14px;
+    line-height: 22px;
+    vertical-align: top;
+    resize: none;
+    box-sizing: border-box;
+}
+
+.opinion-write-form {
+    display: block;
+}
+
+.opinion-write-upload {
+    position: relative;
+    height: 43px;
+    border-top: 1px solid #f4f4f4;
+}
+
+.reply-upload-button {
+    position: absolute;
+    right: -1px;
+    bottom: -1px;
+    width: 68px;
+    height: 52px;
+    border: 1px solid #00b336;
+    background: #00c73c;
+    font-size: 13px;
+    font-weight: bold;
+    line-height: 43px;
+    color: #fff;
+    margin-right: -9px;
+    margin-bottom: -8px;
 }
 
 /* 답변 란 */
@@ -160,8 +229,15 @@ body {
 }
 
 .classify-sorting {
-    height: 32px;
-    margin-bottom: 11px;
+    height: 40px;
+    width: 700px;
+    margin: 0 auto;
+}
+
+.img-sorting {
+    height: 40px;
+    position:absolute;
+    right: 438px;
 }
 
 .answer-wrapper {
@@ -217,11 +293,13 @@ body {
 }
 
 .answer-content {
+    font-family: se-nanumgothic,sans-serif;
     border-top: 1px solid #eee;
     padding-top: 20px;
     font-size:16px;
     margin: 0 49px;
     padding-bottom: 30px;
+    line-height: 40px;
 }
 
 /* 다른 페이지 연결 */
@@ -278,7 +356,7 @@ body {
     max-height: 56px;
     width: 100%;
     font-size: 16px;
-    line-height: 28px;
+    line-height: 24px;
     font-weight: 600;
     white-space: nowrap;
 }
