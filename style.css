@@ -1,5 +1,113 @@
-footer > a {
-    text-decoration: none;
-    color: inherit;
+@import url(//fonts.googleapis.com/css?family=Yanone+Kaffeesatz);
+@import url(//fonts.googleapis.com/css?family=Droid+Serif:400, 700, 400italic);
+@import url(//fonts.googleapis.com/css?family=Ubuntu+Mono:400, 700, 400italic);
+@import url(//fonts.googleapis.com/earlyaccess/hanna.css);
+
+@font-face {
+  font-family: "BMHANNAAir";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_four@1.0/BMHANNAAir.woff")
+    format("woff");
+  font-weight: bold;
+  font-style: normal;
 }
 
+body {
+  font-family: "BMHANNAAir";
+  max-width: 60%;
+  margin: auto;
+}
+
+header {
+  display: flex;
+  justify-content: center;
+}
+
+footer {
+  text-align: center;
+  margin: auto;
+  padding: 1rem;
+}
+
+footer > a {
+  text-decoration: none;
+  color: inherit;
+}
+
+h1 {
+  font-size: 5rem;
+}
+
+nav {
+  font-size: 2rem;
+  position: sticky;
+  display: flex;
+  justify-content: center;
+}
+
+p {
+  line-height: 1.6;
+  text-align: center;
+}
+
+nav > ul {
+  list-style-type: none;
+  display: flex;
+  justify-content: center;
+  justify-items: center;
+}
+
+nav > ul > li {
+  margin: auto;
+  justify-content: center;
+  justify-items: center;
+}
+
+nav > ul > li > a {
+  border: 1px solid gray;
+  text-decoration: none;
+  color: inherit;
+  padding: 2rem 3rem;
+  margin: auto;
+}
+
+a {
+  text-decoration: none;
+}
+
+li > a:hover {
+  background-color: black;
+  color: white;
+}
+
+article > h2 {
+  border-top: 2px solid gray;
+  border-bottom: 2px solid gray;
+  padding: 2rem 0;
+  font-size: 3rem;
+  text-align: center;
+}
+
+h3 {
+  font-size: 2rem;
+  text-align: center;
+}
+
+img {
+  display: flex;
+  margin: 0 auto;
+  max-width: 60%;
+  align-items: center;
+  justify-content: center;
+}
+
+#comment-area {
+  margin: auto;
+  font-size: 1rem;
+  text-align: center;
+  justify-items: center;
+  justify-content: center;
+}
+
+#comment-textarea {
+  font-size: 1rem;
+}
