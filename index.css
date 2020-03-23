@@ -1,0 +1,91 @@
+body{
+	background-image : url(images/background.jpg);
+	color: #3F3D42;
+}
+
+main {
+	margin : auto;
+	float : center;
+	max-width: 800px;
+	border-style : solid;
+	border-width : 10px;
+	background-color : #F6F6F6;
+	border-color : #F6F6F6;
+	border-radius : 15px;
+}
+
+header {
+	border-radius : 15px;
+	padding: 5px;
+}
+
+img {
+	width: auto; 
+	height: auto;
+	max-width: 100%;
+    max-height: 100%;
+	border-style: none;
+	padding: 0px;
+	float : center;
+}
+
+.html_image {
+	max-width: 50%;
+    max-height: 50%;
+}
+
+
+#title{
+	border-style : solid;
+	border-width : 4px thick;
+	border-color : #5D5D5D;
+	background-color : #BDBDBD;
+	color : black; 
+	text-align : left;
+}
+
+#sub_title{
+	font-size : 14pt;
+	color : #4C4C4C;
+}
+
+section{
+	border-style : solid;
+	border-width : 4px thick;
+	border-color : #BDBDBD;
+	background-color : #EAEAEA;
+	border-radius : 15px;
+	padding : 5px;
+	margin-top : 10px;
+}
+
+.subject{
+	border-bottom : solid black;
+	border-width : 2px thick
+}
+
+h1, h2 {
+	font-weight: normal;
+	margin: 3px;	
+	padding: 0px;
+}
+
+p {
+	text-align : justify;
+}
+
+form{
+	padding-top : 10px;
+	padding-left : 5px;
+}
+
+label {
+	font-weight : normal;
+}
+
+#comment {
+	min-width : 450px;
+	width : auto; 
+	height : auto;
+	margin-top : 5px;
+}
