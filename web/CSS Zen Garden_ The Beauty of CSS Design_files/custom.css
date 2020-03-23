@@ -1,13 +1,14 @@
+div#example-code {
+	margin : 10px;
+	font-size: 20px;
+	margin-bottom: 20px;
+}
+
+
 textarea#comment {
 	background-color: rgba(255,255,255,0.5);
 	margin-top: 20px;
 	border-width: 0;
-}
-div#example-code {
-	margin : 10px;
-	font-size: 20px;
-	text-align: center;
-	margin-bottom: 20px;
 }
 
 div#tag-ranking {
