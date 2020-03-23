@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <title>우아한 늬우스</title>
+    <link rel="stylesheet" href="./css/index.css" />
+    <link rel="stylesheet" href="./css/modal.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="left-hand">
+        <a
+          class="news-control-prev"
+          id="news-detail-prev"
+          href="#"
+          role="button"
+          data-slide="prev"
+        >
+          <span
+            class="news-control-prev-icon news-control-icon"
+            aria-hidden="true"
+          ></span>
+        </a>
+      </div>
+
+      <div class="content-container">
+        <div class="news-container">
+          <div class="news-id-container">
+            <div id="news-id">
+              <!-- id -->
+            </div>
+          </div>
+          <div class="woowatech-logo-container">
+            <img src="./img/woowa_tech_news.png" />
+          </div>
+          <div class="anchor-container">
+            <img src="./img/jun_seokhee.jpeg" />
+          </div>
+          <div class="thumbnail-container" id="news-detail-opener">
+            <img id="news-thumbnail" />
+            <!--img_source-->
+          </div>
+          <div class="head-line-container">
+            <h1 id="head-line">
+              <!--head_line-->
+            </h1>
+          </div>
+        </div>
+      </div>
+
+      <div class="right-hand">
+        <a
+          class="news-control-next"
+          id="news-detail-next"
+          href="#"
+          role="button"
+          data-slide="next"
+        >
+          <span
+            class="news-control-next-icon news-control-icon"
+            aria-hidden="true"
+          ></span>
+        </a>
+      </div>
+    </div>
+
+    <!-- 모달 창 -->
+    <div class="modal fade" tabindex="-1" role="dialog" id="news-detail-modal">
+      <div class="modal-dialog modal-dialog-centered" id="news-modal-dialog">
+        <div class="modal-content" id="news-modal-content">
+          <div class="modal-body" id="head-line-area">
+            <h1 id="news-detail-head-line">
+              팀 버너스리 골방에서 HTML 만들어...
+            </h1>
+          </div>
+
+          <div class="modal-body" id="content-area">
+            <div class="news-picture-container">
+              <div class="news-picture">
+                <img src="./img/Tim_Verners-Lee.jpeg" id="news-detail-image" />
+              </div>
+            </div>
+
+            <div class="news-content-container">
+              <div class="news-content" id="news-detail-content"></div>
+            </div>
+
+            <div class="news-reply-container">
+              <h5>댓글</h5>
+              <div id="mypet-replies-body" class="mypet-replies">
+                <div>댓글을 달아보자</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="modal-body" id="reply-area">
+            <form>
+              <input
+                name="content"
+                id="comment-save-part"
+                class="form-control"
+                placeholder="댓글 달기..."
+              />
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script src="./js/data/news.js" type="module"></script>
+  <script src="./js/data/details.js" type="module"></script>
+  <script src="./js/index.js" type="module"></script>
+</html>
