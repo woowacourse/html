@@ -1,0 +1,430 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link href="static/styles/mdn-header.css" rel="stylesheet" type="text/css">
+    <link href="static/styles/mdn-main.css" rel="stylesheet" type="text/css">
+    <title>HTML 요소 참고서 - HTML: Hypertext Markup Language | MDM</title>
+</head>
+<body>
+<div>
+    <header class="page-header">
+        <a href="https://developer.mozilla.org/ko/" class="logo" aria-label="MDN Web Docs">
+            <img src="image/mozalla_logo.png" alt="mozalla logo" viewBox="0 0 219 48" role="img">
+        </a>
+        <nav class="main-nav" role="navigation">
+            <ul>
+                <li class="top-level-entry-container">
+                    <button type="button" class="top-level-entry" aria-haspopup="true">
+                        기술<span class="main-menu-arrow" aria-hidden="true">▼</span>
+                    </button>
+
+                </li>
+                <li class="top-level-entry-container">
+                    <button type="button" class="top-level-entry" aria-haspopup="true">
+                        참조문서 및 가이드<span class="main-menu-arrow" aria-hidden="true">▼</span>
+                    </button>
+                </li>
+                <li class="top-level-entry-container">
+                    <button type="button" class="top-level-entry" aria-haspopup="true">
+                        사용자 의견<span class="main-menu-arrow" aria-hidden="true">▼</span>
+                    </button>
+
+                </li>
+            </ul>
+        </nav>
+        <form class="header-search" id="nav-main-search" action="" method="get" role="search">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 26 28" aria-hidden="true" class="search-icon">
+                <path d="M18 13c0-3.859-3.141-7-7-7s-7 3.141-7 7 3.141 7 7 7 7-3.141 7-7zm8 13c0 1.094-.906 2-2 2a1.96 1.96 0 0 1-1.406-.594l-5.359-5.344a10.971 10.971 0 0 1-6.234 1.937c-6.078 0-11-4.922-11-11s4.922-11 11-11 11 4.922 11 11c0 2.219-.672 4.406-1.937 6.234l5.359 5.359c.359.359.578.875.578 1.406z"></path>
+            </svg>
+            <label for="main-q" class="visually-hidden">MDN 검색</label>
+            <input type="search" class="search-input-field" id="main-q" name="q" placeholder="MDN 검색"
+                   pattern="(.|\s)*\S(.|\s)*" required>
+        </form>
+        <a href="" rel="nofollow" class="signin-link">로그인</a>
+    </header>
+    <main role="main">
+        <div class="titlebar-container">
+            <div class="titlebar">
+                <h1 class="title">이번 미션에 사용한 HTML 태그들</h1>
+            </div>
+        </div>
+        <div class="full-width-row-container">
+            <div class="max-content-width-container">
+                <nav class="breadcrumbs" role="navigation">
+                    <ol typeof="BreadcrumbList" vocab="https://schema.org/" aria-label="breadcrumbs">
+                        <li property="itemListElement" typeof="ListItem"><a href=""
+                                                                            class="breadcrumb-chevron" property="item"
+                                                                            typeof="webPage"><span property="name">개발자를 위한 웹기술</span></a>
+                        </li>
+                        <li property="itemListElement" typeof="ListItem"><a href=""
+                                                                            class="breadcrumb-chevron" property="item"
+                                                                            typeof="WebPage"><span property="name">HTML: Hypertext Markup Language</span></a>
+                        </li>
+                        <li property="itemListElement" typeof="ListItem"><a href=""
+                                                                            class="crumb-current-page" property="item"
+                                                                            typeof="WebPage"><span property="name"
+                                                                                                   aria-current="page">HTML 요소 참고서</span></a>
+                        </li>
+                    </ol>
+                </nav>
+                <div class="dropdown-container">
+                    <button id="header-language-menu" type="button" class="dropdown-menu-label" aria-haspopup="true"
+                            aria-owns="language-menu" aria-label="현재 언어는 한국어입니다. 선호 언어를 선택하세요.">한국어<span
+                            class="dropdown-arrow-down" aria-hidden="true">▼</span></button>
+                    <ul id="language-menu" class="dropdown-menu-items right" role="menu">
+                        <li lang="en-US" role="menuitem"><a href="/en-US/docs/Web/HTML/Element" title="영어 (미국)">
+                            <bdi>English (US)</bdi>
+                        </a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="wiki-left-present content-layout">
+            <aside class="document-toc-container content-layout">
+                <section class="document-toc">
+                    <header>
+                        <h2>On this Page</h2>
+                    </header>
+                    <ul>
+                        <li><a href="#메인_루트" rel="internal">메인 루트</a></li>
+                        <li><a href="#문서_메타데이터" rel="internal">문서 메타데이터</a></li>
+                        <li><a href="#구획_루트" rel="internal">구획 루트</a></li>
+                        <li><a href="#콘텐츠_구획" rel="internal">콘텐츠 구획</a></li>
+                        <li><a href="#텍스트_콘텐츠" rel="internal">텍스트 콘텐츠</a></li>
+                        <li><a href="#인라인_텍스트_시멘틱" rel="internal">인라인 텍스트 시멘틱</a></li>
+                        <li><a href="#이미지_멀티미디어" rel="internal">이미지 &amp; 멀티미디어</a></li>
+                    </ul>
+                </section>
+                <header></header>
+                <ul></ul>
+            </aside>
+            <div id="content" class="article text-content">
+                <article id="wikiArticle">
+                    <br>
+                    <span class="seoSummary">
+                        이 페이지는 MDN 웹페이지를 클론 코딩하면서 사용한 태그와 그 기능들을 설명합니다.
+                    </span>
+
+                    <h2 id="메인_루트">메인 루트</h2>
+                    <table class="standard-table">
+                        <thead>
+                            <tr>
+                                <th scope="col">Element</th>
+                                <th scope="col">Description</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td style="vertical-align: top;">
+                                    <code>HTML</code>
+                                </td>
+                                <td>
+                                    <strong>HTML</strong> <code>&lt;html&gt;</code>는 HTML 문서의 루트(최상단 요소)를 나타내며, "루트 요소"라고도 부릅니다. 모든 다른 요소는 <code>&lt;html&gt;</code> 요소의 후손이어야 합니다.
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <form name="comment-form" action="" method="get">
+                        <table class="compat-table" style="width: 75%">
+                            <tr>
+                                <td>
+                                    <img class="comment-thumbnail" src="image/comment-doo.png">
+                                    <span class="comment-id">두강</span>
+                                </td>
+                                <td>두강이 최강임.</td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <img class="comment-thumbnail" src="image/comment-coolLime.png">
+                                    <span class="comment-id">쿨라임</span>
+                                </td>
+                                <td>쿨라임 피지오가 먹고싶네요.</td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <img class="comment-thumbnail" src="image/comment-moonui.png">
+                                    <span class="comment-id">무늬</span></td>
+                                <td>
+                                    <input class="comment-input-field" type="text" name="comment">
+                                    <input class="comment-button" type="button" value="입력">
+                                </td>
+                            </tr>
+                        </table>
+                    </form>
+
+                    <h2 id="문서_메타데이터">문서 메타데이터</h2>
+                    <p>메타데이터는 스타일, 스크립트, 각종 소프트웨어(검색 엔진, 브라우저 등)의 탐색 및 렌더링을 도와줄 데이터 등 페이지에 대한 정보를 가집니다.</p>
+                    <table class="standard-table">
+                        <thead>
+                        <tr>
+                            <th scope="col">Element</th>
+                            <th scope="col">Description</th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <tr>
+                            <td style="vertical-align: top;">
+                                <code>&lt;head&gt;</code>
+                            </td>
+                            <td>
+                                <strong>head</strong> <code>&lt;head&gt;</code>는 기계가 식별할 수 있는 문서 정보(메타데이터)를 담습니다.
+                            </td>
+                        </tr>
+                        <tr>
+                            <td style="vertical-align: top;">
+                                <code>&lt;link&gt;</code>
+                            </td>
+                            <td>
+                                <strong>link</strong> <code>&lt;link&gt;</code>는 현재 문서와 외부 리소스의 관계를 명시합니다.
+                            </td>
+                        </tr>
+                        <tr>
+                            <td style="vertical-align: top;">
+                                <code>&lt;meta&gt;</code>
+                            </td>
+                            <td>
+                                <strong>meta</strong> <code>&lt;meta&gt;</code>는 <code>&lt;link&gt;</code>, <code>&lt;title&gt;</code>, <code>&lt;style&gt;</code>등 다른 메타관련 요소로 나타낼 수 없는 메타데이터를 나타냅니다.
+                            </td>
+                        </tr>
+                        <tr>
+                            <td style="vertical-align: top;">
+                                <code>&lt;title&gt;</code>
+                            </td>
+                            <td>
+                                <strong>title</strong> <code>&lt;title&gt;</code>는 브라우저의 제목 표시줄이나 페이지 탭에 보이는 문서 제목을 정의합니다.
+                            </td>
+                        </tr>
+                        </tbody>
+                    </table>
+
+                    <h2 id="구획 루트">구획 루트</h2>
+                    <table class="standard-table">
+                        <thead>
+                        <tr>
+                            <th scope="col">Element</th>
+                            <th scope="col">Description</th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <tr>
+                            <td style="vertical-align: top;">
+                                <code>&lt;body&gt;</code>
+                            </td>
+                            <td>
+                                <strong>body</strong> <code>&lt;body&gt;</code>는 HTML 문서의 내용을 나타냅니다. 한 문서에는 하나의 <code>&lt;body&gt;</code> 요소만 존재할 수 있습니다.
+                            </td>
+                        </tr>
+                        </tbody>
+                    </table>
+
+                    <h2 id="콘텐츠 구획">콘텐츠 구획</h2>
+                    <p>콘텐츠 구획 요소를 사용하면 문서의 콘텐츠를 논리적인 조각으로 체계화할 수 있습니다.</p>
+                    <table class="standard-table">
+                        <thead>
+                        <tr>
+                            <th scope="col">Element</th>
+                            <th scope="col">Description</th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <tr>
+                            <td style="vertical-align: top;">
+                                <code>&lt;article&gt;</code>
+                            </td>
+                            <td>
+                                <strong>article</strong> 문서, 페이지, 애플리케이션, 또는 사이트 안에서 독립적으로 구분해 배포하거나 재사용할 수 있는 구획을 나타냅니다.
+                            </td>
+                        </tr>
+                        <tr>
+                            <td style="vertical-align: top;">
+                                <code>&lt;aside&gt;</code>
+                            </td>
+                            <td>
+                                <strong>aside</strong> 문서의 주요 내용과 간접적으로만 연관된 부분을 나타냅니다. 주로 사이드바로 표현합니다.
+                            </td>
+                        </tr>
+                        <tr>
+                            <td style="vertical-align: top;">
+                                <code>&lt;header&gt;</code>
+                            </td>
+                            <td>
+                                <strong>header</strong> 소개 및 탐색에 도움을 주는 콘텐츠를 나타냅니다. 제목, 로고, 검색 폼, 작성자 이름 등의 요소를 포함할 수 있습니다.
+                            </td>
+                        </tr>
+                        <tr>
+                            <td style="vertical-align: top;">
+                                <code>&lt;h1&gt;</code>, <code>&lt;h2&gt;</code>, <code>&lt;h3&gt;</code>, <code>&lt;h4&gt;</code>, <code>&lt;h5&gt;</code>, <code>&lt;h6&gt;</code>
+                            </td>
+                            <td>
+                                <strong>h1</strong> 6단계의 구획 제목을 나타냅니다. 구획 단계는 <code>&lt;h1&gt;</code>이 가장 높고 <code>&lt;h6&gt;</code>은 가장 낮습니다.
+                            </td>
+                        </tr>
+                        <tr>
+                            <td style="vertical-align: top;">
+                                <code>&lt;main&gt;</code>
+                            </td>
+                            <td>
+                                <strong>main</strong> <code>&lt;body&gt;</code>의 주요 콘텐츠를 나타냅니다. 주요 콘텐츠 영역은 문서의 핵심 주제나 앱의 핵심 기능에 직접적으로 연결됐거나 확장하는 콘텐츠로 이루어집니다.
+                            </td>
+                        </tr>
+                        <tr>
+                            <td style="vertical-align: top;">
+                                <code>&lt;nav&gt;</code>
+                            </td>
+                            <td>
+                                <strong>nav</strong> 문서의 부분 중 현재 페이지 내, 또는 다른 페이지로의 링크를 보여주는 구획을 나타냅니다. 메뉴, 목차 색인 등에 주로 사용합니다.
+                            </td>
+                        </tr>
+                        <tr>
+                            <td style="vertical-align: top;">
+                                <code>&lt;section&gt;</code>
+                            </td>
+                            <td>
+                                <strong>section</strong> HTML 문서의 독립적인 구획을 나타내며, 더 적합한 의미를 가진 요소가 없을 때 사용합니다.
+                            </td>
+                        </tr>
+                        </tbody>
+                    </table>
+
+                    <h2 id="텍스트 콘텐츠">텍스트 콘텐츠</h2>
+                    <p>여는 <body>와 닫는 </body> 태그 사이의 블록이나 콘텐츠 구획을 정리할 수 있습니다.</p>
+                    <table class="standard-table">
+                        <thead>
+                        <tr>
+                            <th scope="col">Element</th>
+                            <th scope="col">Description</th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <tr>
+                            <td style="vertical-align: top;">
+                                <code>&lt;div&gt;</code>
+                            </td>
+                            <td>
+                                <strong>div</strong> 플로우 콘텐츠를 위한 통용 컨테이너입니다. CSS로 꾸미기 전에는 콘텐츠나 레이아웃에 어떤 영향도 주지 않습니다.
+                            </td>
+                        </tr>
+                        <tr>
+                            <td style="vertical-align: top;">
+                                <code>&lt;ul&gt;</code>
+                            </td>
+                            <td>
+                                <strong>ul</strong> 정렬되지 않은 목록을 나타냅니다. 보통 불릿으로 표현합니다.
+                            </td>
+                        </tr>
+                        <tr>
+                            <td style="vertical-align: top;">
+                                <code>&lt;ol&gt;</code>
+                            </td>
+                            <td>
+                                <strong>ol</strong> 정렬된 목록을 나타냅니다. 보통 숫자 목록으로 표현합니다.
+                            </td>
+                        </tr>
+                        <tr>
+                            <td style="vertical-align: top;">
+                                <code>&lt;li&gt;</code>
+                            </td>
+                            <td>
+                                <strong>li</strong> 목록의 항목을 나타냅니다.
+                            </td>
+                        </tr>
+                        </tbody>
+                    </table>
+
+                    <h2 id="인라인 텍스트 시멘틱">인라인 텍스트 시멘틱</h2>
+                    <p>HTML 인라인 텍스트 시멘틱을 사용해서 단어, 줄, 혹은 아무 부분의 의미나 구조, 스타일을 정의할 수 있습니다.</p>
+                    <table class="standard-table">
+                        <thead>
+                        <tr>
+                            <th scope="col">Element</th>
+                            <th scope="col">Description</th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <tr>
+                            <td style="vertical-align: top;">
+                                <code>&lt;a&gt;</code>
+                            </td>
+                            <td>
+                                <strong>a</strong> 앵커 요소라고 하며, href 특성을 통해 다른 페이지나 같은 페이지의 어느 위치, 파일, 이메일 주소와 그 외 다른 URL로 연결할 수 있는 하이퍼링크를 만듭니다.
+                            </td>
+                        </tr>
+                        <tr>
+                            <td style="vertical-align: top;">
+                                <code>&lt;br&gt;</code>
+                            </td>
+                            <td>
+                                <strong>br</strong> 텍스트 안에 줄바꿈(캐리지 리턴)을 생성합니다. 주소나 시조 등 줄의 구분이 중요한 내용을 작성할 때 유용합니다.
+                            </td>
+                        </tr>
+                        <tr>
+                            <td style="vertical-align: top;">
+                                <code>&lt;code&gt;</code>
+                            </td>
+                            <td>
+                                <strong>code</strong> 짧은 코드 조각을 나타내는 스타일을 사용해 자신의 콘텐츠를 표시합니다.
+                            </td>
+                        </tr>
+                        <tr>
+                            <td style="vertical-align: top;">
+                                <code>&lt;span&gt;</code>
+                            </td>
+                            <td>
+                                <strong>span</strong> 구문 콘텐츠를 위한 통용 인라인 컨테이너로, 본질적으로는 아무것도 나타내지 않습니다. 스타일을 적용하기 위해서, 또는 `lang` 등 어떤 특성의 값을 서로 공유하는 요소를 묶을 때 사용할 수 있습니다.
+                            </td>
+                        </tr>
+                        <tr>
+                            <td style="vertical-align: top;">
+                                <code>&lt;strong&gt;</code>
+                            </td>
+                            <td>
+                                <strong>strong</strong> 중대하거나 긴급한 콘텐츠를 나타냅니다. 보통 브라우저는 굵은 글씨로 표시합니다.
+                            </td>
+                        </tr>
+                        </tbody>
+                    </table>
+
+                    <h2 id="이미지 & 멀티미디어">이미지 & 멀티미디어</h2>
+                    <p>HTML은 사진, 오디오, 비디오 등 다양한 멀티미디어 리소스를 지원합니다.</p>
+                    <table class="standard-table">
+                        <thead>
+                        <tr>
+                            <th scope="col">Element</th>
+                            <th scope="col">Description</th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <tr>
+                            <td style="vertical-align: top;">
+                                <code>&lt;img&gt;</code>
+                            </td>
+                            <td>
+                                <strong>img</strong> 문서에 이미지를 넣습니다.
+                            </td>
+                        </tr>
+                        <tr>
+                            <td style="vertical-align: top;">
+                                <code>&lt;video&gt;</code>
+                            </td>
+                            <td>
+                                <strong>video</strong> 비디오 플레이백을 지원하는 미디어 플레이어를 문서에 삽입합니다.
+                            </td>
+                        </tr>
+                        </tbody>
+                    </table>
+                </article>
+            </div>
+            <div class="sidebar">
+                <div class="quick-links">
+                    <div class="quick-links-head sidebar-heading">관련 주제</div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer class="nav-footer" id="nav-footer">
+        <div id="license" class="contentinfo"><p><a href="https://developer.mozilla.org/ko/docs/Web/HTML/Element">HTML 요소 참고서</a> by <a href="https://developer.mozilla.org/ko/">Mozilla Contributors</a> is licensed under <a href="https://creativecommons.org/licenses/by-sa/2.5/">CC-BY-SA 2.5</a>.</p></div>
+    </footer>
+</div>
+</body>
+</html>
