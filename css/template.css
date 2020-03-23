@@ -145,3 +145,23 @@ footer {
   width: 100%;
   background-color: #cccccc;
 }
+
+label {
+  display: block;
+  font: 1rem;
+  margin: 0.4rem 0;
+}
+
+input {
+  border-radius: 5px;
+  font-family: BMHANNAProOTF;
+  font-size: 14pt;
+  margin: 0.4rem 0;
+}
+
+input[type="submit"] {
+  border-radius: 5px;
+  color: #fff;
+  font-family: BMHANNAProOTF;
+  font-size: 14pt;
+}
