@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>test</title>
+</head>
+<body>
+<div id="wrapper">
+    <header class="header">
+        <h1>WestJun이 이야기하는 90년생 웹이야기</h1>
+        <hr>
+    </header>
+    <nav class="nav">
+        <p>위키백과</p>
+        <ul>
+            <li><a href="https://ko.wikipedia.org/wiki/HTML">HTML</a></li>
+            <li><a href="https://ko.wikipedia.org/wiki/CSS">CSS</a></li>
+            <li>
+                <a href="https://ko.wikipedia.org/wiki/javascript">javascript</a>
+            </li>
+        </ul>
+    </nav>
+    <section>
+        <article class="intro">
+            <h2>간략한 HTML 소개</h2>
+            <ol>
+                <li><b>HTML</b>이란?</li>
+                <ul>
+                    <li>HTML은 하이퍼텍스트 마크업 언어(HyperText Markup Language)라는 의미의 웹
+                        페이지를 위한 지배적인 마크업 언어다.
+                    </li>
+                    <li>
+                        HTML은 제목, 단락, 목록 등과 같은 본문을 위한 구조적
+                        의미를 나타내는 것뿐만 아니라 링크, 인용과 그 밖의 항목으로 구조적 문서를 만들 수 있는 방법을
+                        제공한다.
+                    </li>
+                </ul>
+                <li>어쩌다 만들어졌나요?</li>
+                <ul>
+                    <li>
+                        1980년, 유럽 입자 물리 연구소(CERN)의 계약자였었던 물리학자 팀 버너스리가 연구원들과 문서를
+                        이용하고 공유하기 위한 목적으로 개발.
+                    </li>
+                </ul>
+            </ol>
+        </article>
+        <article class="inithome">
+            <h2>세계 최초의 웹사이트</h2>
+            <iframe width="800" src="http://info.cern.ch"></iframe>
+        </article>
+        <article class="recommend">
+            <h2>이런 분들께 추천드립니다.</h2>
+            <ul>
+                <li>웹에 대해 관심을 가지고 HTML, CSS, javascript가 무엇인지 배워보고 싶다.</li>
+                <li>향후 프론트엔드에 개발자에 도전하고 싶다.</li>
+                <li>목소리 좋은게 좋다.</li>
+            </ul>
+        </article>
+        <h2>강의 참고자료</h2>
+        <div class="video">
+            <iframe width="600" height="400"
+                    src="https://www.youtube.com/embed/rr6fZ2eg0KU"
+                    frameborder="0"
+                    allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen></iframe>
+        </div>
+        <div class="profile">
+            <h2>수강 후기</h2>
+            <div class="card">
+                <div class="frame"></div>
+                <div class="text">
+                    <h3>보노보노</h3>
+                    <p>정말 쉽습니다.</p>
+                </div>
+            </div>
+            <div class="card">
+                <div class="frame2"></div>
+                <div class="text">
+                    <h3 class="nickname">enjoy</h3>
+                    <p class="comment">웹 공부가 이렇게 즐거울 수가 있네요. </p>
+                </div>
+            </div>
+        </div>
+        <div class="comments">
+            <p>여러분의 <b>의견</b>을 듣고 싶습니다.</p>
+            <label>
+                <textarea></textarea>
+                <br>
+                <button>전달</button>
+            </label>
+        </div>
+    </section>
+    <footer class="footer">
+        <hr>
+        <div class="sns">
+            <a href="https://github.com/minuyim">
+                <img src="github-mark.png" alt="깃허브로고"
+                     style="width: 120px; height: auto;">
+            </a>
+        </div>
+        <p>잘못된 디자인 감각은 개발자에게 고통을 주기 충분하죠.</p>
+    </footer>
+</div>
+</body>
+<style>
+    header {
+        text-align: center;
+    }
+
+    footer {
+        text-align: center;
+        clear: both;
+    }
+
+    header, footer, nav, section {
+        margin: 5px;
+        padding: 10px;
+    }
+
+    nav, section {
+        float: left;
+    }
+
+    article {
+        width: 800px;
+    }
+
+    .card {
+        float: left;
+        margin: 20px;
+        width: 300px;
+        display: grid;
+        grid-template-columns: 300px;
+        grid-template-rows: 210px 110px;
+        grid-template-areas: "image" "text";
+
+        border-radius: 18px;
+        background: white;
+        box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.9);
+        font-family: roboto,sans-serif;
+        text-align: center;
+    }
+
+    .frame {
+        grid-area: image;
+        background: url("bono.jpg");
+        border-top-left-radius: 15px;
+        border-top-right-radius: 15px;
+        background-size: cover;
+    }
+
+    .frame2 {
+        grid-area: image;
+        background: url("i_enjoy.jpeg") no-repeat center;
+        border-top-left-radius: 15px;
+        border-top-right-radius: 15px;
+        background-size: contain;
+    }
+
+    .text {
+        grid-area: text;
+        background: #fafafa;
+        border-bottom-left-radius: 15px;
+        border-bottom-right-radius: 15px;
+    }
+
+    .comments {
+        padding-top: 20px;
+        clear: both;
+    }
+
+    textarea {
+        width: 800px;
+        height: 200px;
+    }
+</style>
+</html>
