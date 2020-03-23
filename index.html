@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Woowa Daily</title>
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <style type="text/css">
+        .highlight {
+            font-weight: bold;
+        }
+
+        body {
+            font-family: serif;
+            background-color: #ede9e4;
+        }
+
+        #header {
+            height: 250px;
+            text-align: center;
+            align-items: center;
+        }
+
+        #header h1 {
+            border-top: 5px black double;
+            border-bottom: 5px black double;
+            font-size: 9em;
+            padding-bottom: 25px;
+            font-weight: 800;
+        }
+
+        #intro .highlight {}
+
+        #intro .publish-date {
+            float: right;
+        }
+
+        #content {
+            clear: both;
+            border-bottom: 5px black double;
+            line-height: 1.8;
+        }
+
+        #content .main-article,
+        .second-article,
+        .third-article,
+        .video-container {
+            padding: 40px;
+        }
+
+        #content .main-article {
+            border: 3px black solid;
+        }
+
+        #content .main-article .video-container {
+            height: 450px;
+            float: right;
+            width: 60%;
+            line-height: 1.5;
+        }
+
+        #content .links-space {
+            border: 3px solid black;
+            font-size: 25px;
+            text-align: center;
+        }
+
+        #content .links-space a {
+            font-weight: bold;
+            color: black;
+            display: inline-block;
+            margin: 0 auto;
+            padding: 30px;
+        }
+
+        #content .second-article {}
+
+        #content .second-article pre {
+            border: 1px solid black;
+            font-family: serif;
+            font-size: 16px;
+        }
+
+
+        #content .third-article {
+            border-left: 3px solid black;
+        }
+
+        #content .third-article .quiz {
+            font-family: serif;
+            font-size: 16px;
+        }
+
+        #footer {
+            height: 100px;
+        }
+
+        #footer .support-me {
+            text-align: right;
+        }
+
+        @media (max-width: 992px) {
+            #header {
+                height: 150px;
+                text-align: center;
+                align-items: center;
+            }
+
+            #header h1 {
+                font-size: 6em;
+            }
+        }
+
+    </style>
+</head>
+
+<body class="container">
+    <div id="header" class="row">
+        <div class="col-md">
+            <h1>Woowa Daily</h1>
+        </div>
+    </div>
+    <div id="intro">
+        <small>
+            <span class="highlight">HTML은 하이퍼텍스트 마크업 언어(HyperText Markup Language)</span>라는 의미의 웹 페이지를 위한 지배적인 마크업 언어다. HTML은 제목, 단락, 목록 등과 같은 본문을 위한 구조적 의미를 나타내는 것뿐만 아니라 링크, 인용과 그 밖의 항목으로 구조적 문서를 만들 수 있는 방법을 제공한다. 그리고 이미지와 객체를 내장하고 대화형 양식을 생성하는 데 사용될 수 있다. HTML은 웹 페이지 콘텐츠 안의 꺾쇠 괄호에 둘러싸인 "태그"로 되어있는 HTML 요소 형태로 작성한다. HTML은 웹 브라우저와 같은 HTML 처리 장치의 행동에 영향을 주는 자바스크립트와 본문과 그 밖의 항목의 외관과 배치를 정의하는 CSS 같은 스크립트를 포함하거나 불러올 수 있다. HTML과 CSS 표준의 공동 책임자인 W3C는 명확하고 표상적인 마크업을 위하여 CSS의 사용을 권장한다.
+        </small><br />
+        <small class="publish-date">간행일: 2020/03/23</small>
+    </div>
+    <div id="content" class="row">
+        <div class="col-md-12 main-article">
+            <h1>HTML, 탄생 30주년. HTML이란 무엇인가?</h1>
+            <div class="video-container">
+                <div class="embed-responsive embed-responsive-16by9">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/sSqZ_hJu9zA" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+                <br />
+                <form>
+                    <div class="comment-container form-row">
+                        <div class="col-md-10">
+                            <input type="text" class="form-control mx-sm-6" placeholder="건강한 웹 문화 유지를 위해 매너를 지켜주세요😉" id="comment">
+                        </div>
+                        <div class="col-md-2">
+                            <button type="button" class="btn btn-dark">등록</button>
+                        </div>
+
+                    </div>
+                </form>
+            </div>
+            <strong>HTML, 역사의 시작 -</strong>
+            1980년, 유럽 입자 물리 연구소(CERN)의 계약자였었던 물리학자 팀 버너스리가 HTML의 원형인 인콰이어를 제안하였다. 인콰이어는 CERN의 연구원들이 문서를 이용하고 공유하기 위한 체계였다. 유럽입자물리연구소는 특성상 한 개별적인 국가의 범위를 넘어서는 연구를 위해 만들어진 곳이다. 그렇다보니 자연스레 여러 연구자들이 엄청나게 많은 정보와 자료를 주고 받게 되었고, 그래서 팀 버너스리가 이와 같은 효율적으로 정보를 주고 받을 수 있는 시스템을 연구한 것이다. 1980년도부터 약 10년동안 연구하다가 989년에 팀 버너스리는 인터넷 기반 하이퍼텍스트 체계를 제안하는 메모를 작성했다. 버너스 리는 1990년 말에 HTML을 명시하고, 브라우저와 서버 소프트웨어를 작성했다. 문자나 사진, 동영상, 음성 등이 조합된 데이터베이스인 사이트의 정보를 전용 열람용 소프트웨어인 웹 브라우저를 통해 볼수 있다.<br /><br />
+            <strong>HTML이란?</strong>
+            HTML (Hypertext Markup Language)는 하이퍼텍스트를 중요한 특징으로 가지고, 우리가 보는 웹페이지가 어떻게 구조화되어 있는지 브라우저로 하여금 알 수 있도록 하는 마크업 언어이다. HTML은 elements로 구성되어 있으며, 이들은 적절한 방법으로 나타내고 실행하기 위해 각 컨텐츠의 여러 부분들을 감싸서 표현한다. 태그는 웹 상의 다른 페이지로 이동하게 하는 하이퍼링크 내용들을 생성하거나, 단어를 강조하는 등의 역할을 한다.
+
+            <strong>HTML Element</strong>는 여는 태그, 닫는 태그, 콘텐츠를 가진다. 여는 태그는 요소의 이름과(예시: &lt;p&gt;) 열고 닫는 꺽쇠 괄호로 구성된다. 닫는 태그는 요소의 이름 앞에 슬래시(/)가 있는 것을 제외하면 여는 태그와 동일하다. 콘텐츠는 요소의 내용이다.
+        </div>
+        <div class="col-md-12 empty-space">
+            &nbsp;
+        </div>
+        <div class="col-md-12 links-space">
+            <a href="http://info.cern.ch/">최초의 웹페이지</a>
+            <a href="https://ko.wikipedia.org/wiki/%EC%9B%94%EB%93%9C%EC%99%80%EC%9D%B4%EB%93%9C%EC%9B%B9">World Wide Web</a>
+            <a href="html-css-js.com">HTML vs CSS vs JS</a>
+        </div>
+        <div class="col-md-12 empty-space">
+            &nbsp;
+        </div>
+        <div class="col-md-4 second-article">
+            <h3>HTML의 기본 구조</h3><br />
+            <pre>
+<span>&lt;!doctype html&gt;</span>
+<span>&lt;html&gt;</span>
+    <span>&lt;head&gt;</span>
+        <span>&lt;title&gt;Hello HTML&lt;/title&gt;</span>
+    <span>&lt;/head&gt;</span>
+    <span>&lt;body&gt;</span>
+        <span>&lt;p&gt;Hello World!&lt;/p&gt;</span>
+    <span>&lt;/body&gt;</span>
+<span>&lt;/html&gt;</span>
+</pre>
+        </div>
+        <div class="col-md-8 third-article">
+            <h3>알쏭달쏭 HTML</h3>
+            <pre class="quiz">
+Q1. HTML은 무엇의 약어일까?
+    1) Hyper Text Markup Language
+    2) Home Tool Markup Language
+    3) Hyperlinks Text Markup Language
+    <small>정답: 1</small>
+    
+Q2. HTML에서 링크를 걸 때 사용되는 태그는?
+    1) &#60;br&#62;    2) &#60;a&#62;    3) &#60;p&#62;    4) &#60;ul&#62;
+    <small>정답: 2</small>
+    
+Q3. 가장 큰 헤딩을 의미하는 HTML 태그는?
+    1) &#60;h6&#62;    2) &#60;heading&#62;    3) &#60;head&#62;    4) &#60;h1&#62;
+    <small>정답: 4</small></pre>
+        </div>
+        <div class="col-md-12 empty-space">
+            &nbsp;
+        </div>
+    </div>
+    <div id="footer" class="row">
+        <div class="col-sm">
+            © 2020 Chomily
+        </div>
+        <div class="support-me col-sm">
+            Support me: WoowaBank 112-234-56789
+        </div>
+    </div>
+</body>
+
+</html>
