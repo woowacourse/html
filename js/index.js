@@ -23,9 +23,7 @@ function showComment(comment) {
 function pressBtn() {
     const currentVal = inputBar.value;
 
-    if (!currentVal.length) {
-        alert("댓글을 입력하세요.");
-    } else {
+    if (currentVal.length) {
         showComment(currentVal);
         mainCommentCount.innerHTML++;
         inputBar.value = '';
