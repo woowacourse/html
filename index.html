@@ -7,10 +7,20 @@
 </head>
 <body>
     <header>
-    <h1>90년생 HTML</h1>
+        <div class="navBar">
+        <nav>
+            <a href="#home">90년생 HTML</a>
+            <a href="#story">HTML 이야기</a>
+            <a href="#hometown">HTML의 고향</a>
+            <a href="#firstHTML">HTML의 시작</a>
+        </nav>
+        </div>
     </header>
+    <div class="content">
+    <h1 id="home">90년생 HTML</h1>
+
     <hr>
-    <h2>HTML 이야기?</h2>
+    <h2 id="story">HTML 이야기?</h2>
     <p>
         <div class="image">
             <figure>
@@ -31,7 +41,7 @@
 
     <hr>
 
-    <h2>HTML의 고향</h2>
+    <h2 id="hometown">HTML의 고향</h2>
 
     <p>
         HTML이 처음 탄생한 곳은 스위스의 <a href="https://home.cern/">CERN</a> 입자 물리 연구소이다. <br>
@@ -54,7 +64,7 @@
 
     <hr>
 
-    <h2>HTML의 시작</h2>
+    <h2 id="firstHTML">HTML의 시작</h2>
     <p>
         <div class="image">
             <figure>
@@ -93,8 +103,13 @@
         이 사건이 있었기에 지금 우리가 웹이라는 서비스를 누구나 자유롭게 사용할 수 있게 된 것이다. <br>
         그리고 현재, 처음에는 단순한 문서였던 HTML은 웹의 폭발적인 성장과 함께 발전하고 있다. <br>
     </p>
-
+        <hr>
+        <h2>90년생 HTML의 이야기를 이어가주세요</h2>
+        <form>
+            <p><textarea cols="200" rows="10"></textarea></p>
+            <p><input type="submit" value="이야기 남기기"></p>
+        </form>
     <hr>
-
+    </div>
 </body>
 </html>

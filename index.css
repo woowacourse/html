@@ -10,3 +10,38 @@ figure hr {
 img {
     width: 100%;
 }
+
+.navBar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+
+    height: 75px;
+    padding: 1rem;
+    color: white;
+    background: teal;
+    font-weight: bold;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navBar a {
+    font-size: 1.2rem;
+    text-decoration: none;
+    color: white;
+    margin-left: 0.5rem;
+    border: 1px solid white;
+    padding: 1rem;
+}
+
+.navBar a:hover {
+    opacity: 0.5;
+}
+
+.content {
+    position: absolute;
+    top: 150px;
+    z-index: -1;
+}
