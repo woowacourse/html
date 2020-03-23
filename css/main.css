@@ -88,7 +88,7 @@ button {
     width: 100%;
 }
 
-.main {
+.menu {
     border-bottom: 1px solid #cccccc;
     border-top: 2px solid #000000;
     list-style: none;
@@ -98,9 +98,6 @@ button {
     justify-content: space-around;
     align-items: center;
     padding: 0;
-}
-
-.main li {
     font-family: Arial, Helvetica, Sans-serif;
     font-weight: bold;
     font: menu;
@@ -108,7 +105,7 @@ button {
     font-size: 20px;
 }
 
-.main a {
+.menu a {
     text-decoration: none; 
     font-family: Arial, Helvetica, sans-serif;
     font-weight: bold;
@@ -149,17 +146,18 @@ button {
 .news-title {
     font-size: 30px;
     font-weight: 700;
+    padding: 10px 0;
 }
 
 .news-body {
-    padding: 20px 0;
+    padding: 25px 0;
 }
 
 .news-author {
+    font-size: 13px;
     font-style: italic;
     color: dimgrey;
     font-family: serif;
-    padding: 10px 0;
 }
 
 .content-image {
