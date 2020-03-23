@@ -1,0 +1,238 @@
+<!doctype html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!-- jQuery-->
+    <script src="JS/jquery-3.4.1.min.js"></script>
+    <!-- 합쳐지고 최소화된 최신 CSS -->
+    <link rel="stylesheet" href="CSS/bootstrap.min.css">
+    <!-- 부가적인 테마 -->
+    <link rel="stylesheet" href="CSS/bootstrap-theme.min.css">
+    <!-- 합쳐지고 최소화된 최신 자바스크립트 -->
+    <script src="JS/bootstrap.min.js"></script>
+    <!-- font-awesome -->
+    <link rel="stylesheet" href="CSS/font-awesome.min.css">
+    <!-- slick -->
+    <link rel="stylesheet" type="text/css" href="CSS/slick.css"/>
+    <link rel="stylesheet" href="CSS/slick-theme.css">
+    <script type="text/javascript" src="JS/slick.min.js"></script>
+    <!-- CkEditor -->
+    <script src="JS/ckeditor5-build-classic/ckeditor.js"></script>
+    <!-- Custom CSS-->
+    <link rel="stylesheet" href="./CSS/reset.css">
+    <link rel="stylesheet" href="./CSS/index.css">
+
+    <title>90년생 HTML 역사 소개하기</title>
+</head>
+<body>
+<!-- 헤더 -->
+<header>
+    <h5>HTML History</h5>
+
+    <ul class="nav navbar-nav navbar-right">
+        <li class="dropdown">
+            <a href="#" class="dropdown-toggle dropdown-a" data-toggle="dropdown" role="button" aria-expanded="false">
+                <span class="glyphicon glyphicon-align-justify" aria-hidden="true"></span>
+                <ul class="dropdown-menu" role="menu">
+                    <li><a href="#">HTML History</a></li>
+                    <li><a href="#">CSS History</a></li>
+                    <li><a href="#">JavaScript History</a></li>
+                </ul>
+        </li>
+    </ul>
+
+</header>
+
+<!-- 사진 및 간단한 소개 -->
+<section class="intro-wrap">
+    <div class="slick-item">
+        <div>
+            <img src="image/slickItem6.jpg" alt="HTML 역사 시각화 이미지">
+        </div>
+        <div>
+            <img src="image/slickItem5.jfif" alt="HTML 역사 시각화 이미지">
+        </div>
+        <div>
+            <img src="image/slickItem1.png" alt="HTML 역사 시각화 이미지">
+        </div>
+        <div>
+            <img src="image/slickItem2.png" alt="HTML 역사 시각화 이미지">
+        </div>
+        <div>
+            <img src="image/slickItem3.png" alt="HTML 역사 시각화 이미지">
+        </div>
+        <div>
+            <img src="image/slickItem4.png" alt="HTML 역사 시각화 이미지">
+        </div>
+    </div>
+    <div class="intro-content">
+        <h2>Hyper Text Markup Language</h2>
+        <p>HTML의 역사를 살펴보겠습니다.</p>
+    </div>
+</section>
+
+<!-- HTML1 ~ HTML5 까지 소개-->
+<section class="setup_inner">
+    <div class="html1 setup_item row">
+        <div class="setup_img col-md-5">
+            <img src="./image/html1.0image.png" alt="html1.0 소개 이미지">
+        </div>
+        <div class="col-md-2 round">
+            HTML1.0
+        </div>
+        <div class="content col-md-5">
+            <h4>HTML 1.0</h4>
+            <ul>
+                <li>1991년에 팀 버나스리가 발표한 최초의 HTML이다.</li>
+                <li><a href="https://www.w3.org/MarkUp/HTMLPlus/htmlplus_1.html">HTML1.0 Specification</a></li>
+                <li>당시에 웹 사이트 제작에 참여한 사람이 많지 않았으며, 언어가 매우 제한적이었습니다.</li>
+                <li>표현할 수 있는 데이터도 굉장히 제한적이였으며, 거의 텍스트 위주의 정보전달 목적으로 사용되었다.</li>
+            </ul>
+        </div>
+        <div class="line"></div>
+    </div>
+    <div class="html2 setup_item row">
+        <div class="setup_img col-md-5">
+            <img src="./image/html2.0img.png" alt="html2.0 소개 이미지">
+        </div>
+        <div class="col-md-2 round">
+            HTML2.0
+        </div>
+        <div class="content col-md-5">
+            <h4>HTML 2.0</h4>
+            <ul>
+                <li>1995년에 국제 표준으로 제정된 최초의 HTML</li>
+                <li><a href="https://www.w3.org/MarkUp/html-spec/">HTML2.0 Specification</a></li>
+                <li>1.0에서 파일 업로드 양식과 프레임, 테이블, 이미지맵, 국제화 기능이 추가되었다.</li>
+                <li>1997년 1월까지 웹사이트 디자인의 표준이 되었고, 처음으로 많은 핵심 HTML 기능들이 정의되었다.</li>
+            </ul>
+        </div>
+        <div class="line"></div>
+
+    </div>
+    <div class="html3 setup_item row">
+        <div class="setup_img col-md-5">
+            <img src="./image/html3.2image.gif" alt="html3.2 소개 이미지">
+        </div>
+        <div class="col-md-2 round">
+            HTML3.2
+        </div>
+        <div class="content col-md-5">
+            <h4>HTML 3.2</h4>
+            <ul>
+                <li>
+                    1997년에 W3C에 의해 제정된 최초의 HTML
+                </li>
+                <li><a href="https://www.w3.org/TR/2018/SPSD-html32-20180315/">HTML 3.2 Reference Specification</a></li>
+                <li>수학 수식을 사용하는 태그를 완전히 제거하고, 넷스케이프의 비주얼 관련 태그(b, font)가 들어갔다.</li>
+            </ul>
+        </div>
+        <div class="line"></div>
+    </div>
+    <div class="html4 setup_item row">
+        <div class="setup_img col-md-5">
+            <img src="image/html4.1img.jpg" alt="html4.01 로고">
+        </div>
+        <div class="col-md-2 round">
+            HTML4.01
+        </div>
+        <div class="content col-md-5">
+            <h4>HTML 4.01</h4>
+            <ul>
+                <li>1999년에 안정된 표준의 버전으로 나왔다.</li>
+                <li><a href="https://www.w3.org/TR/REC-html40/">HTML 4.01 Specification</a></li>
+                <li>CSS로 디자인적인 요소를 구분하게 되고, HTML로는 웹페이지의 전반적인 구조만을 명시하는 것을 원칙으로 하게 된다.</li>
+                <li>W3C에서는 이제 HTML은 다양화된 웹페이지를 모두 표현하기에 기술적인 한계에 부딛혔다고 판단하고, 더이상 HTML을 발전시키지 않을 것을 공표하게 된다.</li>
+            </ul>
+        </div>
+        <div class="line"></div>
+
+    </div>
+    <div class="html5 setup_item row">
+        <div class="setup_img col-md-5">
+            <img src="./image/html5Logo.png" alt="HTML5 로고">
+        </div>
+        <div class="col-md-2 round">
+            HTML5
+        </div>
+        <div class="content col-md-5">
+            <h4>HTML5</h4>
+            <ul>
+                <li>2007년에 WHATWG에서 정의한 표준을 따르기로 하면서 나왔다.</li>
+                <li><a href="https://html.spec.whatwg.org/multipage/">HTML 5 Specification</a></li>
+                <li>지금의 HTML5와 CSS3이 표준으로 확정되었다.</li>
+                <li>시맨틱 태그, 멀티미디어 태그, 폼 관련 태그들이 추가되었다.</li>
+            </ul>
+        </div>
+        <div class="line"></div>
+    </div>
+
+    <div class="html6 setup_item row">
+        <div class="setup_img col-md-5">
+            <img src="./image/html6logo.jpg" alt="HTML6 로고">
+        </div>
+        <div class="col-md-2 round">
+            HTML6
+        </div>
+        <div class="content col-md-5">
+            <h4>HTML6</h4>
+            <ul>
+                <li>
+                    <a href="https://morioh.com/p/6d422fc49bd2?f=5c21fb01c16e2556b555ab32&fbclid=IwAR3pMZeReGcMiJ6v6-G8ajJOWFDOdDQ4jtZKZ5PiGNw6SVCSUNPwE5tgE0g"
+                       target="_blank">
+                        HTML6 is Coming – What’s new in HTML6
+                    </a>
+                </li>
+                <li>링크에 소개한 기능들은 일부 업데이트가 되기도 했으며, 곧 발표할 가능성이 있는 기능들입니다.</li>
+                <li>현재 사용은 되지 않는 버전입니다.</li>
+            </ul>
+        </div>
+        <div class="line-last"></div>
+    </div>
+</section>
+
+<section class="qna-wrap" style="margin: 30px">
+    <h5>문의사항이 있다면 보내주세요.</h5>
+    <label for="editor">
+    <textarea id="editor">
+    </textarea>
+    </label>
+    <button class="btn btn-primary">제출하기</button>
+</section>
+
+<footer>
+    <p>Copyright © Rutgo. All rights reserved</p>
+    <a href="https://github.com/woowacourse/html" target="_blank" class="fa fa-github icon"></a>
+    <a href="https://www.youtube.com/watch?v=rr6fZ2eg0KU&feature=emb_title" target="_blank"
+       class="fa fa-youtube-play icon"></a>
+</footer>
+
+<script type="text/javascript">
+    $('.slick-item').slick({
+        autoplay: true,
+        dots: true,
+        speed: 300,
+        infinite: true,
+        autoplaySpeed: 3000,
+        arrows: true,
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        fade: false
+    });
+
+    ClassicEditor
+        .create(document.querySelector('#editor'), {
+            removePlugins: ['ImageUpload'],
+        }).then(editor => {
+        editor.ui.view.editable.editableElement.style.height = '100px';
+    })
+        .catch(error => {
+            console.error(error);
+        });
+</script>
+
+</body>
+</html>
