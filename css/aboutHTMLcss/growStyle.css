@@ -1,0 +1,17 @@
+#tableBox {
+    font-family: "BMHANNAAir", sans-serif;
+    font-size: 14px;
+    margin: 16px 0;
+}
+
+table, td, th {
+    border: 1px solid darkgray;
+    border-collapse: collapse;
+    padding: 8px;
+}
+
+#headerRaw {
+    font-family: "BMHANNAPro", sans-serif;
+    font-size: 18px;
+    background-color: rgba(119, 218, 220, 0.3);
+}

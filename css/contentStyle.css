@@ -1,0 +1,108 @@
+#content {
+    width: 45%;
+    height: 800px;
+    float: left;
+    box-sizing: border-box;
+    padding: 0 20px;
+}
+
+.subTitle {
+    font-family: "BMHANNAPro", sans-serif;
+    font-size: 30px;
+    background-color: rgba(95, 158, 160, 0.51);
+}
+
+#smallTitle {
+    font-family: "BMHANNAPro", sans-serif;
+    font-size: 24px;
+    background-color: rgba(95, 158, 160, 0.21);
+    margin-left: 50px;
+}
+
+.description {
+    font-family: "BMHANNAAir", sans-serif;
+    font-size: 18px;
+    line-height: 30px;
+}
+
+#referenceTitle {
+    font-family: "BMHANNAPro", sans-serif;
+    font-size: 20px;
+    background-color: lightgoldenrodyellow;
+    font-style: italic;
+    margin-bottom: -10px;
+}
+
+.description li a:link {
+    color: black;
+    text-decoration: none;
+}
+
+.description li a:hover {
+    color: black;
+    text-decoration: none;
+}
+
+.keyword {
+    font-family: "BMHANNAPro", sans-serif;
+    position: relative;
+    font-size: 22px;
+}
+
+.keyword:before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    top: calc(100% - 8px);
+    background-color: rgba(124, 210, 212, 0.36);
+    height: 10px;
+    z-index: -1;
+}
+
+.chipView {
+    overflow: auto;
+}
+
+.chipView span {
+    font-family: "BMHANNAPro", sans-serif;
+    font-size: 16px;
+    padding: 12px 22px;
+    border-radius: 20px;
+    background-color: rgba(95, 158, 160, 0.2);
+    display: inline-block;
+    margin-top: 14px;
+    margin-left: 10px;
+    float: left;
+}
+
+#questionInputBox {
+    width: 80%;
+    height: 150px;
+    resize: none;
+    font-family: "BMHANNAAir", sans-serif;
+    font-size: 16px;
+    line-height: 26px;
+    padding: 16px;
+    border-radius: 5px;
+    display: block;
+    margin-top: 10%;
+    margin-left: 10%;
+}
+
+.questionLine {
+    font-family: "BMHANNAAir", sans-serif;
+    font-size: 20px;
+    padding: 10px;
+    font-style: italic;
+}
+
+#questionBtn {
+    font-family: "BMHANNAPro", sans-serif;
+    font-size: 20px;
+    margin-top: 10px;
+    padding: 5px 10px;
+    border-radius: 10px;
+    border-color: cadetblue;
+    background-color: cadetblue;
+    color: white;
+}

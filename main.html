@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+
+    <style>
+        @font-face { font-family: 'BMHANNAPro'; src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_seven@1.0/BMHANNAPro.woff') format('woff'); font-weight: normal; font-style: normal; }
+        @font-face { font-family: 'BMHANNAAir'; src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_four@1.0/BMHANNAAir.woff') format('woff'); font-weight: normal; font-style: normal; }
+
+        body, html {
+            padding: 0;
+            margin: 0;
+            min-width: 1000px;
+        }
+    </style>
+
+    <link rel="stylesheet" type="text/css" href="css/fadeInAnimation.css" />
+    <link rel="stylesheet" type="text/css" href="css/headerStyle.css" />
+    <link rel="stylesheet" type="text/css" href="css/menuStyle.css" />
+    <link rel="stylesheet" type="text/css" href="css/pictureStyle.css" />
+    <link rel="stylesheet" type="text/css" href="css/contentStyle.css" />
+    <link rel="stylesheet" type="text/css" href="css/aboutHTMLcss/nameDataStyle.css" />
+    <link rel="stylesheet" type="text/css" href="css/aboutHTMLcss/growStyle.css" />
+    <link rel="stylesheet" type="text/css" href="css/footerStyle.css" />
+
+    <script src="js/nameHTML.js"></script>
+    <script src="js/growHTML.js"></script>
+    <script src="js/socialHTML.js"></script>
+    <script src="js/tagHTML.js"></script>
+    <script src="js/semanticTagHTML.js"></script>
+    <script src="js/selfClosingTagHTML.js"></script>
+    <script src="js/askHTML.js"></script>
+    <script src="js/allData.js"></script>
+
+    <title> + HTML profile + </title>
+</head>
+<body>
+    <header id="header">
+        <div id="logo">
+            <a href="https://woowacourse.github.io/" target="_blank">
+                <img id="logoImg" src="resource/logo.png" style="width: 100%" />
+            </a>
+        </div>
+        <div id="emailButton">
+            <img src="resource/cool-lime.png" id="emailBtnImg" style="width: 100%" />
+            <div id="emailText">
+                <a id="emailLink" href="mailto:dev.icymojito@gmail.com">EMAIL</a>
+            </div>
+        </div>
+    </header>
+
+    <div style="overflow: auto">
+        <nav id="menu">
+            <span class="title">HTML, 너를 알려줘!</span>
+            <ul class="mark">
+                <li>이름</li>
+                <li>성장과정</li>
+                <li>대인관계</li>
+            </ul>
+            <span class="title">HTML, 태그가 뭐야?</span>
+            <ul class="mark">
+                <li>태그</li>
+                <li>시맨틱 태그</li>
+                <li>셀프 클로징 태그</li>
+            </ul>
+            <span class="title">HTML, 궁금해!</span>
+            <ul class="mark">
+                <li>질문하기</li>
+            </ul>
+        </nav>
+
+        <article id="picture">
+            <img src="resource/body.png" style="width: 100%"/>
+        </article>
+
+        <article id="content">
+
+        </article>
+    </div>
+
+    <footer id="footerStyle">
+        <span class="keyword">제작자</span>
+        <span class="description" style="font-size: 22px; margin-right: 20px"> 쿨라임</span>
+        <span class="keyword">깃허브</span>
+        <span class="description" style="font-size: 22px; margin-right: 20px">
+            <a href="https://github.com/icyMojito" target="_blank">https://github.com/icyMojito</a></span>
+        <span class="keyword">이메일</span>
+        <span class="description" style="font-size: 22px; margin-right: 20px">
+            <a href="mailto:dev.icymojito@gmail.com" target="_blank">dev.icymojito@gmail.com</a></span>
+    </footer>
+
+</body>
+
+<script>
+    function emailBtnEvent() {
+        const emailBtn = document.getElementById("emailButton");
+        const emailText = document.getElementById("emailText");
+        emailBtn.onmouseover = function () {
+            emailText.style.visibility = "visible";
+        }
+        emailBtn.onmouseout = function () {
+            emailText.style.visibility = "hidden";
+        }
+    }
+
+    function listTextEvent() {
+        const marks = document.getElementsByClassName("mark");
+        for (let i = 0; i < marks.length; i++) {
+            marks[i].addEventListener('click', (e) => {
+                const key = e.target.innerText;
+                const box = document.getElementById("content");
+                box.innerHTML = data[key];
+            })
+        }
+    }
+
+    emailBtnEvent();
+    listTextEvent();
+</script>
+
+</html>

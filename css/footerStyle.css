@@ -1,0 +1,15 @@
+#footerStyle {
+    background-color: rgba(124, 210, 212, 0.36);
+    padding: 30px 20px;
+    text-align: center;
+}
+
+.description a:link {
+    color: black;
+    text-decoration: none;
+}
+
+.description a:hover {
+    color: black;
+    text-decoration: none;
+}
