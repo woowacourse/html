@@ -1,6 +1,11 @@
+* {
+    font-family: 'Kirang Haerang', cursive;
+}
+
 body {
     background-image: linear-gradient(90deg, red, orange, yellow, green, blue, navy, purple);
-    font-family: 'KoPub Dotum';
+    align-content: center;
+    margin: 1%;
 }
 
 header {
@@ -9,16 +14,91 @@ header {
     font-size: large;
 }
 
-footer {
-    text-align: center;
+nav {
+    display: table;
+    margin-left: auto;
+    margin-right: auto;
     color: white;
-    margin: 20px;
+}
+
+nav span {
+    text-align: center;
+    font-size: large;
 }
 
 #bonobono {
     position: fixed;
     bottom: 0px;
     right: 0px;
+    z-index: -1;
+}
+
+#youtube-container {
+    width: 827px;
+    background-size: cover;
+    background-position: center;
+    height: 500px;
+    background-image: url("images/video.png");
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#youtube {
+    position: absolute;
+    align-content: center;
+    z-index: 1;
+    display: block;
+    width: 100%;
+}
+
+.bubble-container {
+    width: 40%;
+    margin: 10px auto;
+    position: relative;
+}
+
+.bubble {
+    width: 100%;
+    vertical-align: middle;
+}
+
+.content-heading {
+    padding: 5px 10px;
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate( -50%, -50%);
+}
+
+.html-content-img {
+    width: 500px;
+    display: block;
+    margin: 10;
+}
+
+.subheading {
+    font-size: large;
+    font-weight: 700;
+    background-color: yellow;
+    margin: 1%;
+    padding: 1%;
+}
+
+.comment {
+    display: table;
+    margin-left: auto;
+    margin-right: auto;
+    border: black 1px solid;
+    padding: 3%;
+}
+
+footer {
+    text-align: center;
+    color: white;
+    margin: 20px;
 }
 
 h1 span {
