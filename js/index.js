@@ -21,8 +21,7 @@ function showComment(comment) {
 }
 
 function pressBtn() {
-    const currentVal = inputBar.value;
-
+    const currentVal = inputBar.value.trim();
     if (currentVal.length) {
         showComment(currentVal);
         mainCommentCount.innerHTML++;
