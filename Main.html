@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang ="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="">
+    <title>Old_google</title>
+    <style>
+        div {
+            text-align: center;
+        }
+        @FONT-FACE {
+            font-family: 'DungGeunMo';
+            src:url("font/DungGeunMo.woff")
+        }
+        button{
+            background-color: #d3d3d3;
+            color: black;
+            padding: 5px;
+            font-family: DungGeunMo;
+        }
+        .space {
+            width:  100%;
+            height : 200px;
+        }
+
+        .banner {
+            margin:0 auto;
+            width:80%;
+            background-color: white;
+        }
+        .banner_item {
+            width: 33.3%;
+            height:100px;
+            text-align:center;
+            float:left;
+        }
+        .banner_item.first {background-color:#33FFBD; line-height:33px;}
+        .banner_item.second {background-color:#30C45B; line-height:25px;}
+        .banner_item.third {background-color:#2CA976;  line-height:25px;}
+    </style>
+
+</head>
+
+<body>
+<div class="space"></div>
+<div style="font-family: DungGeunMo;">
+    <img src="image/google_old_Logo.png"> </img>
+    <div style="background-color:  #ededed; margin:0 auto; width: 80%">
+        <div>Search the web using Google!</div>
+        <form action="">
+            <input type="text" value ="HTML History" style="font-family: DungGeunMo;">
+        </form>
+        <button class="btn-search" type="button" onClick="location.href='result.html'">Google search</button>
+        <button class="btn-search" type="button">I'm feeling lucky</button>
+    </div>
+
+    <div class="banner">
+        <div class = "banner_item first";">
+        Special Searches
+        <br><a href=""> Stanford Search</a>
+        <br> <a href="">Linux Search </a>
+    </div>
+    <div class = "banner_item second";>
+        <a href=""> Help!</a>
+        <br> <a href="">About Google! </a>
+        <br><a href=""> Company Info</a>
+        <br> <a href="">Google Logos </a>
+    </div>
+    <div class = "banner_item third";>
+        Get Google!
+        <br> updates monthly:
+        <br>
+        <input type="text" value ="your e-mail" style="font-family: DungGeunMo; width: 20%;">
+        <br>
+        <button class="btn-search" type="button">subscribe</button>
+        <a href=""> Archive</a>
+    </div>
+    <p>Copyright@1998 Google Inc.</p>
+</div>
+</div>
+</body>
