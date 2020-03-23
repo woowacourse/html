@@ -20,6 +20,8 @@
     <link rel="stylesheet" type="text/css" href="http://kenwheeler.github.io/slick/slick/slick.css"/>
     <link rel="stylesheet" type="text/css" href="http://kenwheeler.github.io/slick/slick/slick-theme.css"/>
     <script type="text/javascript" src="http://kenwheeler.github.io/slick/slick/slick.min.js"></script><!-- jQuery -->
+    <!-- CkEditor -->
+    <script src="JS/ckeditor5-build-classic/ckeditor.js"></script>
     <!-- Custom CSS-->
     <link rel="stylesheet" href="./CSS/reset.css">
     <link rel="stylesheet" href="./CSS/index.css">
@@ -174,6 +176,7 @@
                     </a>
                 </li>
                 <li>링크에 소개한 기능들은 일부 업데이트가 되기도 했으며, 곧 발표할 가능성이 있는 기능들입니다.</li>
+                <li>현재 사용은 되지 않는 버전입니다.</li>
             </ul>
         </div>
         <div class="line-last"></div>
@@ -182,11 +185,13 @@
 
 <section class="qna-wrap" style="margin: 30px">
     <h5>문의사항이 있다면 보내주세요.</h5>
-    <textarea style="width: 100%; height: 100px">
-
+    <label for="editor">
+    <textarea id="editor">
     </textarea>
-    <button>제출하기</button>
+    </label>
+    <button class="btn btn-primary">제출하기</button>
 </section>
+
 <footer>
     <p>Copyright © Rutgo. All rights reserved</p>
     <a href="https://github.com/woowacourse/html" target="_blank" class="fa fa-github icon"></a>
@@ -205,6 +210,16 @@
         slidesToShow: 1,
         slidesToScroll: 1,
         fade: false
+    });
+
+    ClassicEditor
+        .create(document.querySelector('#editor'), {
+            removePlugins: ['ImageUpload'],
+    }) .then(editor => {
+        editor.ui.view.editable.editableElement.style.height = '100px';
+    })
+    .catch(error => {
+        console.error(error);
     });
 </script>
 
