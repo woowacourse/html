@@ -1,0 +1,285 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>HTML HW</title>
+    <style>
+      body {
+        background-color: black;
+        margin: 0;
+      }
+
+      .all {
+        max-width: 1000px;
+        margin: 0 auto;  
+      }
+      .all_box {
+        display: flex;
+        flex-direction: column;
+        align-content: center;
+      }
+      h1 {
+        font-family: "Times New Roman";
+        color: chartreuse;
+        text-align: center;
+      }
+      p {
+        color: chartreuse;
+        text-align: justify;
+        font-family: BM;
+        margin-left: 16px;
+        margin-right: 16px;
+        line-height: 1.6;
+      }
+      img {
+        float: left;
+      }
+      .introduce_box {
+        width: initial;
+        margin-top: 30px;
+        display: flex;
+        flex-direction: row;
+        height: fit-content;
+      }
+      .introduce_box_contents {
+        display: flex;
+        flex-direction: column;
+        margin-left: 16px;
+        margin-right: 16px;
+      }
+      .introduce_box_contents_pics {
+        display: flex;
+        flex-direction: row;
+      }
+			.introduce_contents_box {
+        float: left;
+				display: block;
+        -moz-box-sizing: border-box;
+        box-sizing: border-box;
+        width: 200px; /* Width of new image */
+        height: auto; /* Height of new image */
+        margin-top: 10px;
+        margin-left: 30px;
+			}
+      .title_box {
+        margin-top: 16px;
+        width: initial;
+        height: fit-content;
+        border-style: solid;
+      }
+      .infomation_box {
+          display: flex;
+          margin-top: 30px;
+          flex-direction: column;
+          width: initial;
+          height: fit-content;
+          border-style: solid;
+      }
+      h2 {
+        color: chartreuse;
+      }
+      h3 {
+        color: chartreuse;
+      }
+      .row {
+        margin-left: 16px;
+        width: 100%;
+      }
+      .column {
+        text-align: unset;
+        display: inline-block;
+        width: 30%;
+      }
+
+      .column_flex_box {
+        display: flex;
+        flex-direction: column;
+      }
+      .feeling_box {
+        display: flex;
+        flex-direction: column;
+      }
+      textarea {
+        padding-left: 16px;
+        padding-right: 16px;
+        box-sizing: border-box;
+        border: 2px solid chartreuse;
+        border-radius: 4px;
+        background-color:black;
+        color: chartreuse;
+        font-size: 16px;
+        resize: none;
+      }
+      .row_flex_box {
+        display: flex;
+        flex-direction: row;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="all">
+    <div class="all_box">
+
+      <div class="title_box">
+        <h1>90년생 HTML</h1>
+      </div>
+
+      <h2> 1. 개요 </h2>
+      <div class="introduce_box">  
+        <img src="data:image/png;base64,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"
+        width="200px"
+        height="auto">
+
+        <div class="introduce_box_contents">
+          <p>"Hyper Text Mark-up Language" 의 약자. 웹 페이지의 모습을 기술하기 위한 규약. 프로그래밍 언어가 아니라 마크업 언어다. 헷갈리지 않도록 하자. 웹사이트에서 흔히 볼 수 있는 htm이나 html 확장자가 바로 이 언어로 작성된 문서이다.
+            최초 제안자는 당시 CERN에서 연구 중이던 물리학자 티머시 J. 버너스리 경(Timothy John Berners-Lee OM, KBE, 1955년 6월 8일~) 지금 이 문서를 보고 있는 독자가 이렇게 편하게 HTML을 보고있는 것도 다 이 양반이 대인배스럽게 HTML에 대한 특허를 내지 않았기 때문이다. 못 믿겠으면, 지금 마우스 오른쪽을 클릭하고 "소스 보기"(또는 검사) 메뉴를 선택해보자. URL, HTTP, WWW의 전신인 Enquire 등도 이 양반이 세트로 개발하고 제안했다. TCP/IP 통신규약을 만든 빈턴 G. 서프(Vinton Gray Cerf)와 함께 인터넷의 아버지로 불린다.
+          </p>
+        
+          <div class="introduce_box_contents_pics">
+
+            <div class="introduce_contents_box">
+              <img 
+                src="data:image/jpeg;base64,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"
+                width="150px"
+                height="100px">
+            </div>
+
+            <div class="introduce_contents_box">
+              <img 
+                src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcRTQ14ZL0iG1qZkwY71BcKuXBpM83caRjHF2MY_6CC-Jun8qfyf"
+                width="150px"
+                height="100px">
+            </div>
+
+            <div class="introduce_contents_box">
+              <img 
+                src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcR4QJL4FbGq8R-x6gEmrjt4wGhDPRbUL3MeOOUe_0Ui1Iaul0eX"
+                width="150px"
+                height="100px">
+            </div>
+            
+          </div>
+        </div>
+      </div>  
+
+      <div class="infomation_box">
+        <h2> 2. 신상 정보! </h2>
+
+        <div class="row">
+
+          <div class="column">
+            <h3>풀네임</h3>
+            <p> Hyper Text Markup Language </p>
+            <img 
+              src="data:image/jpeg;base64,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"
+              width="150px"
+              height="100px">
+          </div>
+
+          <div class="column">
+            <h3>생년</h3>
+            <p> 1980년생 </p>
+            <img
+              src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcSn27xtAOEVEOul0J9xdYv94qDqBxOd9yTmYG_U0qOf7ui0laBF"
+              width="150px"
+              height="100px">
+          </div>
+
+          <div class="column">
+            <h3>아버지</h3>
+            <p> 버너스 리</p>
+            <img 
+              src="data:image/jpeg;base64,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"
+              width="150px"
+              height="100px"
+            >
+          </div>
+
+        </div>
+      </div>
+
+      <div class="column_flex_box">
+        <h2> 3. 설명</h2>
+        <br>
+        <p> HTML은 문법 오류에 관대한 편이다. 그래서 닫는 태그를 누락한다든가 태그에 오타가 난다든가 하는 오류가 발생해도 어느 정도는 씹어먹고 작동할 수 있다. 물론 '어느 정도'까지만. "div" 태그 등 중요한 태그에서 오타가 난다면 사이트 레이아웃이 홀랑 깨져버리기도 한다. 위에 있는 HTML5 표준 형식 HTML이 아니더라도, 그냥 "h1" Hello World!라고만 써도(!DOCTYPE> 선언문 누락, "html" 선언 태그 누락, "head", "body" 태그 누락, 닫는 태그 "/h1" 누락) 어지간해서는 의도한 바대로 출력이 된다. 물론 디버그 모드로 보면 이 부분이 잘못되었다고 에러가 떠 있을 것이다. HTML 최상단의 "!DOCTYPE" 선언이 누락될 경우에는 이야기가 많이 달라지는데, 이 경우 브라우저는 해당 HTML 문서를 호환성 모드(Quirks mode)로 해석하여 렌더링한다.
+          그러나 HTML은 서버에서 보내오는 정보대로 페이지를 그려내는 것에는 강하지만 반대로 사용자의 입력에 민감하게 반응하여 페이지를 그리는 것에는 약한 편이다. 또한 동적인 화면 구성이 힘들다는 약점도 있다. 이러한 면을 보완하기 위하여 JavaScript 등의 각종 스크립트의 도움을 받으며, 요즘 유행하는 AJAX도 그런 면을 보완하기에 적합하다. 그 외에 멀티미디어 지원을 위하여 외부 프로그램을 불러올(embedding) 수 있다. 다만 이는 브라우저 의존적인 면이 강하여, 이 브라우저로 잘 표시되는 페이지가 다른 브라우저로는 완전 엉망이 되는 경우도 있다. HTML5는 비디오/오디오 처리를 위한 별도의 "video", "audio" 태그를 추가하고 동적인 그래픽은 "svg"와 "canvas" 태그를 통해 사용할 것을 권고하고 있으며 외부 플러그인은 가급적 사용하지 않으려 하고 있다. 그래도 아직은 "embed" 태그와 "object" 태그를 통해 외부 플러그인(플래시 등)을 제한적으로 실행할 수는 있다.</p>
+      </div>
+
+      <div class="column_flex_box">
+        <h2> 4. HTML 문서 저장 방법</h2>
+        <p> HTML 문서를 작성한 후 메모장에서 저장할 시, 다른 이름으로 저장을 선택한 뒤, 파일 형식을 <b>'모든 파일 (*.*)'</b>로 지정하고 파일명 끝에 .html이나 .htm을 추가하면 HTML 문서가 된다. 이렇게 하지 않으면 그냥 메모장이 열린다.
+          .html로 바꾸고 난 이후에 수정하고 싶다면, .html 확장자 파일을 오른쪽 클릭 후, 연결 프로그램을 선택하고 Notepad(메모장)을 선택하거나, .html 파일을 메모장에 끌어다 놓기 해주자. 다시 확장자를 .txt로 바꿔도 된다. 참고로 윈도우즈의 메모장으로 HTML 문서를 편집하면, 각 줄마다 CRLF가 달라붙어서 문제가 되기도 한다. 웬만하면 Editplus나 vim, Notepad++ 같은 에디터로 편집하도록 하자. 맥이라면 Xcode를 쓰면 된다. 이런 에디터의 경우 HTML이나 서버 사이드 스크립트 코딩에 최적화되어 있기 때문에 구문에 따라 색상 구분도 되는 등 여러 가지 장점이 있다.
+          HTML 파일 형식의 확장자는 .html이며, '.htm'이라고도 쓸 수 있다. 이는 도스 시절 확장자가 3글자로 제한되었기 때문이다. 윈도우즈 95로 넘어오면서 이 제한이 없어져서 지금은 거의 .html로 쓰는 편이다. 또한 HTML의 인코딩은 현재 거의 UTF-8로 통일되었다. 정말 오래된 사이트는 EUC-KR을 사용한다. 참고로 일본 쪽의 오래된 사이트는 SHIFT-JIS 가 가장 보편적이고 EUC-JP도 간간이 보인다. 두 나라 모두 최신 사이트는 모두 UTF-8 사용.
+          작성하는 방식은 크게 텍스트 에디터를 이용해 직접 코드를 편집하는 방법과 WYSIWYG 편집기를 사용하는 방법이 있다. WYSIWYG 방식은 드림위버와 나모 웹에디터가 지원하는데 현재는 WYSIWYG 방식은 거의 온라인 에디터로 대체되었으며, 본격적인 웹 개발에는 사용하지 않는다. 구조화된 HTML을 강조하는 HTML5와는 영 심각하게 궁합이 안 맞기 때문이다. 심지어 멀쩡히 손코딩(?)으로 작성한 HTML 문서를 이들 위지윅 에디터에서 열면 자기 맘대로 소스 코드를 조작하고 임의의 메타데이터를 삽입하거나 태그를 추가하는 등의 뻘짓(!)을 해서 코드를 망가뜨려 놓기도 한다. 특히 XHR을 통해 동적인 기능을 수행하는 홈페이지는 이들 위지윅 에디터로 열어보기만 해도 해당 동적인 기능들이 일제히 망가져서 복구 불가능한 피해를 입을 수 있다. 정적인 기능조차 CSS 적용에 문제가 생겨 레이아웃이 뒤틀려버릴 수 있다. 사실 PHP만 사용하려 해도 이들 위지윅 에디터는 전혀 쓸 수가 없고 모든 코드를 텍스트 에디터로 작성해 넣어야 한다.
+          제로보드 스킨 등을 만들거나 혹은 기타 다른 홈페이지용 게시판을 자신의 홈페이지에 맞게 만들기 위해서 필요한 PHP나 CGI 파일의 이미지 수정을 위해서는 어느 정도 메모장으로 HTML을 구성하는 능력이 필요하다.
+          <i>참고로, .txt 확장자 파일도 웹 브라우저에서 파일 → 열기를 해서 웹 브라우저 안에 내용을 띄울 수 있다. 하지만 txt 파일의 특성상 태그는 적용되지 않으니 주의.</i>
+          마지막으로, 이렇게 저장한 .html 파일을 더블클릭해서 실행할 경우 HTML 파일 내부에서 다른 외부 리소스들을 불러오는 데 제약이 가해진다. 사실상 HTML 파일 하나만 로딩되는 수준인데 이는 브라우저의 보안 모델이 로컬 컴퓨터의 리소스(파일)를 읽지 못하게 제약을 걸었기 때문으로, 이 문제를 피하려면 웹 서버를 실행해서 http://localhost 또는 http://127.0.0.1 로 접근해야 한다. 그냥 더블클릭했을 때의 URL은 file:// 로 시작하는 걸로 구분할 수 있다. 간단한 페이지를 만든다면 로컬 웹 서버를 실행하는 것보다는 싼 가격의 웹호스팅 계정을 개설한 뒤에 FTP를 통해 이용하는 방법이 더 간단하므로 이 편을 추천한다.</p>
+      </div>
+
+      <div class="column_flex_box">
+        <h2> 5. A to Z </h2>        
+          <iframe width="all_box" height="500" src="https://www.youtube.com/embed/OGFgdro160I" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      </div>
+      
+      <div class="feeling_box">
+        <h2>댓글 </h2>
+        <textarea type="text" name="felling"></textarea>
+
+        <div class="row_flex_box"
+        style = "align-items: center">
+          <h2> HTML이 뭔지 설명할 수 있겠는가 ? </h2>
+          <input type="checkbox" name="checkbox"
+          style="margin-left: 16px;">
+        </div>
+      </div>
+
+      <div class="column_flex_box">
+        <h2> 복습해보자! </h2>
+
+        <div class="row_flex_box">
+          <p> 풀네임 </p>
+          <textarea type="text" name="name"></textarea>
+        </div>
+
+        <div class="row_flex_box">
+          <p> 생일은 </p>
+          <textarea type="text" name="birthday"></textarea>
+        </div>
+        
+        <div class="row_flex_box">
+          <p> 아버지 </p>
+          <textarea type="text" name="father_name"></textarea>
+        </div>
+      </div>
+    
+      <div class="column_flex_box">
+        <h2>문제! 맞는 것을 모두 고르시오! </h2>
+      
+        <div class="row_flex_box"
+        style = "align-items: center";
+        >
+          <p> HTML 은 Hyper Text Markup Language다.</p>
+          <input type="radio" name="question1" value="question1">
+        </div>
+
+        <div class="row_flex_box"
+        style = "align-items: center">
+          <p> HTML의 생년월일은 1990년생이다.</p>
+          <input type="radio" name="question2" value="question2">
+        </div>
+
+        <div class="row_flex_box"
+        style = "align-items: center">
+          <p> HTML의 아버지는 버너스리다.</p>
+          <input type="radio" name="question3" value="question3">
+        </div>  
+      </div>
+
+      <a href="http://www.naver.com"> <span style="color: chartreuse; font-size: 30px;">출처</span></a>
+
+    </div>
+  </div>
+  </body>
+
+</html>
