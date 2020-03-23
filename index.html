@@ -26,13 +26,26 @@
     <link rel="stylesheet" href="./CSS/reset.css">
     <link rel="stylesheet" href="./CSS/index.css">
 
-    <title>90년생 HTML 소개하기</title>
+    <title>90년생 HTML 역사 소개하기</title>
 </head>
 <body>
 <!-- 헤더 -->
 <header>
     <h5>HTML History</h5>
-    <span class="glyphicon glyphicon-align-justify" aria-hidden="true"></span>
+
+    <ul class="nav navbar-nav navbar-right">
+        <li class="dropdown">
+            <a href="#" class="dropdown-toggle dropdown-a" data-toggle="dropdown" role="button" aria-expanded="false">
+                <span class="glyphicon glyphicon-align-justify" aria-hidden="true"></span>
+                <ul class="dropdown-menu" role="menu">
+                    <li><a href="#">HTML History</a></li>
+                    <li><a href="#">CSS History</a></li>
+                    <li><a  href="#">JavaScript History</a></li>
+                </ul>
+        </li>
+    </ul>
+
+
 </header>
 
 <!-- 사진 및 간단한 소개 -->
@@ -215,12 +228,12 @@
     ClassicEditor
         .create(document.querySelector('#editor'), {
             removePlugins: ['ImageUpload'],
-    }) .then(editor => {
+        }).then(editor => {
         editor.ui.view.editable.editableElement.style.height = '100px';
     })
-    .catch(error => {
-        console.error(error);
-    });
+        .catch(error => {
+            console.error(error);
+        });
 </script>
 
 </body>
