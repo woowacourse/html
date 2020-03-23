@@ -35,8 +35,7 @@ header {
 
 #contents-box {
   position: relative;
-  min-height: calc(100vh - 30vh - 5vh);
-  background-color: aqua;
+  min-height: calc(100vh - 30vh - 60px);
 }
 
 .content {
@@ -46,7 +45,6 @@ header {
   width: 650px;
   padding: 20px;
   padding-bottom: 60px;
-  background-color: blue;
   font-size: 1.5rem;
 }
 
@@ -54,7 +52,7 @@ header {
   position: relative;
   width: 100%;
   text-align: center;
-  background-color: bisque;
+  min-height: 15vh;
 }
 
 .box {
@@ -71,7 +69,6 @@ header {
   position: relative;
   display: inline-block;
   padding: 0 80px;
-  background-color: green;
 }
 
 .arrowIcon {
@@ -87,8 +84,6 @@ header {
   padding: 5% 0;
   width: max-content;
   height: max-content;
-
-  background-color: aliceblue;
 }
 
 .h3-title {
@@ -97,8 +92,6 @@ header {
   padding: 10px 0;
   width: max-content;
   height: max-content;
-
-  background-color: aliceblue;
 }
 
 .image-box {
@@ -106,7 +99,6 @@ header {
   left: 50%;
   transform: translate(-50%);
   width: 390px;
-  background-color: brown;
 }
 
 .perhaps {
